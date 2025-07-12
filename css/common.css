@@ -1,0 +1,160 @@
+@charset "utf-8";
+* {box-sizing: border-box;}
+
+:root {
+    --bg: #0d1b44;
+    --nav-bg: #0d1041;
+    --color-point-green: #4dffa1;
+    --color-content-blue: #3f5aff;
+    --color-card-title-blue: #466ad0;
+    --bg-light-gray: #f5f6fa;
+    --bg-dary-gray: #333642;
+    --category-bg: #1e3893;
+    --category-card: #292632;
+    --btn-light-blue1: #205aff;
+    --btn-light-blue2: #9aa2dc;
+    --white: #fff;
+}
+
+@font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 400;
+    color: rgba(255,255,255,0.85)
+}
+
+.inner {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+/* top */
+.top {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    height: 40px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: var(--color-content-blue);
+    z-index: 5;
+}
+.top strong {margin-right: 10px;}
+
+/* ========================= heaeer ================================== */
+#header {
+    position: absolute;
+    top: 40px; left: 0; 
+    width: 100%;
+    z-index: 10;
+}
+#header .inner {
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+#header .logo {
+    width: 202px;
+    height: 32px;
+}
+#header .logo > a {
+    display: block;
+    background: url(../img/common/logo_white.png) no-repeat center/contain;
+}
+
+/* === gnb Area ====== */
+.gnbArea .gnb {
+    display: flex;
+    gap: 20px;
+    margin-left: 50px;
+}
+.gnbArea .gnb a {
+    display: block;
+    padding: 5px 10px;
+    color: var(--white);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.gnbArea .gnb a:hover {
+    color: var(--color-point-green);
+}
+
+/* === utilNav ====== */
+.utilNav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 50px;
+}
+.utilNav > a {
+    position: relative;
+    color: var(--white);
+    font-size: 15px;
+    width: 95px;
+    height: 40px;
+    border-radius: 8px;
+    line-height: 40px;
+    padding-left: 30px;
+}
+.utilNav > a.on {
+    background: var(--btn-light-blue);
+    color: #fff;
+}
+.utilNav > a:first-child::before {
+    content: '';
+    position: absolute;
+    top: 10px; left: 10px;
+    width: 14px; height: 20px;
+    background: url(../img/icon/ico_mypage.png) no-repeat left center/contain;
+}
+/* ========================= //heaeer ================================== */
+
+/* ========================= titleArea ================================== */
+section h2 {
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 36px;
+    font-w: 600;
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+}
+section .titleText {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 100px;
+}
+section strong {
+    font-weight: 600;
+}
+/* ========================= //titleArea ================================== */
+
+
+/* === button set ====== */
+.btnArea {text-align: center; margin-top: 60px;}
+.btn {
+    width: 260px;
+    height: 60px; 
+    border-radius: 10px;
+    background: #3f5aff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 60px;
+    margin: 0 5px;
+    transition: backgroundColor 0.3s;
+}
+.btnStyle01:hover,
+.btnStyle02:hover {
+    background: #121ab4;
+}
+
