@@ -21,3 +21,10 @@ em, i, address, cite {font-style: normal;}
     height: 0;
     visibility: hidden;
 }
+
+.clear::before,
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}

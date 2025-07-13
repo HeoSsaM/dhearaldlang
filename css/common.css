@@ -14,6 +14,7 @@
     --btn-light-blue1: #205aff;
     --btn-light-blue2: #9aa2dc;
     --white: #fff;
+    --color-hightlight: #0da3fa;
 }
 
 @font-face {
@@ -105,7 +106,7 @@ body {
     padding-left: 30px;
 }
 .utilNav > a.on {
-    background: var(--btn-light-blue);
+    background: var(--btn-light-blue1);
     color: #fff;
 }
 .utilNav > a:first-child::before {
@@ -121,7 +122,7 @@ body {
 section h2 {
     font-family: 'NEXON Lv2 Gothic';
     font-size: 36px;
-    font-w: 600;
+    font-weight: 600;
     margin-bottom: 30px;
     color: #fff;
     text-align: center;
@@ -158,3 +159,114 @@ section strong {
     background: #121ab4;
 }
 
+/* secContact */
+#secContact {
+    padding: 80px 0;
+    background: var(--nav-bg) url(../img/common/footer.png) no-repeat center/contain;
+    text-align: center;
+}
+#secContact .inner>p {
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 1.5;
+}
+#secContact h2 {
+    font-size: 40px;;
+}
+#secContact h2+strong {
+    display: block;
+    font-size: 24px;
+    color: var(--color-point-green);
+    margin-bottom: 50px;
+}
+
+#secContact form ul {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-bottom: 80px;
+}
+
+#secContact form ul li {
+    width: calc(100%/2);
+    height: 50px;
+    font-size: 0;
+    line-height: 0;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#secContact form ul li:nth-child(even) {
+    padding-left: 50px;
+}
+
+#secContact form ul li:nth-child(even) label {
+    width: 60px;
+}
+
+#secContact form ul li label {
+    font-weight: 500;
+    font-size: 18px;
+    width: 100px;
+}
+
+#secContact form ul li input {
+    width: calc(100% - 100px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    height: 100%;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+#secContact form ul li input:focus {
+    outline: 1px solid var(--color-point-green);
+}
+
+#secContact form ul li input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#secContact form ul li:last-child {
+    width: 100%;
+}
+
+#secContact form ul li:last-child select {
+    width: calc(100% - 140px);
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-left: 10px;
+}
+
+#secContact form ul li:last-child select option {
+    color: #000
+}
+
+/* footer */
+footer {
+    padding: 50px;
+    text-align: center;
+    opacity: 0.7;
+}
+footer .f_logo {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+footer .address p {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 300;
+}

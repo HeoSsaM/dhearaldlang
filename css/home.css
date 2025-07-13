@@ -844,42 +844,5 @@ body {
 }
 #secPartners h2 span {display: block; margin-bottom: 10px;}
 #secPartners h2 strong {color: var(--color-point-green);}
-/* swiper */
 
-#secPartners .partnerBanner {width: 100%;}
-#secPartners .swiper-wrapper {
-  transition-timing-function: linear;
-  column-gap: 30px;
-}
-#secPartners .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 160px;
-  border-radius: 8px;
-  transition: transform 0.3s;
-}
-.swiper-slide img {
-  display: block;
-  width: 60%;
-  object-fit: fill;
-}
-footer {
-    padding: 50px;
-    text-align: center;
-    opacity: 0.7;
-}
-footer .f_logo {
-    font-weight: 600;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-footer .address p {
-    margin-bottom: 10px;
-    font-size: 15px;
-    font-weight: 300;
-}
+

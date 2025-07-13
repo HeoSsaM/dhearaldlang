@@ -32,3 +32,15 @@ swiperSlides.forEach(function (element, index) {
       freemode: true,      
     });
 });
+
+//회사소개 리뷰
+/* 회사소개 */
+var swiper = new Swiper(".caseCards", {
+      slidesPerView: 3,
+      spaceBetween: 40,   
+      autoplay: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
