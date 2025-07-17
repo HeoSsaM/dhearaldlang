@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-body {
-    background: var(--bg);
-}
-
 /* main visual swiper */
 #mainVisual .mainHero {
     position: relative;
@@ -81,29 +77,33 @@ body {
 
 /* mainTopicArea */
 #mainTopicArea {
-    padding: 120px 0;
-    height: 80vh;
-    background: #0d1b44;
+    padding: 80px 0;
+    height: 640px;
+    background: #0d1b44 url(../img/main/mid_bg.png) no-repeat center/cover;
 }
 
 #mainTopicArea .topicList {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    /* gap: 50px; */
 }
 
 #mainTopicArea .topicList li {
-    /* border-radius: 20px; */
+    border-radius: 20px;
     height: 420px;
-    flex: 1;
+    width: 340px;
     overflow: hidden;
     border: 3px solid transparent;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    transition: border-color 0.3s ease;
+    transition: all 0.3s ease;
+    filter: brightness(1);
 }
 
 #mainTopicArea .topicList li:hover {
     border-color: var(--color-point-green);
+    filter: brightness(1.4);
 }
 
 #mainTopicArea .topicList li a {
@@ -136,12 +136,8 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3));
+    background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4));
     content: '';
-}
-
-#mainTopicArea .topicList li:hover {
-    border-color: var(--color-point-green);
 }
 
 #mainTopicArea .topicList li .category {
@@ -159,15 +155,18 @@ body {
 
 #mainTopicArea .topicList li h3 {
     position: relative;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     z-index: 3;
+    font-family: 'NEXON Lv2 Gothic';
+    color: #fff;
 }
 
 /* secValue */
 #secValue {
     position: relative;
     padding: 100px 0 100px;
+    background: linear-gradient(to bottom, #f2f4fb,#d8dbec);
 }
 
 #secValue::before {
@@ -191,14 +190,17 @@ body {
 
 #secValue h2 {
     margin-top: 40px;
+    color: #000;
 }
 
 #secValue .valueCard {
+    border-radius: 40px;
+    overflow: hidden;
     max-width: 994px;
     height: 850px;
     padding: 50px 40px;
     margin: 0 auto;
-    background: url(../img/main/sec2_cardbg.png) no-repeat bottom center;
+    background:#eaecf7 url(../img/main/sec2_cardbg.png) no-repeat bottom center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
@@ -291,11 +293,10 @@ body {
     font-size: 44px;
     font-weight: 600;
     margin-bottom: 50px;
-    color: var(--white)
 }
 
 #secValue .trustText p strong {
-    color: var(--color-point-green)
+    color: var(--color-content-blue)
 }
 
 #secValue .trustText .trustNum {
@@ -349,18 +350,18 @@ body {
 /* secWhy */
 #secWhy {
     position: relative;
-    padding: 80px 0 0;
-    height: 1150px;
+    padding: 110px 0;
+    background: var(--bg);
 }
 
 #secWhy .inner {
     position: relative;
-    height: 90vh;
-    background: url(../img/main/sec03_bg2.png) no-repeat left 100px center/560px auto;
+    height: 90vh;    
 }
 
 #secWhy h2 {
     /* margin-bottom: 60px; */
+    color: #fff;
 }
 
 #secWhy h2 span {
@@ -378,54 +379,65 @@ body {
 
 #secWhy .whyList {
     position: relative;
-    margin-left: 48%;
-    height: 80%;
+    height: 570px;
+    background: url(../img/main/sec03_bg2.png) no-repeat left top/ 560px auto;
 }
-
-#secWhy .whyList .title {
+#secWhy .whyList .whyListText {
+    width: 50%;
+    height:100%;
+    padding-top: 20px;
+    margin-left: 48%;
+}
+#secWhy .whyList .whyListText  .title {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 10px;
     color: var(--white)
 }
 
-#secWhy .whyList .text {
+#secWhy .whyList .whyListText  .text {
     line-height: 1.5;
     width: 400px;
+    color: rgba(255, 255, 255, 0.8)
 }
 
-#secWhy .whyList .title strong {
+#secWhy .whyList .whyListText  .title strong {
     color: var(--color-point-green)
 }
 
-#secWhy .whyList>div {
+#secWhy .whyList .whyListText  {
     /* position: absolute; */
     position: relative;
+    margin-top: 80px;
 }
-
+#secWhy .whyList .whyListText > div {
+    position: absolute;
+}
 #secWhy .whyList .why01 {
-    top: 80px;
-    left: 100px;
+    top: 0;
+    left: 0;
 }
 
 #secWhy .whyList .why02 {
     top: 220px;
-    left: 80px;
+    left: 0;
 }
 
 #secWhy .whyList .why03 {
-    top: 320px;
-    left: -100px;
+    top: 400px;
+    left: -200px;
 }
 
 #secWhy .whyList .why04 {
-    top: 320px;
-    left: -450px
+    top: 500px;
+    left: -550px
 }
 
 /* secSolution */
 #secSolution {
-    padding: 0 0 120px
+    padding: 100px 0;
+    background: var(--bg);
+    color: #fff;
 }
 
 #secSolution .titleText strong {
@@ -541,7 +553,9 @@ body {
 
 /* secExec */
 #secExec {
-    padding: 50px 0 100px;
+    padding: 100px 0;
+    background: url(../img/main/sec04_edu_bg.png) no-repeat center/cover;
+    color: #fff;
 }
 
 #secExec h2 span {
@@ -600,11 +614,11 @@ body {
 
 /* secPrograms */
 #secPrograms {
-    padding: 0 0 100px
+    padding:0
 }
 
 #secPrograms article {
-    padding: 100px 0;
+    padding: 100px 0 80px;
 }
 
 #secPrograms article .inner {
@@ -627,6 +641,7 @@ body {
     background-position: left center;
 }
 
+#secPrograms article.program02 {background: #f1f2f2;}
 #secPrograms article.program02 .inner {
     background-position: left center;
 }
@@ -667,7 +682,8 @@ body {
 }
 
 #secPrograms article .titleText span strong {
-    color: var(--color-point-green);
+    color: var(--color-content-blue);
+    font-size: 24px;
 }
 
 #secPrograms article .programList div {
@@ -678,7 +694,7 @@ body {
     position: relative;
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 15px;
+    
 }
 
 #secPrograms article .programList dt img {
@@ -695,8 +711,10 @@ body {
 
 /* secEval */
 #secEval {
-    padding: 0px 0 100px;
+    padding: 80px 0 100px;
     text-align: center;
+    background: var(--bg);
+    color: #fff;
 }
 
 #secEval .titleArea>span,
@@ -739,110 +757,17 @@ body {
     right: 100px;
 }
 
-/* secContact */
-#secContact {
-    padding: 80px 0;
-    background: var(--nav-bg) url(../img/common/footer.png) no-repeat center/contain;
-    text-align: center;
-}
-#secContact .inner>p {
-    font-family: 'NEXON Lv2 Gothic';
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 40px;
-    text-align: center;
-    line-height: 1.5;
-}
-#secContact h2 {
-    font-size: 40px;;
-}
-#secContact h2+strong {
-    display: block;
-    font-size: 24px;
-    color: var(--color-point-green);
-    margin-bottom: 50px;
-}
-
-#secContact form ul {
-    width: 960px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    text-align: left;
-    margin-bottom: 80px;
-}
-
-#secContact form ul li {
-    width: calc(100%/2);
-    height: 50px;
-    font-size: 0;
-    line-height: 0;
-    margin-bottom: 25px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-#secContact form ul li:nth-child(even) {
-    padding-left: 50px;
-}
-
-#secContact form ul li:nth-child(even) label {
-    width: 60px;
-}
-
-#secContact form ul li label {
-    font-weight: 500;
-    font-size: 18px;
-    width: 100px;
-}
-
-#secContact form ul li input {
-    width: calc(100% - 100px);
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    height: 100%;
-    padding-left: 10px;
-    font-size: 18px;
-}
-
-#secContact form ul li input:focus {
-    outline: 1px solid var(--color-point-green);
-}
-
-#secContact form ul li input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-#secContact form ul li:last-child {
-    width: 100%;
-}
-
-#secContact form ul li:last-child select {
-    width: calc(100% - 140px);
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    background-color: transparent;
-    color: rgba(255, 255, 255, 0.6);
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    padding-left: 10px;
-}
-
-#secContact form ul li:last-child select option {
-    color: #000
-}
-
 /* secPartners */
 #secPartners {
-    padding: 100px 0;
+    padding: 80px 0;
+    background: #eaecf7;
 }
+#secPartners .swiper + .swiper {margin-top: 60px;}
 
 #secPartners h2 {
     margin-bottom: 80px;
 }
 #secPartners h2 span {display: block; margin-bottom: 10px;}
-#secPartners h2 strong {color: var(--color-point-green);}
+#secPartners h2 strong {color: var(--color-content-blue);}
 
 

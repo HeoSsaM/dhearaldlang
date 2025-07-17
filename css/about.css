@@ -1,15 +1,8 @@
 @charset "utf-8";
 
-body {
-    background-color: var(--bg);
-}
-
-section+section {
-    padding: 140px 0 70px;
-}
-
+section + section {padding: 120px 0;}
 section strong {
-    color: var(--color-point-green)
+    color: var(--color-content-blue)
 }
 
 section h3 {
@@ -29,6 +22,13 @@ section p {
     width: 100%;
     height: 760px;
     overflow: hidden;
+}
+#secMainVisual::before {
+    content: '';
+    width: 100%; 
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(8, 16, 53, 0.3), rgba(15, 34, 69, 0.4));
+    display: block;
 }
 
 #secMainVisual video {
@@ -79,10 +79,10 @@ section p {
     margin-top: 25px;
     color: var(--color-point-green);
 }
-
 /* secIntro */
 #secIntro {
     position: relative;
+    background: #fff url(../img/sub_about/bg_gradinet.png) no-repeat center;
 }
 
 #secIntro::before {
@@ -91,8 +91,10 @@ section p {
     text-align: center;
     margin-bottom: 30px;
 }
-
-#secIntro .inner>.introText {
+#secIntro .introArea {
+    margin-bottom: 120px;
+}
+#secIntro .introArea .introText {
     font-family: 'NEXON Lv2 Gothic';
     font-size: 40px;
     font-weight: 600;
@@ -101,68 +103,63 @@ section p {
     line-height: 1.4;
 }
 
-#secIntro .inner>.introText strong {
-    color: var(--color-point-green)
+#secIntro .introArea .introText strong {
+    color: var(--color-content-blue)
 }
 
-#secIntro .inner>.text {
+#secIntro .introArea .text {
     font-size: 22px;
     margin-bottom: 25px;
     text-align: center;
     line-height: 1.6;
 }
 
-/* secSlogan */
-#secSlogan {
-    padding-top: 50px;
-}
-
-#secSlogan .tagline {
+.sloganArea .tagline {
     text-align: center;
     margin-bottom: 60px;
 }
 
-#secSlogan .tagline>strong {
+.sloganArea .tagline>strong {
     display: inline-block;
     padding: 2px;
     background: linear-gradient(90deg, #4d88ff, #20ee79);
     border-radius: 40px;
 }
 
-#secSlogan .tagline>strong span {
+.sloganArea .tagline>strong span {
     display: inline-block;
-    background: var(--bg);
+    background: #e4ecfb;
     /* 안쪽 박스 색상 */
     padding: 15px 25px;
     border-radius: 30px;
-    color: #fff
+    color: var(--color-content-blue)
 }
 
-#secSlogan .mainSlogan {
+.sloganArea .mainSlogan {
     margin-bottom: 80px;
 }
 
-#secSlogan .sloganContents {
+.sloganArea .sloganContents {
     display: flex;
     justify-content: space-between;
 }
 
-#secSlogan .sloganContents>div {
+.sloganArea .sloganContents>div {
     width: 50%;
 }
 
-#secSlogan .sloganContents .sloganText {
+.sloganArea .sloganContents .sloganText {
     width: 40%;
 }
 
-#secSlogan .sloganContents .sloganText h3 {
+.sloganArea .sloganContents .sloganText h3 {
     font-family: 'NEXON Lv2 Gothic';
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 30px;
 }
 
-#secSlogan .sloganContents .sloganText p {
+.sloganArea .sloganContents .sloganText p {
     margin-bottom: 25px;
     line-height: 1.6;
     opacity: 0.9;
@@ -172,8 +169,9 @@ section p {
 
 /* secCore */
 #secCore {
-    background: var(--bg-light-gray);
-    padding: 100px 0 120px;
+    position: relative;
+    background: #f5f6fa;
+    padding: 100px 0 0;
 }
 
 #secCore h2 {
@@ -216,8 +214,32 @@ section p {
 }
 
 /* secWhyus */
+#secWhyus {
+    position: relative;
+    height: 998px;
+    padding: 260px 0 100px;
+    background: url(../img/sub_about/about_img02.png) no-repeat left top / 100%;
+    display: flex;
+    z-index: 2;
+}
 #secWhyus h2 {
-    margin-bottom: 80px;
+    position: relative;
+    margin-bottom: 80px;    
+    text-align: center;
+}
+#secWhyus h2::before {
+    content: '';
+    width: 1px; height: 60px;
+    background: #fff;
+    position: absolute;
+    top: -100px; left: 50%;
+}
+#secWhyus h2 span {
+    display: inline-block;
+    padding: 15px 40px;
+    color: #fff;
+    border-radius: 50px;
+    border: 2px solid #fff;
 }
 
 #secWhyus .whyusCard {
@@ -229,31 +251,55 @@ section p {
 }
 
 #secWhyus .whyusCard>div {
+    position: relative;
+    width: calc(100%/3);
     padding: 45px 40px;
-    border-radius: 15px;
+    height: 320px;
+    border-radius: 25px;
     /* background: linear-gradient(to bottom, white, #ddd); */
-    background: url(../img/sub_about/card_bg.png) no-repeat center;
+    background: no-repeat top center;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border: 1px solid #90a2fd;
 }
-
+#secWhyus .whyusCard > div:nth-child(1) {
+    background-image: url(../img/sub_about/img_whyus01.png);
+}
+#secWhyus .whyusCard > div:nth-child(2) {
+    background-image: url(../img/sub_about/img_whyus02.png);
+}
+#secWhyus .whyusCard > div:nth-child(3) {
+    background-image: url(../img/sub_about/img_whyus03.png);
+}
+#secWhyus .whyusCard > div > .whyText {
+    position: absolute;
+    top: 150px; left: 0;
+    width: 100%; 
+    padding: 0 40px;
+    word-break: keep-all;
+    color: rgba(255,255,255,0.8)
+}
 #secWhyus .whyusCard>div h3 {
     color: #fff;
 }
 
 /* ourValues */
 #secOurValues {
-    padding-bottom: 120px;
+    background: #f5f6fa;
+    position: relative;
+    top: -120px;
+    padding-bottom: 240px;
+    color: #000
 }
 
 #secOurValues .titleLogo {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     text-align: center;
 }
 
 #secOurValues .ourValues {
     position: relative;
-    height: 600px;
-    margin-top: 100px;
+    height: 560px;
+    margin-top: 0;
 }
 
 #secOurValues h2 {
@@ -264,7 +310,6 @@ section p {
     font-family: 'NEXON Lv2 Gothic';
     font-size: 40px;
     font-weight: 600;
-    color: var(--color-point-green)
 }
 
 .valuesCircle {
@@ -302,7 +347,6 @@ section p {
 .valueItem p {
     font-size: 18px;
     font-weight: 500;
-    color: #fff;
     line-height: 1.5;
 }
 
@@ -334,34 +378,41 @@ section p {
 
 /* section#eduPhilosophy */
 #secEduPhil {
-    padding-bottom: 100px;
-    background: var(--bg-light-gray) url(../img/sub_about/about_img06.png) no-repeat center/cover;
+    padding: 0 0 100px;
+    /* background: url(../img/sub_about/about_img06.png) no-repeat center/cover; */
 }
-
-#secEduPhil .eduPhilText {
-    width: 50%;
+#secEduPhil .inner {
+    width: 1080px;
     margin: 0 auto;
-    text-align: center;
 }
-
-#secEduPhil .eduPhilText h2 {
-    margin-bottom: 50px;
+#secEduPhil .edu_phil_top {    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 100px;
 }
+#secEduPhil .edu_phil_top .eduPhilText {width: 50%;}
+#secEduPhil .edu_phil_top .eduPhilText .top_logo_navy {margin-bottom: 30px;}
 
 #secEduPhil .eduPhilText .text {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 25px;
 }
-
-#secEduPhil .eduPhilText .highlight {
-    color: var(--color-point-green);
-    font-size: 22px;
+#secEduPhil .eduPhilText .text span {display: block;}
+#secEduPhil .eduPhilText .text strong {
     font-weight: 600;
+    color: #000;
+    display: block;
+}
+#secEduPhil .edu_phil_top .eduPhilPic {width: 40%;}
+#secEduPhil .edu_phil_top .eduPhilPic img {max-width: 100%;}
+#secEduPhil .eduPhilText h2 {
+    margin-bottom: 50px;
+    text-align: left;
 }
 
 #secEduPhil .philPoints {
     position: relative;
-    z-index: 2;
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
@@ -370,11 +421,15 @@ section p {
 
 #secEduPhil .philPoints>div {
     width: calc(100%/3);
-    background: linear-gradient(to bottom, white, #ddd);
-    padding: 45px 40px;
-    border-radius: 25px;
 }
-
+#secEduPhil .philPoints>div h3 {
+    text-align: left;
+}
+#secEduPhil .philPoints>div img {
+    width: 40px;
+    display: block;
+    margin-bottom: 20px;
+}
 #secEduPhil .philPoints>div p {
     color: #000;
     font-size: 18px;
@@ -382,56 +437,60 @@ section p {
 
 /* review */
 #secReviews {
-    text-align: center;
+    background: linear-gradient(to bottom, #2043a4, #3357bd 22%, #4a89ff 100%);    
 }
-
-#secReviews .titleText {
-    margin-bottom: 60px;
+#secReviews .reviewBg {
+    height: 770px;
+    margin: 0 auto;
+    background: url(../img/sub_about/review_bg01.png) no-repeat center/cover;
+    border-radius: 40px;
+    padding: 80px;
 }
-
-#secReviews .titleText>strong {
+#secReviews .titleArea {text-align: center;}
+#secReviews .titleArea > p > strong {
     display: inline-block;
-    padding: 2px;
-    background: linear-gradient(90deg, #4d88ff, #20ee79);
+    padding: 12px 40px;
+    background: #111;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
     border-radius: 40px;
 }
-
-#secReviews .titleText>strong span {
-    display: inline-block;
-    background: var(--bg);
-    /* 안쪽 박스 색상 */
-    padding: 15px 25px;
-    border-radius: 30px;
-    color: #fff
+#secReviews .titleText {
+    margin-top: 60px;
+    margin-bottom: 70px;
 }
+#secReviews .titleText span {display: block; font-size: 24px;}
 
 #secReviews h2 {
-    font-size: 2rem;
+    font-size: 40px;
+    font-weight: 600;
     margin-bottom: 40px;
 }
 
-.caseCards {
+#secReviews .caseCards {
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    height: 300px;
+    height: 320px;    
 }
-
-.caseCard {
+#secReviews .caseCards {height: 280px;}
+#secReviews .caseCards .caseCard {
     position: relative;
     width: calc(100%/3);
-    height: max-content;
-    background: url(../img/sub_about/card_bg.png) no-repeat center;
-    padding: 40px;
+    background: #fff;
+    padding: 80px 30px 40px;
     border-radius: 18px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     text-align: left;
 }
 .caseCard::before {
     position: absolute;
-    top: 0; left: 0; right: 0; bottom:0;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    content: '';
+    top: 20px; left: 50%;
+    transform: translateX(-50%);
+    width: 40px; height: 40px;
+    background: url(../img/icon/quotation.png) no-repeat center/contain;
+    content: '';    
 }
 .caseCard p {
     margin-bottom: 20px;
@@ -440,18 +499,18 @@ section p {
     text-align: center;
 }
 .caseCard p span {
-    color: var(--color-point-green);
-    font-weight: 600;
+    color: var(--color-content-blue);
+    font-weight: 700;
 }
 .caseCard .author {
     display: block;
-    text-align: center;
+    text-align: center;   
 }
 .caseCard .author span {
     position: relative;
     display: inline-block;
     font-size: 16px;
-    color: white;
+    color:rgba(0, 0, 0, 0.8);
     text-align: center;
     padding: 0 15px;
 }
@@ -459,50 +518,29 @@ section p {
 .caseCard .author span::after {
     content: '';
     width: 10px; height: 1px;
-    background: rgba(255,255,255,0.6);
+    background: rgba(0,0,0,0.6);
     position: absolute;
     top: 50%;
 }
 .caseCard .author span::before {left: 0}
 .caseCard .author span::after {right: 0}
-#ctaJoin {
-    padding: 60px 20px;
-    background: linear-gradient(180deg, #4d88ff, #20ee79);
-    color: #fff;
+.reviewBg > .text {
+    margin-top: 15px; 
+    color: rgba(0,0,0,0.6);
+    text-align: right;
+}
+#secReviews .contactArea {
+    margin-top: 80px;
     text-align: center;
 }
-
-#ctaJoin h2 {
-    font-size: 2rem;
-    margin-bottom: 16px;
-}
-
-#ctaJoin .subtext {
-    font-size: 1rem;
+#secReviews .contactArea .emphasis {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
     margin-bottom: 30px;
 }
-
-#ctaJoin .btnArea {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-#ctaJoin .btn {
-    padding: 12px 24px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.btnPrimary {
-    background: #fff;
-    color: #4d88ff;
-}
-
-.btnSecondary {
-    background: transparent;
-    border: 2px solid #fff;
+#secReviews .contactArea .text {
     color: #fff;
+    font-size: 24px;
 }
+#secReviews .contactArea .text strong {font-weight: 600; color:#fff;}

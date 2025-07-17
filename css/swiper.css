@@ -17,16 +17,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 160px;
+  width: 160px;
+  height: 100px;
   border-radius: 8px;
   transition: transform 0.3s;
 }
 
 #secPartners .swiper-slide img {
   display: block;
-  width: 60%;
-  object-fit: fill;
+  width: 120px;
 }
 
 /* 회사소개-리뷰 */

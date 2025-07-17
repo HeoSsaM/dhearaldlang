@@ -17,21 +17,26 @@ var swiper = new Swiper(".mainHero", {
 });
 
 //파트너사
-const swiperSlides = document.querySelectorAll('.partnerBanner');
+$('.partnerBanner').each(function(index) {
+  let t = $(this);
+  t.addClass('swiper-' + index);
 
-swiperSlides.forEach(function (element, index) {
-    element.classList.add("swiper-" + index);
-    let swiper = new Swiper(".swiper-" + index, {
-      autoplay: {
-            delay: 1,
-            desableOnInteraction: false,
-      },
-      speed: 8e3,
-      loop: true,
-      slidesPerView: "auto",
-      freemode: true,      
-    });
+  let swiper = new Swiper(t.get(0), {
+    slidesPerView: '5',
+    spaceBetween: 0,
+    loop: true,
+    speed: 8000,                       // 속도가 크면 느리게, 작으면 빨라짐
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    freeMode: true,
+    freeModeMomentum: false,           // 관성 움직임 꺼서 일정 속도 유지
+    allowTouchMove: false,             // 사용자가 건드려서 멈추는 거 방지
+  });
 });
+
+
 
 //회사소개 리뷰
 /* 회사소개 */
