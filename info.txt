@@ -1,0 +1,14 @@
+font-family: 'NEXON Lv2 Gothic';
+--bg: #0d1b44;
+    --nav-bg: #0d1041;
+    --color-point-green: #4dffa1;
+    --color-content-blue: #3f5aff;
+    --color-card-title-blue: #466ad0;
+    --bg-light-gray: #f5f6fa;
+    --bg-dary-gray: #333642;
+    --category-bg: #1e3893;
+    --category-card: #292632;
+    --btn-light-blue1: #205aff;
+    --btn-light-blue2: #9aa2dc;
+    --white: #fff;
+    --color-hightlight: #0da3fa;
