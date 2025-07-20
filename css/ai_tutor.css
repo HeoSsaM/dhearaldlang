@@ -1,0 +1,43 @@
+section+section {
+    padding: 120px 0;
+}
+
+section strong {
+    color: var(--color-content-blue)
+}
+
+section h3 {
+    color: var(--category-bg);
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section p {
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+.mainVisual {
+    position: relative;
+    width: 100%;
+    height: 760px;
+    background: url(../img/sub_ai/sub_ai_main.png) no-repeat center/cover;
+}
+.mainVisual .inner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainVisual .mainTitleArea {
+    margin-top: 80px;
+}
+.mainVisual .mainTitleArea span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-family: 'NEXON Lv2 Gothic';
+    font-weight: 600;
+    color: #fff;
+}

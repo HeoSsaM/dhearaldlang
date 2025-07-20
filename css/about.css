@@ -17,21 +17,25 @@ section p {
     word-break: keep-all;
 }
 
-#secMainVisual {
+/* 메인이미지영역 */
+.mainVisual {
     position: relative;
     width: 100%;
     height: 760px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-#secMainVisual::before {
+.mainVisual::before {
     content: '';
-    width: 100%; 
-    height: 100%;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
     background: linear-gradient(to bottom, rgba(8, 16, 53, 0.3), rgba(15, 34, 69, 0.4));
-    display: block;
 }
 
-#secMainVisual video {
+.mainVisual video {
     position: absolute;
     top: 0;
     left: 0;
@@ -41,23 +45,18 @@ section p {
     z-index: -1;
 }
 
-#secMainVisual .mainTitleArea {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.mainVisual .mainTitleArea {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    z-index: 100
 }
 
 .mainTitleArea .title {
     margin-bottom: 25px;
-    font-family: 'NEXON Lv2 Gothic';
-}
+    font-family: 'NEXON Lv2 Gothic';}
 
 .mainTitleArea span {
     display: block;
@@ -68,7 +67,7 @@ section p {
 .mainTitleArea .title>span {
     display: block;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 40px;
     color: var(--white);
     margin-bottom: 10px;
 }
@@ -79,6 +78,7 @@ section p {
     margin-top: 25px;
     color: var(--color-point-green);
 }
+.mainVisual .btnArea {position: relative;}
 /* secIntro */
 #secIntro {
     position: relative;

@@ -1,11 +1,12 @@
 @charset "utf-8";
 
 /* main visual swiper */
-#mainVisual .mainHero {
+.mainVisual .mainHero {
     position: relative;
+    margin-top: 110px;
 }
 
-#mainVisual .mainHero .swiper-slide {
+.mainVisual .mainHero .swiper-slide {
     position: relative;
     display: flex;
     justify-content: center;
@@ -14,20 +15,20 @@
     background: #000 no-repeat center/cover;
 }
 
-#mainVisual .mainHero .bg01 {
+.mainVisual .mainHero .bg01 {
     background-image: url(../img/main/main_slidebg01.png);
 }
 
-#mainVisual .mainHero .bg02 {
+.mainVisual .mainHero .bg02 {
     background-image: url(../img/main/main_slidebg02.png);
 }
 
-#mainVisual .mainHero .bg03 {
+.mainVisual .mainHero .bg03 {
     background-image: url(../img/main/main_slidebg03.png);
 }
 
-#mainVisual .mainHero .bg02::before,
-#mainVisual .mainHero .bg03::before {
+.mainVisual .mainHero .bg02::before,
+.mainVisual .mainHero .bg03::before {
     content: '';
     position: absolute;
     top: 0;
@@ -37,7 +38,7 @@
     background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
 }
 
-#mainVisual .mainHero .mainTitleArea {
+.mainVisual .mainHero .mainTitleArea {
     position: absolute;
     top: 50%;
     left: 50%;
