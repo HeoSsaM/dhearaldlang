@@ -1,3 +1,12 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 section+section {
     padding: 120px 0;
 }
@@ -24,15 +33,18 @@ section p {
     height: 760px;
     background: url(../img/sub_ai/sub_ai_main.png) no-repeat center/cover;
 }
+
 .mainVisual .inner {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .mainVisual .mainTitleArea {
     margin-top: 80px;
 }
+
 .mainVisual .mainTitleArea span {
     display: block;
     margin-bottom: 10px;
@@ -40,4 +52,368 @@ section p {
     font-family: 'NEXON Lv2 Gothic';
     font-weight: 600;
     color: #fff;
+}
+
+/* ai 영어코치 상단 */
+.aiCoatch-area .coach-intro {
+    text-align: center;
+}
+
+.aiCoatch-area .coach-intro .titleText span {
+    display: block;
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 28px;
+    font-weight: 400;
+    color: #474b5b;
+}
+
+.aiCoatch-area .coach-intro h2 {
+    font-family: 'NEXON Lv2 Gothic';
+    font-weight: 700;
+    margin-bottom: 120px;
+}
+
+.aiCoatch-area .coach-intro h2 span {
+    color: #ff6243;
+}
+
+.aiCoatch-area .coach-intro h2 span:nth-child(2) {
+    background: #ff6243;
+    color: #fff
+}
+
+.aiCoatch-area .coach-intro .coach-visual {
+    text-align: center;
+    margin-bottom: 115px;
+}
+
+.aiCoatch-area .coach-result {
+    padding-top: 140px;
+    text-align: center;
+}
+
+.aiCoatch-area .coach-result h3 {
+    font-family: 'NEXON Lv2 Gothic';
+    font-weight: 700;
+    font-size: 40px;
+    color: #000;
+    margin-bottom: 60px;
+}
+
+.aiCoatch-area .coach-result h3 span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.aiCoatch-area .coach-result h3 em {
+    color: #ff6243;
+}
+
+.aiCoatch-area .coach-result h3 img {
+    width: 150px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.aiCoatch-area .coach-result .result-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto 80px;
+}
+
+.aiCoatch-area .coach-result .result-list li {
+    height: 190px;
+    background: #f8f8f8;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.aiCoatch-area .coach-result .result-list li img {
+    margin-bottom: 25px;
+}
+
+.aiCoatch-area .coach-result .result-list li strong {
+    font-family: 'NEXON Lv2 Gothic';
+    font-weight: 700;
+    font-size: 24px;
+    color: #ff5e3a;
+    margin-bottom: 15px;
+}
+
+.aiCoatch-area .coach-result .result-list li span {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+}
+
+/* 화상영어 */
+.sec-ai {
+    padding-top: 0;
+}
+
+.sec-ai .sec-ai-intro {
+    background: #f3f2f7;
+    padding: 50px;
+
+}
+
+.sec-ai .sec-ai-intro .inner_bg {
+    position: relative;
+    width: 1080px;
+    margin: 0 auto;
+    background: #ff6749 url(../img/sub_ai/ai_sub_bg2.png) no-repeat top center/contain;
+    text-align: center;
+    border-radius: 120px;
+    overflow: hidden;
+    padding-bottom: 80px;
+}
+
+.sec-ai .inner_bg em {
+    font-weight: 600;
+    color: #fff
+}
+
+.sec-ai .sec-ai-intro .intro {
+    position: relative;
+    height: 650px;
+    text-align: center;
+}
+
+.sec-ai .sec-ai-intro .intro>img {
+    position: relative;
+    width: 550px;
+    left: -50px
+}
+
+.sec-ai .sec-ai-intro .memory .thumb img {
+    margin-bottom: 60px;
+    width: 720px;
+}
+
+.sec-ai .sec-ai-intro .memory .thumb p {
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.sec-ai .sec-ai-intro .memory .thumb {
+    margin-bottom: 40px;
+}
+
+.sec-ai .sec-ai-intro .memory .thumb p span {
+    display: block;
+}
+
+.sec-ai .sec-ai-intro .memory .memoryText h3 {
+    position: relative;
+    color: #fff;
+    font-weight: 300;
+    font-size: 32px;
+    margin-bottom: 100px;
+    letter-spacing: -1px;
+}
+
+.sec-ai .sec-ai-intro .memory .memoryText h3::after {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    width: 2px;
+    height: 60px;
+    border-left: 2px dotted #fff;
+    content: '';
+}
+
+.sec-ai .sec-ai-intro .memory .memoryText p {
+    color: #fff;
+    font-size: 30px;
+}
+
+.sec-ai .inner {
+    padding: 80px 0 0;
+    text-align: center;
+}
+
+.sec-ai .memoryScan .thumb {
+    margin-bottom: 70px;
+}
+
+.sec-ai .scanText .titleText {
+    font-family: 'NEXON Lv2 Gothic';
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+
+.sec-ai .scanText em {
+    color: #ff5e3a;
+    font-weight: 700;
+}
+
+.sec-ai .scanText .text span {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* 인터렉티브 코칭*/
+.sec-coach {
+    background: var(--bg-light-gray);
+    padding: 0;
+}
+
+.sec-coach .inner {
+    position: relative;
+    width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    /* 요소 간 간격 */
+    height: 680px;
+    overflow: hidden;
+}
+
+.sec-coach .titleArea {
+    width: 480px;
+    height: 680px;
+    border-radius: 30px 30px 0 0;
+    background: #fff;
+    padding: 80px 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 50px;
+}
+
+.sec-coach .titleArea em {
+    font-weight: 700;
+    color: #ff5e3a
+}
+
+.sec-coach .titleArea strong {
+    font-weight: 700;
+    color: #000
+}
+
+.sec-coach .titleArea span {
+    font-size: 17px;
+    display: block;
+}
+
+.sec-coach .titleArea p {
+    margin-bottom: 40px;
+}
+
+.sec-coach .titleArea h2 {
+    text-align: left;
+}
+
+.sec-coach .titleArea .logo {
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+}
+
+.sec-coach .titleArea .logo img {
+    width: 120px;
+}
+
+.sec-coach .cards {
+    width: 670px;
+    /* 정확히 계산된 너비 */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 30px;
+}
+
+.sec-coach .cards .card {
+    width: 100%;
+    /* grid item 기준 */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.sec-coach .cards .card:nth-child(1) {
+    margin-top: 110px;
+    height: 320px;
+}
+
+.sec-coach .cards .card:nth-child(2) {
+    border-radius: 0 0 20px 20px;
+    height: 310px;
+}
+
+.sec-coach .cards .card:nth-child(3) {
+    border-radius: 20px 20px 0 0;
+    height: 310px;
+}
+
+.sec-coach .cards .card:nth-child(4) {
+    height: 280px;
+    margin-top: -110px;
+}
+
+.sec-coach .cards .card img {
+    width: 100%;
+}
+
+/* 왜 틀렸을까 */
+.whyWrong {
+    background: url(../img/sub_ai/whywrong_bg.png) no-repeat center;
+    height: 920px;
+}
+
+.whyWrong .inner {
+    position: relative;
+    height: 100%;
+}
+
+.whyWrong .titleArea {
+    width: 405px;
+    height: 484px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 40px 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);    
+}
+.whyWrong .titleArea .icon {
+    text-align: right;
+    padding-right: 25px;
+    margin-bottom: 25px;
+}
+.whyWrong h2 {
+    text-align: left;
+    margin-bottom: 50px;
+}
+.whyWrong .titleArea h2 > em {
+    font-weight: 700;
+    color: #ff5e3a;
+    display: block;
+    margin-bottom: 5px;
+}
+.whyWrong .titleArea .text {
+    font-size: 17px;
+    line-height: 1.5;
+}
+.whyWrong .titleArea .text em {
+    font-weight: 700;
+}
+.whyWrong .btnArea {
+    position: absolute;
+    bottom: -70px; 
+    width: 100%;
+    text-align: center;
 }
