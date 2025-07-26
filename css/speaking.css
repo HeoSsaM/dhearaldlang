@@ -1,0 +1,515 @@
+@charset "utf-8";
+
+section+section {
+    padding: 120px 0;
+}
+
+section strong {
+    color: var(--color-content-blue)
+}
+
+section h3 {
+    color: var(--category-bg);
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section p {
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+.mainVisual {
+    position: relative;
+    width: 100%;
+    height: 760px;
+    background: url(../img/sub_speaking/sub_test_bg.png) no-repeat center/cover;
+}
+
+.mainVisual .inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.mainVisual .mainTitleArea {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.mainVisual .mainTitleArea .title {
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 80px;
+}
+
+.mainVisual .mainTitleArea .title span {
+    color: var(--color-content-blue);
+}
+
+.mainVisual .mainTitleArea .titleText {
+    text-align: left;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+.mainVisual .mainTitleArea .titleText span {
+    display: block;
+}
+
+.mainVisual .mainTitleArea .titleText em {
+    font-weight: 700;
+}
+
+.mainVisual .mainTitleArea .btnArea {
+    text-align: left;
+}
+
+/* 모의테스트 특장점 */
+.sec-benefit .titleArea h2 img {
+    vertical-align: middle;
+}
+
+.sec-benefit .titleArea h2+p {
+    margin-top: 40px;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.sec-benefit .benefit-list {
+    margin: 0 auto;
+    background: url(../img/sub_speaking/sec2_cardbg02.png) no-repeat center 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 160px;
+}
+
+.sec-benefit .benefit-list>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-benefit .benefit-list .card_bg {
+    width: 200px;
+    height: 230px;
+    background: no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sec-benefit .benefit-list>div:nth-child(1) .card_bg {
+    background-image: url(../img/sub_speaking/testcenter_card01.png);
+}
+
+.sec-benefit .benefit-list>div:nth-child(2) .card_bg {
+    background-image: url(../img/sub_speaking/testcenter_card02.png);
+}
+
+.sec-benefit .benefit-list>div:nth-child(3) .card_bg {
+    background-image: url(../img/sub_speaking/testcenter_card03.png);
+}
+
+.sec-benefit .benefit-list>div:nth-child(4) .card_bg {
+    background-image: url(../img/sub_speaking/testcenter_card04.png);
+}
+
+.sec-benefit .benefit-list .card_bg h3 {
+    font-size: 20px;
+    line-height: 1.4;
+    color: #474b5b
+}
+
+.sec-benefit .benefit-list .card_bg h3 strong {
+    font-size: 22px;
+}
+
+.sec-benefit .benefit-list>div p {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    color: #444;
+    line-height: 1.2;
+}
+
+/* hspi */
+.sec_hspi {
+    height: 900px;
+    background: url(../img/sub_speaking/mid_bg.png) no-repeat center/100% 100%;
+}
+
+.sec_hspi .inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sec_hspi .titleArea {
+    width: 40%;
+}
+
+.sec_hspi .h_logo {
+    margin-bottom: 30px;
+}
+
+.sec_hspi .titleArea h2 {
+    text-align: left;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.sec_hspi .titleArea p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* 말하기실력 평가 */
+.sec-speak {
+    position: relative;
+    background: #e4e6fa;
+}
+
+.sec-speak::before {
+    content: '';
+    width: 1px;
+    height: 100px;
+    background: #aaacbc;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sec-speak .titleArea {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sec-speak .titleArea .desc {
+    font-family: 'NEXON Lv2 Gothic';
+    font-weight: 400;
+    font-size: 38px;
+}
+
+.sec-speak .titleArea h2 {
+    font-weight: 500;
+    font-size: 46px;
+}
+
+.sec-speak .titleArea h2 strong {
+    font-weight: 700;
+    color: #000
+}
+
+.sec-speak .criteria {
+    margin-bottom: 180px;
+}
+
+.sec-speak .criteria .crit-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 60px;
+}
+
+.sec-speak .criteria .crit-list li {
+    text-align: center;
+}
+
+.sec-speak .criteria .crit-list li .img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-speak .criteria .crit-list strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+    font-size: 20px;
+}
+
+.sec-speak .speak-info h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.sec-speak .speak-info .textArea {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.sec-speak .flow-tags {
+    text-align: center;
+}
+
+.sec-speak .flow-tags img {
+    width: 980px
+}
+
+.sec-speak .flow-process {
+    background: url(../img/sub_speaking/sub_test_img_arrow_bg.png) no-repeat center top;
+}
+
+.sec-speak .flow-process .titleArea {
+    margin-bottom: 100px;
+}
+
+.sec-speak .flow-process .titleArea img {
+    width: 40px;
+    margin-bottom: 25px;
+}
+
+.sec-speak .flow-process .titleArea .subtitle {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.sec-speak .flow-process .titleArea .subtext span {
+    display: block;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.sec-speak .flow-process .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.sec-speak .flow-process .tag-list span {
+    width: 200px;
+    height: 64px;
+    border-radius: 60px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 64px;
+    text-align: center;
+}
+
+.sec-speak .flow-process .tag-list span:nth-child(odd) {
+    background: #d2d5f2;
+}
+
+.sec-speak .flow-process .tag-list span:nth-child(even) {
+    background: #cdcfe4;
+}
+
+.sec-speak .flow-process .tag-list span.indent {
+    margin-left: 120px;
+}
+
+.sec-speak .flow-process .subtext {
+    font-family: 'NEXON Lv2 Gothic';
+    font-weight: 400;
+    text-align: center;
+    font-size: 30px;
+}
+
+.sec-speak .flow-process .subtext strong {
+    font-weight: 700;
+    color: #000
+}
+
+/* 모의테스트 기관 로고들 */
+.sec-logos .titleText {
+    margin-bottom: 80px;
+}
+
+.sec-logos .titleText strong {
+    color: #000;
+    font-weight: 700;
+}
+
+.sec-logos .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.sec-logos .company_logo li {
+    border-radius: 15px;
+    border: 1px solid #cdcdcd;
+    text-align: center;
+}
+
+.sec-logos .company_logo li img {
+    width: 80%;
+}
+
+.sec-logos .titleArea {
+    text-align: center;
+    margin: 80px 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* 활용사례 */
+.sec-usage {
+    background: #748ae4;
+}
+
+.sec-usage .inner {
+    width: 980px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-usage .usage-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.sec-usage .usage-box .img {
+    width: auto;
+}
+.sec-usage .usage-box .img img {
+    width: 100%;
+}
+.sec-usage .usage-box .usage-text {
+    width: 65%;
+}
+.sec-usage .usage-box .usage-title {
+    height: 76px;
+    border-radius: 30px;
+    background: linear-gradient(to right, transparent, white 65%);
+    line-height: 76px;
+    padding-left: 100px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom:20px;
+}
+
+.sec-usage .usage-box .usage-title img {
+    width: 32px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.sec-usage .usage-box .usage-title strong {
+    color: #000;
+}
+.usage-box.left .usage-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 50px;
+}
+.usage-box.left .usage-list li {
+    padding-left: 100px;
+}
+.usage-box .usage-list li {
+    background: linear-gradient(to right,transparent, #5770f7);
+    color: #fff;
+    border-radius: 0 30px 30px 0;
+    padding: 12px 35px;
+    font-weight: 500;
+    font-size: 18px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* 개별 길이 조정 (예: px 기준) */
+.usage-box.left .w1 {
+    width: 240px;
+}
+
+.usage-box.left .w2 {
+    width: 280px;
+}
+
+.usage-box.left .w3 {
+    width: 320px;
+}
+
+.usage-box.left .w4 {
+    width: 360px;
+}
+
+.usage-box.left .w5 {
+    width: 400px;
+}
+
+.usage-box.right {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.usage-box.right .usage-title {
+    border-radius: 30px 0 0 30px;
+    background: linear-gradient(to left, transparent 5%, white 65%);
+    padding-left: 30px;
+    margin-left: 100px;
+}
+.usage-box.right .usage-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 50px;
+}
+.usage-box.right .usage-list li {
+    background: linear-gradient(to left,transparent, #3647a3);
+    color: #fff;
+    border-radius: 30px 0 0 30px;
+}
+.usage-box.right .w1 {
+    width: 400px;
+}
+.usage-box.right .w2 {
+    width: 520px;
+}
+.usage-box.right .w3 {
+    width: 600px;
+}
+
+.siteInfo h2 {
+    margin-bottom: 60px;
+}
+.siteInfo figure {
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+.siteInfo figcaption {
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+/* 하단 텍스트 */
+.bottomText {
+    background: #233e85;
+}
+.bottomText .text {
+    font-family: 'NEXON Lv2 Gothic';
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+}

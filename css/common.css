@@ -23,6 +23,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-weight: 400;
@@ -166,7 +172,14 @@ section strong {
 .btnStyle02:hover {
     background: #121ab4;
 }
-
+.btnStyle03 {
+    border: 2px solid #3f5aff;
+    background: #fff;
+    border-radius: 40px;
+    color: #3f5aff;
+    font-weight: 600;
+    font-size: 24px;
+}
 /* footer */
 .footer {
     padding: 60px 0;

@@ -1,0 +1,606 @@
+@charset "utf-8";
+
+section+section {
+    padding: 120px 0;
+}
+
+section strong {
+    color: var(--color-content-blue)
+}
+
+section h3 {
+    color: var(--category-bg);
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section p {
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+.mainVisual {
+    position: relative;
+    width: 100%;
+    height: 760px;
+    background: #f5f9fd url(../img/sub_junior/sub_junior_main.png) no-repeat center/100% 100%;
+}
+
+.mainVisual .inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.mainVisual .mainTitleArea {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.mainVisual .mainTitleArea .title {
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 80px;
+}
+
+.mainVisual .mainTitleArea .title span {
+    color: var(--color-content-blue);
+}
+
+.mainVisual .mainTitleArea .titleText {
+    text-align: left;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+.mainVisual .mainTitleArea .titleText span {
+    display: block;
+}
+
+.mainVisual .mainTitleArea .titleText em {
+    font-weight: 700;
+}
+
+.mainVisual .mainTitleArea .btnArea {
+    text-align: left;
+}
+
+/* intro_top */
+.sec-edu-cont01 {
+    background: linear-gradient(to bottom, #f3f6fd, #fff, #e0eafb 30%, #fff);
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.sec-edu-cont01 .titleArea {
+    margin-bottom: 70px;
+}
+
+.sec-edu-cont01 .titleArea h2 {
+    margin-bottom: 40px;
+}
+
+.sec-edu-cont01 .text {
+    margin-bottom: 20px;
+}
+
+.sec-edu-cont01 .text span {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sec-edu-cont01 .titleArea .text em {
+    font-weight: 600;
+}
+
+.sec-edu-cont01 .edu-tags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.sec-edu-cont01 .edu-tags li {
+    padding: 12px 35px;
+    border-radius: 40px;
+    border: 1px solid var(--color-content-blue);
+    color: var(--color-content-blue);
+    font-size: 18px;
+    font-weight: 500;
+    background: rgba(63, 89, 255, 0.07);
+}
+
+.sec-edu-cont01 .edu_img img {
+    width: 780px;
+}
+
+.sec-edu-cont02 {
+    height: 960px;
+    text-align: center;
+    background: #fdfeff url(../img/sub_junior/bg2.png) no-repeat center bottom;
+}
+
+.sec-edu-cont02 .edu-content {
+    margin-bottom: 80px;
+}
+
+.sec-edu-cont02 .h_logo {
+    margin-bottom: 50px;
+}
+
+.sec-edu-cont02 h2 {
+    font-size: 40px;
+    line-height: 1.4;
+}
+
+.sec-edu-cont02 .text {
+    margin-bottom: 40px;
+}
+
+.sec-edu-cont02 .text span {
+    display: block;
+    font-size: 18px;
+}
+
+.sec-edu-cont02 .text span em {
+    font-weight: 600;
+}
+
+/* 강사진 */
+.sec-teacher {
+    position: relative;
+    background: #274bae;
+    color: #fff;
+    text-align: center;
+}
+
+.sec-teacher::before {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100px;
+    background: #fff;
+    content: '';
+}
+
+.sec-teacher .titleArea {
+    margin-top: 60px;
+}
+
+.sec-teacher .titleArea .sub-title {
+    font-family: 'NEXON Lv2 Gothic';
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.sec-teacher .titleArea h2 {
+    display: inline-block;
+    padding: 15px 45px;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    margin-bottom: 60px;
+}
+
+.sec-teacher .titleArea .text {
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.sec-teacher .titleArea span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.sec-teacher .t-feature {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    margin-bottom: 80px;
+}
+
+.sec-teacher .t-feature>div {
+    overflow: hidden;
+    border-radius: 30px;
+    width: calc(100%/3);
+    height: 446px;
+    background: transparent no-repeat center/contain;
+    padding-top: 120px;
+}
+
+.sec-teacher .t-feature>div:nth-child(1) {
+    background-image: url(../img/sub_junior/card01.png);
+}
+
+.sec-teacher .t-feature>div:nth-child(2) {
+    background-image: url(../img/sub_junior/card02.png);
+}
+
+.sec-teacher .t-feature>div:nth-child(3) {
+    background-image: url(../img/sub_junior/card03.png);
+}
+
+.sec-teacher .t-feature>div span {
+    display: block;
+}
+
+.sec-teacher .t-feature>div .label {
+    font-weight: 22px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.sec-teacher .teacher-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px
+}
+
+.sec-teacher .teacher-cards .card .slogan {
+    position: relative;
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+.sec-teacher .teacher-cards .card .slogan::after {
+    content: '';
+    width: 1px;
+    height: 40px;
+    background: #afafaf;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+}
+
+.sec-teacher .teacher-cards .card .slogan strong {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.sec-teacher .teacher-cards .card .slogan span {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 0;
+    letter-spacing: -1px;
+}
+
+.sec-teacher .teacher-cards .card img {
+    position: relative;
+    z-index: 2;
+}
+
+.sec-teacher .teacher-cards .card .profile {
+    position: relative;
+    top: -50px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 60px 12px 20px;
+}
+
+.sec-teacher .teacher-cards .card .profile ul {
+    color: #222222
+}
+
+.sec-teacher .teacher-cards .card .profile ul li {
+    padding: 6px 0;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+/* 커리큘럼 */
+.sec-curri .inner {
+    position: relative;
+    padding: 75px 125px;
+    border-radius: 50px;
+    background: #f7f9fd;
+}
+
+.sec-curri .inner .imgBox {
+    position: absolute;
+    top: -40px;
+    right: 0;
+}
+
+.sec-curri .titleArea {
+    margin-bottom: 80px;
+}
+
+.sec-curri .titleArea .badge {
+    display: inline-block;
+    color: var(--color-content-blue);
+    ;
+    font-size: 18px;
+    padding: 12px 30px;
+    border: 1px solid var(--color-content-blue);
+    border-radius: 40px;
+    margin-bottom: 60px;
+}
+
+.sec-curri .titleArea h2 {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.sec-curri .titleArea .text {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.sec-curri .titleArea .text span {
+    display: block;
+}
+
+.sec-curri .titleArea .text em {
+    font-weight: 600;
+}
+
+.sec-curri .curri-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.sec-curri .curri-list li {
+    width: calc(100%/2 - 120px)
+}
+
+.sec-curri .curri-list li h3 {
+    text-align: left;
+}
+
+.sec-curri .curri-list li h3 img {
+    vertical-align: middle;
+    width: 32px;
+    margin-right: 15px;
+}
+
+.sec-curri .curri-list li p em {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+/* 단계별 교재 */
+.sec-steps {
+    background: #f0f5ff;
+}
+
+.sec-steps .inner {
+    position: relative;
+    /*  max-width: 1440px; */
+}
+
+.sec-steps .titleArea {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.sec-steps .titleArea .badge {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 40px;
+    border: 1px solid var(--color-content-blue);
+    color: var(--color-content-blue);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.sec-steps .titleArea h2 {
+    margin-bottom: 80px;
+}
+
+.sec-steps .titleArea .text span {
+    display: block;
+    font-size: 18px;
+}
+
+.sec-steps .titleArea .text span strong {
+    color: var(--color-content-blue);
+    font-weight: 20px;
+}
+
+/* 단계별 카드 */
+.sec-steps .step-list-wrap {
+    position: relative;
+
+}
+
+.sec-steps .step-list-wrap::after {
+    border-radius: 50px 50px 0 0;
+    background: #fff;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+}
+
+.sec-steps .steps-list {
+    position: relative;
+    width: 1100px;
+    height: 780px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 2
+}
+
+.sec-steps .steps-list .step {
+    position: absolute;
+    top: 0;
+    height: 780px;
+    padding: 50px 60px;
+    background: no-repeat left top;
+    box-sizing: border-box;
+}
+
+.sec-steps .steps-list .step:nth-child(1) {
+    width: 520px;
+    left: 0;
+    background-image: url(../img/sub_junior/step_card01.png);
+    z-index: 10;
+}
+
+.sec-steps .steps-list .step:nth-child(2) {
+    width: 550px;
+    left: 270px;
+    background-image: url(../img/sub_junior/step_card02.png);
+    z-index: 2;
+}
+
+.sec-steps .steps-list .step:nth-child(3) {
+    width: 460px;
+    left: 640px;
+    background-image: url(../img/sub_junior/step_card03.png);
+    order: 3;
+    z-index: 1;
+}
+
+.sec-steps .steps-list .step h3 {
+    text-align: right;
+    padding-right: 60px;
+    font-size: 22px;
+}
+
+.sec-steps .steps-list .step:nth-child(3) {
+    padding-right: 40px;
+}
+
+.sec-steps .steps-list .step:nth-child(3) h3 {
+    padding-right: 0;
+}
+
+.sec-steps .steps-list .step h3 span {
+    display: block;
+}
+
+.sec-steps .steps-list .step .textArea {
+    position: absolute;
+    width: 240px;
+}
+
+.sec-steps .steps-list .step:nth-child(1) .textArea {
+    top: 200px;
+    left: 60px;
+}
+
+.sec-steps .steps-list .step:nth-child(2) .textArea {
+    bottom: 70px;
+    left: 140px;
+}
+
+.sec-steps .steps-list .step:nth-child(3) .textArea {
+    bottom: 70px;
+    left: 90px;
+}
+
+.sec-steps .steps-list .step .textArea h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.sec-steps .steps-list .step .textArea p {
+    font-size: 16px
+}
+
+/* 수준별 콘텐츠 */
+.sec-steps .steps-wrap {
+    background: linear-gradient(to bottom, #fff 80%, transparent);
+    border-radius: 0 0 500px 500px;
+    padding: 80px 0 0;
+}
+
+.sec-steps .steps-wrap>div {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.sec-steps .steps-wrap .titleArea {
+    text-align: left;
+}
+
+.sec-steps .steps-wrap .titleArea .badge {
+    border-color: #707070;
+    color: #707070;
+    font-size: 20px;
+    padding: 8px 25px;
+}
+
+.sec-steps .steps-wrap .titleArea h2 {
+    text-align: left;
+    color: #707070;
+    margin-bottom: 40px;
+}
+
+.sec-steps .steps-wrap .titleArea .text span {
+    display: block;
+    font-size: 18px;
+}
+
+.sec-steps .steps-wrap .titleArea .text em {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.steps-wrap .cont-list {
+    display: flex;
+    background: #f7f8ff;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 40px;
+    padding: 40px;
+}
+
+.steps-wrap .cont-list div {
+    text-align: center;
+}
+
+.steps-wrap .cont-list img {
+    width: 32px
+}
+
+.steps-wrap .cont-list .text {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.steps-wrap .contImg {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.steps-wrap .step-begin .cont-list {
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 50px;
+}
+
+.steps-wrap .step-inter .cont-list,
+.steps-wrap .step-advance .cont-list {
+    gap: 50px;
+    margin-bottom: 70px;
+}
+
+.steps-wrap .step-inter .cont-list div,
+.steps-wrap .step-advance .cont-list div {
+    width: calc(100%/3)
+}
