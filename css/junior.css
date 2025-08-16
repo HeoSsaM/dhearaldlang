@@ -40,12 +40,13 @@ section p {
     text-align: left;
 }
 
-.mainVisual .mainTitleArea .title {
+.mainVisual .mainTitleArea h2 {
     font-family: 'NEXON Lv2 Gothic';
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 700;
     color: #000;
     margin-bottom: 80px;
+    text-align: left;
 }
 
 .mainVisual .mainTitleArea .title span {
@@ -55,7 +56,7 @@ section p {
 .mainVisual .mainTitleArea .titleText {
     text-align: left;
     margin-bottom: 40px;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .mainVisual .mainTitleArea .titleText span {
@@ -124,24 +125,29 @@ section p {
 .sec-edu-cont02 {
     height: 960px;
     text-align: center;
-    background: #fdfeff url(../img/sub_junior/bg2.png) no-repeat center bottom;
+    background: linear-gradient(#ecf2fd, #ceddf6, #ecf2fd)
 }
 
 .sec-edu-cont02 .edu-content {
     margin-bottom: 80px;
 }
-
-.sec-edu-cont02 .h_logo {
-    margin-bottom: 50px;
-}
-
 .sec-edu-cont02 h2 {
     font-size: 40px;
     line-height: 1.4;
 }
-
-.sec-edu-cont02 .text {
+.sec-edu-cont02 .titleText {
+    font-size: 22px;
+    font-family: 'NEXON Lv2 Gothic'; 
+    font-weight: 700;
     margin-bottom: 40px;
+}
+.sec-edu-cont02 .titleText span {
+    display: block;
+}
+.sec-edu-cont02 .text {
+    font-size: 18px;
+    font-weight: 500;
+    color:#3f4b6d
 }
 
 .sec-edu-cont02 .text span {
@@ -167,13 +173,13 @@ section p {
     left: 50%;
     transform: translateX(-50%);
     width: 2px;
-    height: 100px;
-    background: #fff;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.5);
     content: '';
 }
 
 .sec-teacher .titleArea {
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .sec-teacher .titleArea .sub-title {
@@ -188,9 +194,11 @@ section p {
     padding: 15px 45px;
     border: 2px solid #fff;
     border-radius: 40px;
+    margin-bottom: 70px;
+}
+.sec-teacher .titleArea {
     margin-bottom: 60px;
 }
-
 .sec-teacher .titleArea .text {
     margin-bottom: 25px;
     font-size: 20px;
@@ -245,7 +253,9 @@ section p {
     align-items: flex-start;
     gap: 30px
 }
-
+.sec-teacher .teacher-cards > div {
+    flex: 1;
+}
 .sec-teacher .teacher-cards .card .slogan {
     position: relative;
     background: #fff;
@@ -434,7 +444,7 @@ section p {
 
 .sec-steps .steps-list {
     position: relative;
-    width: 1100px;
+    width: 1180px;
     height: 780px;
     margin: 0 auto;
     display: flex;
@@ -461,14 +471,14 @@ section p {
 
 .sec-steps .steps-list .step:nth-child(2) {
     width: 550px;
-    left: 270px;
+    left: 300px;
     background-image: url(../img/sub_junior/step_card02.png);
     z-index: 2;
 }
 
 .sec-steps .steps-list .step:nth-child(3) {
     width: 460px;
-    left: 640px;
+    left: 660px;
     background-image: url(../img/sub_junior/step_card03.png);
     order: 3;
     z-index: 1;
@@ -477,7 +487,8 @@ section p {
 .sec-steps .steps-list .step h3 {
     text-align: right;
     padding-right: 60px;
-    font-size: 22px;
+    font-size: 20px;
+    margin-top: 30px;
 }
 
 .sec-steps .steps-list .step:nth-child(3) {
@@ -503,7 +514,7 @@ section p {
 }
 
 .sec-steps .steps-list .step:nth-child(2) .textArea {
-    bottom: 70px;
+    bottom: 50px;
     left: 140px;
 }
 
@@ -515,7 +526,7 @@ section p {
 .sec-steps .steps-list .step .textArea h4 {
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .sec-steps .steps-list .step .textArea p {

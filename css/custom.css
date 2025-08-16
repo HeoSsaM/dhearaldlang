@@ -275,12 +275,13 @@ section p {
 }
 
 .overview .textArea .slogan {
-    font-size: 36px;
-    font-weight: 500;
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 34px;
+    font-weight: 600;
     margin-bottom: 25px;
 }
 
-.overview .textArea .slogan strong {
+.overview  strong {
     color: var(--color-content-blue)
 }
 
@@ -322,28 +323,29 @@ section p {
     width: 650px;
 }
 
-.overview .hsrt h2 {
+.overview .hspt h2 {
+    font-size: 36px;
     line-height: 1.4;
-    color: #737584;
     font-weight: 700;
 }
 
-.overview .hsrt h2 strong {
+.overview .hspt h2 strong {
     color: var(--color-content-blue)
 }
 
-.overview .hsrt h2 span {
+.overview .hspt h2 span {
     color: #000
 }
 
-.overview .hsrt .text {
-    font-size: 22px;
-    color: #878891;
-    font-weight: 600;
-    margin-bottom: 100px;
+.overview .hspt .text {
+    width: 70%;
+    margin: 0 auto 100px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 500;
 }
 
-.overview .hsrt .text>span {
+.overview .hspt .text>span {
     display: block;
 }
 
@@ -539,6 +541,7 @@ section p {
 /* 파트너사 */
 .partners h2 {
     margin-bottom: 80px;
+    font-size: 32px;
 }
 .partners_logo {
     display: flex;

@@ -185,6 +185,7 @@ section strong {
     padding: 60px 0;
     background: #111;
     color: rgba(255, 255, 255, 0.6);
+    font-size: 15px;
 }
 .footer .inner {
     display: flex;

@@ -34,22 +34,59 @@ section p {
     align-items: center;
 }
 
-.mainVisual .mainTitleArea {
-    margin-top: 80px;
-}
-
-.mainVisual .mainTitleArea span {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 40px;
+.mainVisual .mainTitleArea .titleText {
+    font-size: 44px;
     font-family: 'NEXON Lv2 Gothic';
     font-weight: 600;
     color: #fff;
+    margin-top: -40px;
+    margin-bottom: 25px;
+}
+
+.mainVisual .mainTitleArea .text>span {
+    display: block;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
 }
 
 /* ai 영어코치 상단 */
 .aiCoatch-area .coach-intro {
     text-align: center;
+}
+
+.aiCoatch-area .coach-visual {
+    position: relative;
+    width: 670px;
+    height: 670px;
+    margin: 0 auto;
+    background: url(../img/sub_ai/sub_ai_main02.png) no-repeat center/contain;
+}
+
+.aiCoatch-area .coach-visual video {
+    display: block;
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    /* 스마트폰 화면 모양에 맞춘 클리핑 (좌표값 예시) */
+    clip-path: inset(14% 22% 0 0 round 30px);
+    object-fit: contain;
+    z-index: -1
+}
+
+.aiCoatch-area .coach-visual .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 100%; /* 필요에 따라 높이 조정 */
+    clip-path: inset(14% 22% 0 0 round 30px);
+    background: linear-gradient(to top, rgba(255,255,255,1) 5%, transparent 40%);
+    pointer-events: none; /* 클릭 이벤트 방해 안 함 */
 }
 
 .aiCoatch-area .coach-intro .titleText span {
@@ -440,9 +477,12 @@ section p {
 
 .secTutor .titleArea .titleText {
     font-size: 26px;
-    font-weight: 500;
+    font-weight: 500;    
 }
-
+.secTutor .titleArea h2 {line-height: 1.4;}
+.secTutor .titleArea h2 em {
+    color: #ff5e3a;
+}
 .secTutor .titleArea .titleText span {
     color: #acadb2
 }
@@ -623,66 +663,97 @@ section p {
     max-width: 900px;
     margin: 0 auto 40px;
 }
-.sec-flow .steps .step-item  {
-  height: 180px;
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 700;
-  display: flex;
-  align-items: flex-end;
-  padding: 16px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+.sec-flow .steps .step-item {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: flex-end;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* 상단 3개는 각 2칸씩 차지 (총 6칸) */
-.item01 { grid-column: span 2; background-image: url('../img/sub_ai/bot_flow01.png'); }
-.item02 { grid-column: span 2; background-image: url('../img/sub_ai/bot_flow02.png'); }
-.item03 { grid-column: span 2; background-image: url('../img/sub_ai/bot_flow03.png'); }
+.item01 {
+    grid-column: span 2;
+    background-image: url('../img/sub_ai/bot_flow01.png');
+}
+
+.item02 {
+    grid-column: span 2;
+    background-image: url('../img/sub_ai/bot_flow02.png');
+}
+
+.item03 {
+    grid-column: span 2;
+    background-image: url('../img/sub_ai/bot_flow03.png');
+}
 
 /* 하단 2개는 각 3칸씩 차지 (1.5배 넓이 느낌) */
-.item04 { grid-column: span 3; background-image: url('../img/sub_ai/bot_flow04.png'); }
-.item05 { grid-column: span 3; background-image: url('../img/sub_ai/bot_flow05.png'); }
+.item04 {
+    grid-column: span 3;
+    background-image: url('../img/sub_ai/bot_flow04.png');
+}
+
+.item05 {
+    grid-column: span 3;
+    background-image: url('../img/sub_ai/bot_flow05.png');
+}
 
 .sec-flow .promo {
     padding: 80px 0 0;
     text-align: center;
 }
+
 .sec-flow .desc {
     font-family: 'GmarketSansMedium';
     font-size: 40px;
 }
+
 .sec-flow .desc p {
     color: #80839e
 }
+
 .sec-flow .desc p strong {
     color: #000;
     font-weight: 700;
 }
+
 .sec-flow .promo .mockup {
     width: 960px;
     margin: 50px auto 0;
 }
+
 .sec-flow .promo .mockup img {
     max-width: 100%;
 }
+
 .sec-flow .summary h3 {
     font-size: 40px;
     color: #000;
     margin-bottom: 35px;
 }
-.sec-flow .summary h3 em {color: #ff5e3a}
+
+.sec-flow .summary h3 em {
+    color: #ff5e3a
+}
+
 .sec-flow .summary .desc {
     text-align: center;
     font-size: 22px;
     color: #878891;
     font-family: initial;
 }
+
 .sec-flow .summary .desc p {
     margin-bottom: 25px;
 }
+
 .sec-flow .summary .desc p strong {
     font-weight: 700;
     color: #000;
@@ -692,15 +763,39 @@ section p {
 .sec-program .titleArea {
     text-align: center;
 }
-.sec-program .titleArea img {margin-bottom: 30px;}
-.sec-program .titleArea h2 {font-weight: 600; line-height: 1.5;}
-.sec-program .titleArea h2 span {font-weight: 700;}
-.sec-program .titleArea p {font-size: 24px; margin-bottom: 60px;}
-.sec-program .img_teacher {width: 640px; margin: 0 auto 60px;}
-.sec-program .img_teacher img {max-width: 100%;}
+
+.sec-program .titleArea img {
+    margin-bottom: 30px;
+}
+
+.sec-program .titleArea h2 {
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.sec-program .titleArea h2 span {
+    font-weight: 700;
+}
+.sec-program .titleArea h2 em {
+    color: #ff5e3a
+}
+.sec-program .titleArea p {
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+
+.sec-program .img_teacher {
+    width: 640px;
+    margin: 0 auto 60px;
+}
+
+.sec-program .img_teacher img {
+    max-width: 100%;
+}
+
 .sec-program .sub_contents .tag {
     width: 488px;
-    height: 60px; 
+    height: 60px;
     margin: 0 auto 15px;
     border-radius: 60px;
     background: #ff5e3a;
@@ -710,24 +805,29 @@ section p {
     line-height: 60px;
     text-align: center;
 }
+
 .sec-program .sub_contents .desc {
     color: #80839e;
     text-align: center;
     margin-bottom: 60px;
 }
-.sec-program .sub_contents dl  {
+
+.sec-program .sub_contents dl {
     width: 980px;
     margin: 0 auto 60px;
 }
+
 .sec-program .sub_contents dl div {
     padding: 20px;
     border-top: 1px solid #acadb2;
     display: flex;
     gap: 25px;
 }
+
 .sec-program .sub_contents dl div:last-child {
     border-bottom: 1px solid #acadb2;
 }
+
 .sec-program .sub_contents dl dt {
     position: relative;
     color: #ff5e3a;
@@ -737,32 +837,43 @@ section p {
     padding-left: 20px;
     line-height: 1.6;
 }
+
 .sec-program .sub_contents dl dt::before {
     position: absolute;
-    top: 5px; left: 0;
+    top: 5px;
+    left: 0;
     width: 4px;
     height: 50px;
     background: #ff5e3a;
     content: '';
 }
+
 .sec-program .sub_contents dl dd {
     width: 70%;
     text-align: left;
     color: #424242
 }
+
 .sec-program .sub_contents dl dd em {
     font-weight: 600;
-    color:#000
+    color: #000
 }
 
 /* 프로세스 */
-.sec-process {padding-top: 50px;}
-.sec-process h2 span {color: var(--color-content-blue)}
+.sec-process {
+    padding-top: 50px;
+}
+
+.sec-process h2 span {
+    color: var(--color-content-blue)
+}
+
 .sec-process .process-list {
     margin-top: 70px;
     display: flex;
     gap: 60px;
 }
+
 .sec-process .process-list div {
     position: relative;
     width: calc(100%/4);
@@ -773,15 +884,18 @@ section p {
     flex-direction: column;
     align-items: center;
 }
-.sec-process .process-list div + div::before {
+
+.sec-process .process-list div+div::before {
     content: '';
     width: 15px;
     height: 17px;
     background: url(../img/icon/arrow_blue.png) no-repeat center;
     position: absolute;
-    top: 50%; left: -32px;
+    top: 50%;
+    left: -32px;
     transform: translateY(-50%);
 }
+
 .sec-process .process-list h3 {
     width: 168px;
     height: 40px;
@@ -793,14 +907,17 @@ section p {
     font-weight: 600;
     margin-bottom: 35px
 }
+
 .sec-process .process-list img {
     margin-bottom: 15px;
 }
+
 .sec-process .process-list h4 {
     font-weight: 600;
     margin-bottom: 25px;
     font-size: 20px;
 }
+
 .sec-process .process-list p {
     line-height: 1.4;
     color: #424242;
@@ -808,4 +925,8 @@ section p {
     letter-spacing: -1px;
     text-align: center;
 }
-.sec-process .process-list p span {color:#000; font-weight: 600;}
+
+.sec-process .process-list p span {
+    color: #000;
+    font-weight: 600;
+}
