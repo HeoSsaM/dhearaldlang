@@ -1,40 +1,52 @@
 //index 
-var swiper = new Swiper(".mainHero", {
-    spaceBetween: 0,
-    centeredSlides: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
+let swiperTopic = null;
+
+function initSwiper() {
+  const isMobile = window.innerWidth < 768;
+
+  if (isMobile && !swiperTopic) {
+    // 모바일일 때만 실행
+    swiperTopic = new Swiper(".swiper-topic", {
+      slidesPerView: 1.5,
+      spaceBetween: 30,
+    });
+  } else if (!isMobile && swiperTopic) {
+    // PC 전환 시 swiper 제거
+    swiperTopic.destroy(true, true);
+    swiperTopic = null;
+  }
+}
+
+// 최초 실행
+initSwiper();
+
+// 화면 리사이즈 시 다시 체크
+window.addEventListener("resize", initSwiper);
+
+
 
 //파트너사
 $('.partnerBanner').each(function(index) {
-  let t = $(this);
+  const t = $(this);
   t.addClass('swiper-' + index);
 
-  let swiper = new Swiper(t.get(0), {
-    slidesPerView: '5',
+  const swiper = new Swiper(t.get(0), {
+    slidesPerView: 3,   // 기본: 모바일(<= 767px)
     spaceBetween: 0,
     loop: true,
-    speed: 8000,                       // 속도가 크면 느리게, 작으면 빨라짐
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
-    },
+    speed: 8000,
+    autoplay: { delay: 0, disableOnInteraction: false },
     freeMode: true,
-    freeModeMomentum: false,           // 관성 움직임 꺼서 일정 속도 유지
-    allowTouchMove: false,             // 사용자가 건드려서 멈추는 거 방지
+    freeModeMomentum: false,
+    allowTouchMove: false,
+
+    // >= 768px부터 덮어쓰기
+    breakpoints: {
+      768: { slidesPerView: 5 }
+    }
   });
 });
+
 
 
 

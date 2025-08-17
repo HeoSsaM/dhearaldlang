@@ -17,10 +17,15 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/mobile.css" media="screen ()">
+    <link rel="stylesheet" href="css/index_mobile.css" media="screen and (min-width: 361px) and (max-width: 767px)">
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js" defer></script>
+    <script src="js/main.js" defer></script>
 
 </head>
 
@@ -43,32 +48,36 @@
                         <li><a href="junior.html">주니어교육</a></li>
                         <li><a href="contact.html">교육문의하기</a></li>
                     </ul>
+
+                    <div class="utilNav mobile">
+                        <a href="/" class="on">회원가입</a>
+                        <a href="/">로그인</a>
+                    </div>
+                    <button class="btnClose" onclick="menuClose()"><img src="img/common/btn_close.png"
+                            alt="메뉴닫기"></button>
                 </nav>
-                <div class="utilNav">
+                <div class="utilNav pc">
                     <a href="/" class="on">회원가입</a>
                     <a href="/">로그인</a>
                 </div>
+                <button class="btn btnStyle01 btnInquiry">교육문의하기</button>
+                <button class="btnMobile" onclick="menuOpen()"><img src="img/common/btn_menu.png" alt="메뉴열기"></button>
             </div>
         </header>
         <section class="mainVisual">
-            <div class="swiper mainHero">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide bg01"></div>
-                    <!-- <div class="swiper-slide bg02"></div>
-                    <div class="swiper-slide bg03"></div> -->
-                </div>
+            <div class="mainHero">
                 <div class="mainTitleArea">
                     <p class="title">
                         <span>정확한 평가, 목적에 닿는 교육설계</span>
-                        <span>언어교육의 기준을 높여 온 기업교육 전문기업</span>
+                        <span>언어교육의 기준을 높여 온 <em>기업교육 전문기업</em></span>
                     </p>
                     <p class="text">
                         <span>정확하고 체계적인 말하기 평가를 기반으로 한</span>
                         <span>임원교육과 임직원 1:1 맞춤교육 전문기업</span>
                     </p>
                     <div class="btnArea">
-                        <button class="btn btnStyle01"><span>교육문의하기</span></button>
-                        <button class="btn btnStyle02"><span>교육제안서받기</span></button>
+                        <button class="btn btnStyle01">교육문의하기</button>
+                        <button class="btn btnStyle02">교육제안서받기</button>
                     </div>
                 </div>
                 <!-- <div class="swiper-pagination"></div> -->
@@ -77,28 +86,30 @@
         <!-- //mainVisual -->
 
         <section id="mainTopicArea">
-            <h2>매일 업데이트 되는 다양한 분야별 시사토론 컨텐츠</h2>
+            <h2>매일 업데이트 되는 <span>다양한 분야별 시사토론 컨텐츠</span></h2>
             <div class="inner">
-                <ul class="topicList">
-                    <li>
-                        <a href="#">
-                            <span class="category">Graphic News</span>
-                            <h3>그래픽뉴스</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="category">Biz &amp; Social Topic Discussion</span>
-                            <h3>비즈영어&amp;사회 이슈 토론</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="category">Conversation</span>
-                            <h3>일상회화 </h3>
-                        </a>
-                    </li>
-                </ul>
+                <div class="swiper swiper-topic">
+                    <ul class="swiper-wrapper topicList">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <span class="category">Graphic News</span>
+                                <h3>그래픽뉴스</h3>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <span class="category"><span>Biz &amp; Social</span> Topic Discussion</span>
+                                <h3>비즈영어&amp;사회 이슈 토론</h3>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <span class="category">Conversation</span>
+                                <h3>일상회화 </h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <!-- //TopicArea -->
@@ -110,8 +121,8 @@
                     <span>신뢰로 성장한 디헤럴드플립언어교육</span>
                 </h2>
                 <p class="titleText">
-                    <span>수많은 기업의 HR 담당자들이 직접 경험한 교육 효과를 입소문으로 전해주었습니다.</span>
-                    <strong>비즈니스 현장에서 커뮤니케이션 역량으로 증명하는 어학교육</strong>
+                    <span><span>수많은 기업의 HR 담당자들이</span> <span>직접 경험한 교육 효과를</span> <span>입소문으로 전해주었습니다.</span></span>
+                    <span><span>비즈니스 현장에서 커뮤니케이션 역량으로</span> <span>증명하는 어학교육</span></span>
                 </p>
 
                 <div class="valueCard">
@@ -141,12 +152,12 @@
 
                     <div class="textArea">
                         <p>고객의 니즈에 집중한 <em>‘효과중심 교육’</em></p>
-                        <p><strong>90% 이상의 재계약율</strong>로 증명하고 있습니다.</p>
+                        <p><strong>90% 이상의 재계약율로</strong> 증명하고 있습니다.</p>
                     </div>
                 </div>
 
                 <div class="trustText">
-                    <p>언어교육, 선택이 아닌 <strong>성공전략</strong>입니다.</p>
+                    <p>언어교육, 선택이 아닌 <span><strong>성공전략</strong>입니다.</span></p>
                     <ul class="trustNum">
                         <li>
                             <strong>200+</strong>
@@ -165,15 +176,11 @@
                             <span>수업만족도</span>
                         </li>
                     </ul>
-                    <!-- <div class="btnArea">
-                        <button class="btn btnStyle02">맞춤커리큘럼 상담</button>
-                        <button class="btn btnStyle02">교육상담 예약하기</button>
-                        <button class="btn btnStyle02">샘플 수업신청</button>
-                    </div> -->
+                    <div class="btnArea">
+                        <button class="btn btnStyle01">교육 문의하기</button>
+                    </div>
                 </div>
-                <div class="btnArea">
-                    <button class="btn btnStyle01">교육 문의하기</button>
-                </div>
+
             </div>
 
             <section id="secPartners">
@@ -214,7 +221,7 @@
         <section id="secWhy">
             <div class="inner">
                 <h2>
-                    <span>고객사의 목표에 맞춘 맞춤형 콘텐츠와 업계 최고 수준의 전문 강사진이</span>
+                    <span><span>고객사의 목표에 맞춘 맞춤형 콘텐츠와</span> 업계 최고 수준의 전문 강사진이</span>
                     <span><strong>실무중심 수업</strong>과 <strong>정교한 피드백</strong>으로 기업의 글로벌 경쟁력을 도약시킵니다. </span>
                 </h2>
                 <div class="whyList">
@@ -248,9 +255,9 @@
         <section id="secSolution">
             <div class="inner">
                 <article class="sol01">
-                    <h2>실무에서 바로 통하는 산업.직군별 특화된 상황별 언어학습</h2>
+                    <h2><span>실무에서 바로 통하는 산업.직군별</span> <span>특화된 상황별 언어학습</span></h2>
                     <p class="titleText">
-                        실무현장에서의 언어활용 능력을 평가하고 이를 기반으로 교육을 설계합니다.
+                        <span>실무현장에서의 언어활용 능력을 평가하고</span> <span>이를 기반으로 교육을 설계합니다.</span>
                     </p>
 
                     <div class="subTitle">
@@ -369,9 +376,9 @@
                 <article class="sol02">
                     <div class="titleArea">
                         <h2>Herald Speaking Proficiency Test (HSPT)</h2>
-                        <p class="smallTitle">업무현장에서의 언어별 활용능력까지 평가하는 말하기 평가시험 </p>
+                        <p class="smallTitle"><span>업무현장에서의 언어별 활용능력까지</span> 평가하는 말하기 평가시험 </p>
                         <p class="titleText">
-                            전문 평가자의 정확한 진단을 바탕으로, <strong>정확한 평가 기반의 어학 과정</strong>을 제공합니다.
+                            <span>전문 평가자의 정확한 진단을 바탕으로,</span> <span><strong>정확한 평가 기반의 어학 과정</strong>을</span> <span>제공합니다.</span>
                         </p>
                     </div>
                     <ul class="hsptList">
@@ -410,30 +417,30 @@
 
         <section id="secExec">
             <div class="inner">
-                <h2><span>리더들을 위한 프리미엄 1:1 임원 어학교육</span></h2>
+                <h2><span>리더들을 위한 </span><span>프리미엄 1:1 임원 어학교육</span></h2>
                 <p class="titleText"> 임원의 커뮤니케이션 능력이 조직의 전략이 됩니다. </span></p>
-                <ul class="circle-group">
-                    <li class="circle circleA">
-                        <p class="text">
-                            본사 회의에서 복잡한 국내 시장의 이슈들을 명확하게 전달할 수 있게 되었습니다. <br><strong>책임이 많은 자리일수록 언어는 전략</strong> 그
-                            자체인 것 같습니다.
-                        </p>
-                        <span class="name">- 언더아머 코리아 CEO -</span>
-                    </li>
-                    <li class="circle circleB">
-                        <p class="text">
-                            금융 경제애 해박한 전담 강사와의 1:1 코칭 덕분에 <strong>FOMC 국제회의</strong>에서 현안관련 논의를 할 때 부담이 적었습니다.
-                        </p>
-                        <span class="name">- 한국 금융권 임원 -</span>
-                    </li>
-                    <li class="circle circleC">
-                        <p class="text">
-                            복잡한 상황에서 유연하게 의사소통을 해야할 때가 많은데 <strong>국제 비즈니스</strong> 경험이 풍부한 강사와의 1:1 코칭 수업에서 배운 표현이나 말투가
-                            도움이 된다고 느꼈어요.
-                        </p>
-                        <span class="name">- 화이자 코리아 임원 -</span>
-                    </li>
-                </ul>
+                    <ul class="circle-group">
+                        <li class="circle circleA">
+                            <p class="text">
+                                본사 회의에서 복잡한 국내 시장의 이슈들을 명확하게 전달할 수 있게 되었습니다. <br><strong>책임이 많은 자리일수록 언어는 전략</strong> 그
+                                자체인 것 같습니다.
+                            </p>
+                            <span class="name">- 언더아머 코리아 CEO -</span>
+                        </li>
+                        <li class="circle circleB">
+                            <p class="text">
+                                금융 경제애 해박한 전담 강사와의 1:1 코칭 덕분에 <strong>FOMC 국제회의</strong>에서 현안관련 논의를 할 때 부담이 적었습니다.
+                            </p>
+                            <span class="name">- 한국 금융권 임원 -</span>
+                        </li>
+                        <li class="circle circleC">
+                            <p class="text">
+                                복잡한 상황에서 유연하게 의사소통을 해야할 때가 많은데 <strong>국제 비즈니스</strong> 경험이 풍부한 강사와의 1:1 코칭 수업에서 배운 표현이나 말투가
+                                도움이 된다고 느꼈어요.
+                            </p>
+                            <span class="name">- 화이자 코리아 임원 -</span>
+                        </li>
+                    </ul>
                 <div class="btnArea">
                     <button class="btn btnStyle01">교육 문의하기</button>
                 </div>
@@ -533,7 +540,7 @@
                 <div class="titleArea">
                     <strong>정확한 진단이 변화의 시작입니다.</strong>
                     <h2>말하기 평가 센터</h2>
-                    <p class="titleText">Since 2008 – 공인시험 대비 가장 정확한 모의시험 평가 싸이트 </p>
+                    <p class="titleText"><span>Since 2008 –</span> 공인시험 대비 가장 정확한 모의시험 평가 싸이트 </p>
                     <div class="evalArea">
                         <div>
                             <strong>모의시험</strong>
@@ -600,11 +607,6 @@
             </div>
         </footer>
     </div>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js"></script>
-
 </body>
 
 </html>

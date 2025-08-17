@@ -1,41 +1,17 @@
 @charset "utf-8";
-
-/* main visual swiper */
+/* main visual */
 .mainVisual .mainHero {
     position: relative;
     margin-top: 110px;
 }
 
-.mainVisual .mainHero .swiper-slide {
+.mainVisual .mainHero {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 760px;
-    background: #000 no-repeat center/cover;
-}
-
-.mainVisual .mainHero .bg01 {
-    background-image: url(../img/main/main_slidebg01.png);
-}
-
-.mainVisual .mainHero .bg02 {
-    background-image: url(../img/main/main_slidebg02.png);
-}
-
-.mainVisual .mainHero .bg03 {
-    background-image: url(../img/main/main_slidebg03.png);
-}
-
-.mainVisual .mainHero .bg02::before,
-.mainVisual .mainHero .bg03::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+    background: url(../img/main/main_slidebg01.png) no-repeat center/cover;
 }
 
 .mainVisual .mainHero .mainTitleArea {
@@ -49,7 +25,6 @@
     align-items: center;
     text-align: center;
     margin-top: 80px;
-    z-index: 100
 }
 
 .mainTitleArea .title {
@@ -71,9 +46,9 @@
 }
 
 .mainTitleArea .text {
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 120px;
-    opacity: 0.7;
+    opacity: 0.85;
 }
 
 /* mainTopicArea */
@@ -87,6 +62,7 @@
 }
 
 #mainTopicArea .topicList {
+    padding: 50px 0;
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -177,7 +153,7 @@
 
 #secValue h2 {
     color: #fff;
-    margin-top: 40px;
+    margin: 40px;
 }
 
 #secValue::before {
@@ -192,15 +168,17 @@
 }
 
 #secValue .titleText {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: 60px;
 }
 
-#secValue span {
+#secValue .titleText > span {
     display: block;
+    font-size: 22px;
 }
 
 #secValue span+span {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 #secValue .valueCard {
@@ -270,9 +248,11 @@
     line-height: 1.2;
     color: #000;
     font-weight: 500;
+    padding: 0 25px;
 }
 
 #secValue .valueCard>ul li .text span {
+    display: block;
     font-size: 18px;
     margin-top: 5px;
 }
@@ -633,10 +613,9 @@
 #secExec .titleText span strong {
     color: var(--color-point-green);
 }
-
 #secExec .circle-group {
     position: relative;
-    width: 1100px;
+    width: 1000px;
     height: 360px;
     margin: 0 auto;
     display: flex;
@@ -646,8 +625,8 @@
 
 #secExec .circle {
     position: absolute;
-    width: 420px;
-    height: 420px;
+    width: 380px;
+    height: 380px;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -656,28 +635,28 @@
     font-weight: 800;
     color: #fff;
     mix-blend-mode: screen;
-    padding: 60px;
+    padding: 40px 90px;
 }
 
 /* 좌-중앙-우 */
 #secExec .circle.circleA {
     left: 0;
     top: 30px;
-    border: 50px solid #26c7a9
+    border: 30px solid #26c7a9
 }
 
 #secExec .circle.circleB {
     left: 50%;
     top: 30px; 
     transform: translateX(-50%);
-    border: 50px solid #8fb7ff;
+    border: 30px solid #8fb7ff;
     z-index: 2
 }
 
 #secExec .circle.circleC {
     right: 0;
     top: 30px;
-    border: 50px solid #3f5aff;
+    border: 30px solid #3f5aff;
     z-index: 3
 }
 
@@ -817,10 +796,6 @@
 }
 
 /* secPartners */
-/* #secPartners {
-    padding: 80px 0;
-    background: #eaecf7;
-} */
 #secPartners .swiper+.swiper {
     margin-top: 60px;
 }

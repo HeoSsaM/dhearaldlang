@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>산업직무별맞춤교육 | 디헤럴드플립-기업교육 전문 파트너</title>
+    <title>디헤럴드플립 | 기업교육 전문 파트너</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- Link Swiper's CSS -->
@@ -15,11 +15,14 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/industry.css">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (min-width: 361px) and (max-width: 767px)">
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js" defer></script>
+
 </head>
 
 <body>
@@ -41,14 +44,22 @@
                         <li><a href="junior.html">주니어교육</a></li>
                         <li><a href="contact.html">교육문의하기</a></li>
                     </ul>
+
+                    <div class="utilNav mobile">
+                        <a href="/" class="on">회원가입</a>
+                        <a href="/">로그인</a>
+                    </div>
+                    <button class="btnClose" onclick="menuClose()"><img src="img/common/btn_close.png"
+                            alt="메뉴닫기"></button>
                 </nav>
-                <div class="utilNav">
+                <div class="utilNav pc">
                     <a href="/" class="on">회원가입</a>
                     <a href="/">로그인</a>
                 </div>
+                <button class="btn btnStyle01 btnInquiry">교육문의하기</button>
+                <button class="btnMobile" onclick="menuOpen()"><img src="img/common/btn_menu.png" alt="메뉴열기"></button>
             </div>
         </header>
-        <!-- //header -->
 
         <section class="mainVisual">
             <div class="inner">

@@ -1,5 +1,18 @@
 @charset "utf-8";
-* {box-sizing: border-box;}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+#wrap {
+    overflow: hidden;
+}
 
 :root {
     --bg: #0d1b44;
@@ -15,6 +28,14 @@
     --btn-light-blue2: #9aa2dc;
     --white: #fff;
     --color-hightlight: #0da3fa;
+    --font-heading: 'NEXON Lv2 Gothic', 'Pretendard', 'Noto Sans KR', sans-serif;
+    --font-content: 'Pretendard', 'Noto Sans KR', sans-serif;
+    --font-size-h2: 36px;
+    /* 제목 */
+    --font-size-subTitle: 20px;
+    /* 본문 */
+    --font-size-small: 14px;
+    /* 보조 텍스트 */
 }
 
 @font-face {
@@ -23,12 +44,14 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'GmarketSansMedium';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 body {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-weight: 400;
@@ -39,10 +62,14 @@ body {
     max-width: 1280px;
     margin: 0 auto;
 }
+
 /* top */
 .top {
     position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     height: 40px;
     background: #000;
     display: flex;
@@ -52,17 +79,43 @@ body {
     color: var(--color-content-blue);
     z-index: 5;
 }
-.top strong {margin-right: 10px;}
+
+.top strong {
+    margin-right: 10px;
+}
 
 /* ========================= heaeer ================================== */
+/* header Area  */
+.m-home {
+    display: none;
+}
+
+.btnMenu {
+    display: none;
+}
+
+.btnClose {
+    display: none;
+}
+
+.btnInquiry {
+    display: none;
+}
+
+.btnMobile {
+    display: none;
+}
+
 #header {
     position: fixed;
-    top: 40px; left: 0;
+    top: 40px;
+    left: 0;
     height: 70px;
     width: 100%;
-    z-index: 10;
+    z-index: 50;
     background: var(--nav-bg);
 }
+
 #header .inner {
     max-width: 1600px;
     display: flex;
@@ -70,14 +123,24 @@ body {
     align-items: center;
     padding: 15px 0;
 }
+
 #header .logo {
+    position: relative;
     width: 202px;
-    height: 32px;
-}
-#header .logo > a {
-    display: block;
+    height: 38px;
+    z-index: 10;
     background: url(../img/common/logo_white.png) no-repeat center/contain;
 }
+
+#header .logo a {
+    display: block;
+    background: none;
+}
+
+#header .logo.on {
+    background: url(../img/common/logo_black.png) no-repeat center/contain;
+}
+
 
 /* === gnb Area ====== */
 .gnbArea .gnb {
@@ -85,6 +148,7 @@ body {
     gap: 20px;
     margin-left: 50px;
 }
+
 .gnbArea .gnb a {
     display: block;
     padding: 5px 10px;
@@ -92,6 +156,7 @@ body {
     font-weight: 500;
     transition: color 0.3s;
 }
+
 .gnbArea .gnb a:hover {
     color: var(--color-point-green);
 }
@@ -103,7 +168,8 @@ body {
     align-items: center;
     margin-left: 50px;
 }
-.utilNav > a {
+
+.utilNav>a {
     position: relative;
     color: var(--white);
     font-size: 15px;
@@ -113,20 +179,29 @@ body {
     line-height: 40px;
     padding-left: 30px;
 }
-.utilNav > a.on {
+
+.utilNav>a.on {
     background: var(--btn-light-blue1);
     color: #fff;
 }
-.utilNav > a:first-child::before {
+
+.utilNav>a:first-child::before {
     content: '';
     position: absolute;
-    top: 10px; left: 10px;
-    width: 14px; height: 20px;
+    top: 10px;
+    left: 10px;
+    width: 14px;
+    height: 20px;
     background: url(../img/icon/ico_mypage.png) no-repeat left center/contain;
 }
+
+.utilNav.mobile {
+    display: none;
+}
+
 /* ========================= //heaeer ================================== */
 
-/* ========================= titleArea ================================== */
+/* ========================= section ================================== */
 section h2 {
     font-family: 'NEXON Lv2 Gothic';
     font-size: 36px;
@@ -134,6 +209,7 @@ section h2 {
     margin-bottom: 30px;
     text-align: center;
 }
+
 section .titleText {
     font-size: 20px;
     line-height: 1.5;
@@ -141,21 +217,20 @@ section .titleText {
     text-align: center;
     margin-bottom: 100px;
 }
+
 section strong {
     font-weight: 600;
 }
-/* ========================= //titleArea ================================== */
-
-/* mainVisual */
-.mainVisual {
-    margin-top: 110px;
-}
 
 /* === button set ====== */
-.btnArea {text-align: center; margin-top: 60px;}
+.btnArea {
+    text-align: center;
+    margin-top: 60px;
+}
+
 .btn {
     width: 260px;
-    height: 60px; 
+    height: 60px;
     border-radius: 10px;
     background: #3f5aff;
     color: #fff;
@@ -165,13 +240,16 @@ section strong {
     margin: 0 5px;
     transition: backgroundColor 0.3s;
 }
+
 .btnStyle02 {
     background: #2c40c8;
 }
+
 .btnStyle01:hover,
 .btnStyle02:hover {
     background: #121ab4;
 }
+
 .btnStyle03 {
     border: 2px solid #3f5aff;
     background: #fff;
@@ -180,6 +258,7 @@ section strong {
     font-weight: 600;
     font-size: 24px;
 }
+
 /* footer */
 .footer {
     padding: 60px 0;
@@ -187,38 +266,80 @@ section strong {
     color: rgba(255, 255, 255, 0.6);
     font-size: 15px;
 }
+
 .footer .inner {
     display: flex;
     justify-content: space-between;
 }
+
 .footer .f_company {
     width: 40%;
 }
-.footer .f_company h1 {margin-bottom: 15px;}
-.footer .f_company .f_slogan {margin-bottom: 5px;}
-.footer .f_company .f_desc {margin-bottom: 20px;}
-.footer .f_company .com_ceo {margin-bottom: 10px;}
-.footer .f_company .com_info {margin-top: 10px;}
-.footer .f_company .com_call {margin-top: 10px;}
-.footer .f_company .com_call > span{margin-right: 10px;}
-.footer .f_company .com_call > span + span {margin-left: 10px;}
-.footer .f_company .copyright {margin-top: 10px;}
 
-.footer .f_title {color: #eee; margin-bottom: 25px;}
-.footer .f_nav li {margin-bottom: 15px;}
-.footer .f_nav li:hover {color: #fff; text-decoration: underline;}
+.footer .f_company h1 {
+    margin-bottom: 15px;
+}
+
+.footer .f_company .f_slogan {
+    margin-bottom: 5px;
+}
+
+.footer .f_company .f_desc {
+    margin-bottom: 20px;
+}
+
+.footer .f_company .com_ceo {
+    margin-bottom: 10px;
+}
+
+.footer .f_company .com_info {
+    margin-top: 10px;
+}
+
+.footer .f_company .com_call {
+    margin-top: 10px;
+}
+
+.footer .f_company .com_call>span {
+    margin-right: 10px;
+}
+
+.footer .f_company .com_call>span+span {
+    margin-left: 10px;
+}
+
+.footer .f_company .copyright {
+    margin-top: 10px;
+}
+
+.footer .f_title {
+    color: #eee;
+    margin-bottom: 25px;
+}
+
+.footer .f_nav li {
+    margin-bottom: 15px;
+}
+
+.footer .f_nav li:hover {
+    color: #fff;
+    text-decoration: underline;
+}
 
 .footer .f_contact .f_text {
     font-size: 18px;
     font-size: 500;
     color: #fff;
 }
+
 .footer .f_contact i {
     font-size: 30px;
     color: rgba(255, 255, 255, 0.6);
     margin-right: 12px;
     vertical-align: 5px;
 }
+
 .footer .f_contact img {
     width: 34px;
 }
+    
