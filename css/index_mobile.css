@@ -1,6 +1,12 @@
 @charset "utf-8";
 @import url(mobile_commin.css);
 
+section h2 {
+    letter-spacing: -1px;
+    word-break: keep-all;
+    line-height: 1.4;
+}
+
 /* main visual */
 .mainVisual .mainHero {
     margin-top: 70px;
@@ -20,7 +26,7 @@
 
 .mainTitleArea .title>span {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .mainTitleArea .title>span em {
@@ -28,7 +34,7 @@
 }
 
 .mainTitleArea .text {
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom: 60px;
     opacity: 0.857;
 }
@@ -36,7 +42,7 @@
 /* topic */
 /* mainTopicArea */
 #mainTopicArea {
-    padding: 50px 0;
+    padding: 0 0 50px;
     background: #f5f7fa;
     overflow: hidden;
 }
@@ -94,7 +100,6 @@
 
 #secValue h2>span {
     display: block;
-    letter-spacing: -0.5px;
 }
 
 #secValue::before {
@@ -108,11 +113,11 @@
 
 #secValue .titleText>span span {
     display: block;
-    font-size: 18px;
+    font-size: var(--font-size-base);
 }
 
 #secValue span+span {
-    margin-top: 5px;
+    margin-top: 0;
 }
 
 #secValue .valueCard {
@@ -191,7 +196,7 @@
 
 #secValue .textArea em {
     font-size: 22px;
-    color: var(--color-content-blue);
+    color: var(--color-point-green);
     margin-bottom: 15px;
 }
 
@@ -228,8 +233,7 @@
 }
 
 #secValue .trustText .trustNum>li {
-    width: calc(100%/2 - 25px);
-    width: 160px;
+    width: calc(100%/2 - 10px);
     height: 150px;
 }
 
@@ -278,37 +282,25 @@
 /* secWhy */
 #secWhy {
     position: relative;
-    padding: 70px 0;
+    padding: 60px 0;
     background: var(--bg);
 }
-
 #secWhy .inner {
-    position: relative;
-    padding: 0 5%
+    max-width: 90%;
+    margin: 0 auto;
 }
-
-#secWhy h2 {
-    font-size: 20px;
-    line-height: 1.4;
-    margin-bottom: 50px;
-    font-weight: 500;
+#secWhy .titleArea {
+    margin-bottom: 40px;
 }
-
-#secWhy h2 span {
+#secWhy .titleText {
+    margin-bottom: 25px;
+}
+#secWhy .titleText > span {
     display: block;
+    font-size: 20px;
 }
-
-#secWhy h2>span:first-child {
-    margin-bottom: 30px;
-}
-
-#secWhy h2 span+span {
-    margin-top: 10px;
-    font-size: 22px;
-}
-
-#secWhy h2 span strong {
-    color: var(--color-point-green)
+#secWhy .titleText strong {
+    color: var(--color-point-green);
 }
 
 #secWhy .whyList {
@@ -324,7 +316,7 @@
 }
 
 #secWhy .whyList .whyListText .title {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     margin-bottom: 10px;
 }
@@ -332,7 +324,8 @@
 #secWhy .whyList .whyListText .text {
     line-height: 1.5;
     width: inherit;
-    color: rgba(255, 255, 255, 0.8)
+    color: rgba(255, 255, 255, 0.8);
+    font-size: var(--font-size-base);
 }
 
 #secWhy .whyList .whyListText {
@@ -624,33 +617,24 @@
 }
 
 #secPrograms .programList div {
-    margin-bottom: 30px;
-}
-
-#secPrograms .programList dt {
-    position: relative;
-    font-size: 18px;
-    font-weight: 600;
-
-}
-
-#secPrograms .programList dt img {
-    width: 36px;
-    vertical-align: middle;
-    margin-right: 15px;
+    margin-bottom: 20px;
 }
 
 #secPrograms .programList dd {
     line-height: 1.6;
     opacity: 0.85;
-    margin-left: 55px;
+    margin-left: 45px;
+    font-size: 15px;
+    word-break: keep-all;
 }
 
 /* secEval */
 #secEval {
     padding: 60px 0;
 }
-
+#secEval .inner {
+    padding: 0 5%;
+}
 #secEval .titleText span {
     display: block;
 }
@@ -661,7 +645,7 @@
 }
 
 #secEval .titleArea>span {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 #secEval .evalArea{
@@ -693,6 +677,12 @@
     margin-bottom: 5px;
 }
 
+#secEval .evalArea strong {
+    font-size: 18px;
+}
+#secEval .evalArea span {
+    font-size: var(--font-size-base)
+}
 #secEval .evalArea>div:nth-child(1) {
     left: 0;
     border: 2px solid var(--color-point-green);

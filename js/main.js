@@ -11,7 +11,7 @@ $(function () {
 
   // PC로 넘어가면 강제 닫기(선택)
   $(window).on('resize', function () {
-    if ($(this).width() > 767) {
+    if ($(this).width() > 760) {
       $('.gnbArea').removeClass('open');
       $('#header .logo').removeClass('on');
     }

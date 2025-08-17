@@ -33,6 +33,7 @@ html {
     --font-size-h2: 36px;
     /* 제목 */
     --font-size-subTitle: 20px;
+    --font-size-base: 16px;
     /* 본문 */
     --font-size-small: 14px;
     /* 보조 텍스트 */

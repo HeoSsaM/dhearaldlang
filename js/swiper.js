@@ -2,7 +2,7 @@
 let swiperTopic = null;
 
 function initSwiper() {
-  const isMobile = window.innerWidth < 768;
+  const isMobile = window.innerWidth < 769;
 
   if (isMobile && !swiperTopic) {
     // 모바일일 때만 실행

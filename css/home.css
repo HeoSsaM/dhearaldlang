@@ -349,22 +349,19 @@
     position: relative;
 }
 
-#secWhy h2 {
+#secWhy .titleArea {
     margin-bottom: 60px;
-    color: #fff;
+    color: #fff;    
 }
-
-#secWhy h2 span {
+#secWhy .titleText {
+    margin-bottom: 25px;
+}
+#secWhy .titleText > span {
     display: block;
+    font-size: 34px;
 }
-
-#secWhy h2 span+span {
-    margin-top: 10px;
-    font-size: 40px;
-}
-
-#secWhy h2 span strong {
-    color: var(--color-point-green)
+#secWhy .titleText strong {
+    color: var(--color-point-green);
 }
 
 #secWhy .whyList {
