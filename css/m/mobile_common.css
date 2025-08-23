@@ -33,7 +33,7 @@
 }
 
 #header .logo.on {
-    background-image: url(../img/common/logo_black.png);
+    background-image: url(../../img/common/logo_black.png);
 }
 
 #header .btnMobile {
@@ -169,7 +169,7 @@ body.no-scroll {
     left: 10px;
     width: 14px;
     height: 20px;
-    background: url(../img/icon/ico_mypage.png) no-repeat left center/contain;
+    background: url(../../img/icon/ico_mypage.png) no-repeat left center/contain;
 }
 
 /* //section */
