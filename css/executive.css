@@ -154,9 +154,11 @@ section p {
     justify-content: space-between;
     align-items: center;
 }
-.secIntro .circle-diagram strong {
+.secIntro .circle-diagram > div {
     width: calc(100%/3);
     text-align: center;
+}
+.secIntro .circle-diagram strong {
     font-size: 20px;
     font-weight: 600;
     color: #fff;

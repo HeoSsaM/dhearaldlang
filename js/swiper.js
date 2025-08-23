@@ -1,4 +1,4 @@
-//index 
+//index
 let swiperTopic = null;
 
 function initSwiper() {
@@ -23,15 +23,13 @@ initSwiper();
 // 화면 리사이즈 시 다시 체크
 window.addEventListener("resize", initSwiper);
 
-
-
 //파트너사
-$('.partnerBanner').each(function(index) {
+$(".partnerBanner").each(function (index) {
   const t = $(this);
-  t.addClass('swiper-' + index);
+  t.addClass("swiper-" + index);
 
   const swiper = new Swiper(t.get(0), {
-    slidesPerView: 3,   // 기본: 모바일(<= 767px)
+    slidesPerView: 3, // 기본: 모바일(<= 767px)
     spaceBetween: 0,
     loop: true,
     speed: 8000,
@@ -42,22 +40,27 @@ $('.partnerBanner').each(function(index) {
 
     // >= 768px부터 덮어쓰기
     breakpoints: {
-      768: { slidesPerView: 5 }
-    }
+      768: { slidesPerView: 5 },
+    },
   });
 });
 
-
-
-
 //회사소개 리뷰
 /* 회사소개 */
-var swiper = new Swiper(".caseCards", {
-      slidesPerView: 3,
-      spaceBetween: 40,   
-      autoplay: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
+  new Swiper('.myCase', {
+    slidesPerView: "auto",
+      centeredSlides: true,
+    spaceBetween: 10,
+    pagination: {
+      el: '.myCase .swiper-pagination',
+      clickable: true
+    },
+    breakpoints: {
+      769: {
+        enabled: false
+      }
+    },
+    observer: true,
+    observeParents: true
+  });
+//회사소개 -

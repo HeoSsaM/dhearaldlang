@@ -1,0 +1,807 @@
+@charset "utf-8";
+/* main visual */
+.mainVisual .mainHero {
+    position: relative;
+    margin-top: 110px;
+}
+
+.mainVisual .mainHero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 760px;
+    background: url(../img/main/main_slidebg01.png) no-repeat center/cover;
+}
+
+.mainVisual .mainHero .mainTitleArea {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.mainTitleArea .title {
+    margin-bottom: 25px;
+}
+
+.mainTitleArea span {
+    display: block;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.mainTitleArea .title>span {
+    display: block;
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.mainTitleArea .text {
+    font-size: 24px;
+    margin-bottom: 120px;
+    opacity: 0.85;
+}
+
+/* mainTopicArea */
+#mainTopicArea {
+    padding: 120px 0;
+    background: #f5f7fa;
+}
+
+#mainTopicArea h2 {
+    margin-bottom: 50px;
+}
+
+#mainTopicArea .topicList {
+    padding: 50px 0;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 50px; */
+}
+
+#mainTopicArea .topicList li {
+    border-radius: 20px;
+    height: 340px;
+    width: 340px;
+    overflow: hidden;
+    border: 3px solid transparent;
+    background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    border: 3px solid #236391;
+    transition: all 0.3s ease;
+    filter: brightness(1);
+}
+
+#mainTopicArea .topicList li:hover {
+    filter: brightness(1.6);
+    transform: scale(1.05);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#mainTopicArea .topicList li a {
+    position: relative;
+    display: block;
+    height: 100%;
+    background: no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    gap: 50px;
+}
+
+#mainTopicArea .topicList li:nth-child(1) a {
+    background-image: url(../img/main/sec_cardarea_card01.jpg);
+}
+
+#mainTopicArea .topicList li:nth-child(2) a {
+    background-image: url(../img/main/sec_cardarea_card02.jpg);
+}
+
+#mainTopicArea .topicList li:nth-child(3) a {
+    background-image: url(../img/main/sec_cardarea_card03.jpg);
+}
+
+#mainTopicArea .topicList li a::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4));
+    content: '';
+}
+
+#mainTopicArea .topicList li .category {
+    position: relative;
+    padding: 10px 25px;
+    border-radius: 40px;
+    background: rgba(41, 38, 50, 0.85);
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'NEXON Lv2 Gothic', "Pretendard Variable", Pretendard;
+    letter-spacing: 1px;
+    color: var(--white);
+    z-index: 2;
+}
+
+#mainTopicArea .topicList li h3 {
+    position: relative;
+    font-size: 28px;
+    font-weight: 700;
+    z-index: 3;
+    font-family: 'NEXON Lv2 Gothic';
+    color: #fff;
+}
+
+/* secValue */
+#secValue {
+    position: relative;
+    padding: 100px 0 100px;
+    background: linear-gradient(180deg, #2e3f6f, #1e2a4a);
+}
+
+#secValue h2 {
+    color: #fff;
+    margin: 40px;
+}
+
+#secValue::before {
+    content: '';
+    width: 42px;
+    height: 42px;
+    background: url(../img/common/ico_logo.png) no-repeat center;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#secValue .titleText {
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: 60px;
+}
+
+#secValue .titleText > span {
+    display: block;
+    font-size: 22px;
+}
+
+#secValue span+span {
+    margin-top: 10px;
+}
+
+#secValue .valueCard {
+    border-radius: 40px;
+    overflow: hidden;
+    max-width: 994px;
+    height: 850px;
+    padding: 50px 40px;
+    margin: 0 auto;
+    background: #eaecf7 url(../img/main/sec2_cardbg.png) no-repeat bottom center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#secValue .valueCard>ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+#secValue .valueCard>ul li {
+    position: relative;
+    width: calc(100%/3);
+    height: 260px;
+    border-radius: 25px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#secValue .valueCard>ul li::before {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 46px;
+    height: 52px;
+    background: url(../img/icon/sec2_ico01.png) no-repeat center/cover;
+    content: '';
+}
+
+#secValue .valueCard>ul li.value_ico02::before {
+    background-image: url(../img/icon/sec2_ico02.png);
+}
+
+#secValue .valueCard>ul li.value_ico03::before {
+    background-image: url(../img/icon/sec2_ico03.png);
+}
+
+#secValue .valueCard>ul li strong {
+    margin-top: 90px;
+    width: 180px;
+    height: 40px;
+    border: 1px solid var(--btn-light-blue2);
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    line-height: 40px;
+}
+
+#secValue .valueCard>ul li .text {
+    margin-top: 20px;
+    line-height: 1.2;
+    color: #000;
+    font-weight: 500;
+    padding: 0 25px;
+}
+
+#secValue .valueCard>ul li .text span {
+    display: block;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#secValue .textArea {
+    text-align: center;
+    color: #000
+}
+
+#secValue .textArea p {
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+#secValue .textArea em {
+    font-size: 24px;
+    color: var(--color-content-blue);
+}
+
+#secValue .trustText {
+    margin-top: 120px;
+    text-align: center;
+}
+
+#secValue .trustText p {
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 44px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+#secValue .trustText p strong {
+    color: var(--color-point-green)
+}
+
+#secValue .trustText .trustNum {
+    margin: 0 auto 150px;
+    max-width: 980px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#secValue .trustText .trustNum>li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+#secValue .trustText .trustNum>li+li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    transform: translateY(-50%);
+    ;
+    width: 44px;
+    height: 44px;
+    background: url(../img/icon/ico_plus.png) no-repeat center/cover;
+}
+
+#secValue .trustText .trustNum>li strong {
+    display: block;
+    color: var(--color-content-blue);
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#secValue .trustText .trustNum>li span {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* secWhy */
+#secWhy {
+    position: relative;
+    padding: 140px 0;
+    background: var(--bg);
+}
+
+#secWhy .inner {
+    position: relative;
+}
+
+#secWhy .titleArea {
+    margin-bottom: 60px;
+    color: #fff;    
+}
+#secWhy .titleText {
+    margin-bottom: 25px;
+}
+#secWhy .titleText > span {
+    display: block;
+    font-size: 34px;
+}
+#secWhy .titleText strong {
+    color: var(--color-point-green);
+}
+
+#secWhy .whyList {
+    position: relative;
+    height: 570px;
+    background: url(../img/main/sec03_bg2.png) no-repeat left top/ 560px auto;
+}
+
+#secWhy .whyList .whyListText {
+    width: 50%;
+    height: 100%;
+    padding-top: 20px;
+    margin-left: 48%;
+}
+
+#secWhy .whyList .whyListText .title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--white)
+}
+
+#secWhy .whyList .whyListText .text {
+    line-height: 1.5;
+    width: 400px;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+#secWhy .whyList .whyListText .title strong {
+    color: var(--color-point-green)
+}
+
+#secWhy .whyList .whyListText {
+    /* position: absolute; */
+    position: relative;
+    margin-top: 80px;
+}
+
+#secWhy .whyList .whyListText>div {
+    position: absolute;
+}
+
+#secWhy .whyList .why01 {
+    top: 0;
+    left: 0;
+}
+
+#secWhy .whyList .why02 {
+    top: 220px;
+    left: 0;
+}
+
+#secWhy .whyList .why03 {
+    top: 400px;
+    left: -200px;
+}
+
+#secWhy .whyList .why04 {
+    top: 500px;
+    left: -550px
+}
+
+/* secSolution */
+#secSolution {
+    padding: 120px 0;
+    background: var(--bg-light-gray);
+}
+
+#secSolution .titleText {
+    margin-bottom: 60px;
+}
+
+#secSolution .titleText strong {
+    color: var(--color-point-green);
+}
+
+#secSolution .subTitle {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#secSolution .subTitle strong {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    border-radius: 40px;
+    background: var(--color-content-blue);
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#secSolution .subTitle p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#secSolution article+article {
+    margin-top: 140px;
+}
+
+#secSolution ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+#secSolution ul li {
+    position: relative;
+    padding: 30px 25px;
+    width: calc(100% / 5 - 35px);
+    height: 280px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#secSolution .curriList li {
+    border: 4px solid transparent;
+    /* 테두리 두께 */
+    background:
+        linear-gradient(#fff, #fff) padding-box,
+        /* 내부 배경색 */
+        linear-gradient(45deg, #7ddfab, #3f5aff) border-box;
+    /* 테두리 그라디언트 */
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+#secSolution ul li img {
+    width: 52px;
+    margin-bottom: 10px;
+}
+
+#secSolution ul h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#secSolution ul li>span {
+    display: inline-block;
+    padding: 6px 15px;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+#secSolution .curriList li>span {
+    background: var(--btn-light-blue1);
+    color: var(--color-point-green);
+}
+
+#secSolution ul li .solText {
+    word-break: keep-all;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+}
+
+#secSolution .sol02 h2 {
+    display: inline-block;
+    background: #1e2a4a;
+    color: #fff;
+    border-radius: 40px;
+    padding: 10px 30px;
+}
+
+#secSolution .sol02 .smallTitle {
+    display: block;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#secSolution .sol02 .titleArea {
+    text-align: center;
+}
+
+#secSolution .sol02 .titleArea strong {
+    color: var(--color-content-blue);
+    font-weight: 600;
+}
+
+#secSolution .hsptList li {
+    padding-top: 60px;
+    border-radius: 30px;
+    width: calc(100%/3 - 30px);
+    background: no-repeat center / cover;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+#secSolution .hsptList li:nth-child(1) {
+    background-image: url(../img/sub_testcenter/testcenter_card01.png);
+}
+
+#secSolution .hsptList li:nth-child(2) {
+    background-image: url(../img/sub_testcenter/testcenter_card02.png);
+}
+
+#secSolution .hsptList li:nth-child(3) {
+    background-image: url(../img/sub_testcenter/testcenter_card03.png);
+}
+
+
+#secSolution .sol02 .hsptList h3 {
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#secSolution .sol02 .hsptList li>span {
+    padding: 5px 25px;
+    border-radius: 10px;
+    background: #1e2a4a;
+    color: var(--color-point-green);
+    font-weight: 500;
+    margin-bottom: 20px
+}
+
+#secSolution .sol02 .hsptList li p {
+    font-size: 18px;
+    word-break: keep-all;
+    letter-spacing: -1px;
+}
+
+/* secExec */
+#secExec {
+    position: relative;
+    padding: 100px 0;
+    background: url(../img/main/sec04_edu_bg.png) no-repeat center/cover;
+    color: #fff;
+    height: 95vh;
+}
+
+#secExec h2 span {
+    position: relative;
+    padding-left: 50px;
+}
+
+#secExec .titleText span {
+    display: block;
+    font-size: 28px;
+}
+#secExec .titleText {margin-bottom: 70px;}
+#secExec .titleText span strong {
+    color: var(--color-point-green);
+}
+#secExec .circle-group {
+    position: relative;
+    width: 1000px;
+    height: 360px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#secExec .circle {
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: #fff;
+    mix-blend-mode: screen;
+    padding: 40px 90px;
+}
+
+/* 좌-중앙-우 */
+#secExec .circle.circleA {
+    left: 0;
+    top: 30px;
+    border: 30px solid #26c7a9
+}
+
+#secExec .circle.circleB {
+    left: 50%;
+    top: 30px; 
+    transform: translateX(-50%);
+    border: 30px solid #8fb7ff;
+    z-index: 2
+}
+
+#secExec .circle.circleC {
+    right: 0;
+    top: 30px;
+    border: 30px solid #3f5aff;
+    z-index: 3
+}
+
+#secExec .circle > p {
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+#secExec .circle strong {
+    font-weight: 600;
+}
+#secExec ul li span {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#secExec .btnArea {
+    position: absolute;
+    bottom: 50px; left: 50%;
+    transform: translateX(-50%);
+}
+/* secPrograms */
+#secPrograms {
+    padding: 120px 0;
+}
+#secPrograms .inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+#secPrograms .contArea {
+    width: calc(100% / 3 - 30px);
+    letter-spacing: -1px;
+    padding: 30px;
+    border-radius: 25px;
+    border: 1px solid #236391;
+}
+#secPrograms .contArea h2 {
+    font-size: 24px;
+    line-height: 1.4;
+    height: 60px;
+    margin-bottom: 40px;
+}
+#secPrograms .titleText {
+    margin-bottom: 40px;
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: -1px;
+}
+
+#secPrograms .titleText span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#secPrograms .titleText span strong {
+    color: var(--color-content-blue);
+}
+
+#secPrograms .programList div {
+    margin-bottom: 30px;
+}
+
+#secPrograms .programList dt {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+#secPrograms .programList dt img {
+    width: 36px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+#secPrograms .programList dd {
+    line-height: 1.6;
+    opacity: 0.85;
+    margin-left: 55px;
+}
+
+/* secEval */
+#secEval {
+    padding: 80px 0 100px;
+    text-align: center;
+    background: var(--bg);
+    color: #fff;
+}
+
+#secEval .titleArea>span,
+#secEval .titleArea>strong {
+    display: block;
+}
+
+#secEval .titleArea>span {
+    margin-bottom: 60px;
+}
+
+#secEval .titleArea>strong {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#secEval .evalArea {
+    margin-top: 60px;
+    width: 910px;
+    margin: 0 auto;
+    height: 350px;
+    background: url(../img/main/sec06_text.png) no-repeat center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#secEval .evalArea>div {
+    position: relative;
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
+}
+#secEval .evalArea>div * {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#secEval .evalArea>div:nth-child(1) {
+    left: 100px;
+}
+
+#secEval .evalArea>div:nth-child(2) {
+    right: 100px;
+}
+
+/* secPartners */
+#secPartners .swiper+.swiper {
+    margin-top: 60px;
+}
+
+#secPartners h2 span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#secPartners h2 strong {
+    color: var(--color-content-blue);
+}

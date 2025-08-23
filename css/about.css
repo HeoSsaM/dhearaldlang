@@ -152,7 +152,7 @@ section p {
     width: 40%;
 }
 
-.sloganArea .sloganContents .sloganText h3 {
+.sloganArea .sloganContents h3 {
     font-family: 'NEXON Lv2 Gothic';
     font-size: 32px;
     font-weight: 600;
@@ -453,7 +453,6 @@ section p {
     background: linear-gradient(to bottom, #2043a4, #3357bd 22%, #4a89ff 100%);    
 }
 #secReviews .reviewBg {
-    height: 770px;
     margin: 0 auto;
     background: url(../img/sub_about/review_bg01.png) no-repeat center/cover;
     border-radius: 40px;
@@ -481,13 +480,13 @@ section p {
     margin-bottom: 40px;
 }
 
+#secReviews .caseCards.swiper {display: none;}
 #secReviews .caseCards {
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    height: 320px;    
+    height: 280px;    
 }
-#secReviews .caseCards {height: 280px;}
 #secReviews .caseCards .caseCard {
     position: relative;
     width: calc(100%/3);

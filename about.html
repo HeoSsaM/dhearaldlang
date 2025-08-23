@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>디헤럴드플립 | 기업교육 전문 파트너</title>
+    <title>회사소개 - 디헤럴드플립 | 기업교육 전문 파트너</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- Link Swiper's CSS -->
@@ -17,10 +17,14 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/mobile.css" media="screen and (min-width: 361px) and (max-width: 767px)">
+    <link rel="stylesheet" href="css/m/about_mobile.css" media="screen and (max-width: 768px)">
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js" defer></script>
     <script src="js/main.js" defer></script>
 </head>
 
@@ -59,41 +63,40 @@
                 <button class="btnMobile" onclick="menuOpen()"><img src="img/common/btn_menu.png" alt="메뉴열기"></button>
             </div>
         </header>
-            <div class="inner">
-                <h1 class="logo"><a href="index.html"><span class="blind">디헤럴드플립언어교육</span></a></h1>
-                <nav class="gnbArea">
-                    <ul class="gnb">
-                        <li><a href="about.html">회사소개</a></li>
-                        <li><a href="executive.html">임원교육</a></li>
-                        <li><a href="custom.html">기업맞춤교육</a></li>
-                        <li><a href="industry.html">산업/직무별 맞춤교육</a></li>
-                        <li><a href="ai.html">AI 튜터링</a></li>
-                        <li><a href="speaking.html">말하기평가센터</a></li>
-                        <li><a href="junior.html">주니어교육</a></li>
-                        <li><a href="contact.html">교육문의하기</a></li>
-                    </ul>
+        <div class="inner">
+            <h1 class="logo"><a href="index.html"><span class="blind">디헤럴드플립언어교육</span></a></h1>
+            <nav class="gnbArea">
+                <ul class="gnb">
+                    <li><a href="about.html">회사소개</a></li>
+                    <li><a href="executive.html">임원교육</a></li>
+                    <li><a href="custom.html">기업맞춤교육</a></li>
+                    <li><a href="industry.html">산업/직무별 맞춤교육</a></li>
+                    <li><a href="ai.html">AI 튜터링</a></li>
+                    <li><a href="speaking.html">말하기평가센터</a></li>
+                    <li><a href="junior.html">주니어교육</a></li>
+                    <li><a href="contact.html">교육문의하기</a></li>
+                </ul>
 
-                    <div class="utilNav mobile">
-                        <a href="/" class="on">회원가입</a>
-                        <a href="/">로그인</a>
-                    </div>
-                    <button class="btnClose" onclick="menuClose()"><img src="img/common/btn_close.png"
-                            alt="메뉴닫기"></button>
-                </nav>
-                <div class="utilNav pc">
+                <div class="utilNav mobile">
                     <a href="/" class="on">회원가입</a>
                     <a href="/">로그인</a>
                 </div>
-                <button class="btn btnStyle01 btnInquiry">교육문의하기</button>
-                <button class="btnMobile" onclick="menuOpen()"><img src="img/common/btn_menu.png" alt="메뉴열기"></button>
+                <button class="btnClose" onclick="menuClose()"><img src="img/common/btn_close.png" alt="메뉴닫기"></button>
+            </nav>
+            <div class="utilNav pc">
+                <a href="/" class="on">회원가입</a>
+                <a href="/">로그인</a>
             </div>
+            <button class="btn btnStyle01 btnInquiry">교육문의하기</button>
+            <button class="btnMobile" onclick="menuOpen()"><img src="img/common/btn_menu.png" alt="메뉴열기"></button>
+        </div>
         </header>
         <!-- //header -->
 
         <section class="mainVisual">
             <div class="mainTitleArea">
                 <p class="title">
-                    <span>정확한 평가 기반, 실질적인 말하기실력 향상으로</span>
+                    <span><em>정확한 평가 기반,</em> <em>실질적인 말하기실력 향상으로</em></span>
                     <span>검증된 언어교육 전문기업 </span>
                     <strong>디헤럴드플립 언어교육</strong>
                 </p>
@@ -107,22 +110,20 @@
         </section>
         <!-- //mainVisual -->
 
-         <section id="secIntro">
-            <div class="inner">                
+        <section id="secIntro">
+            <div class="inner">
                 <article class="sloganArea">
-                    <h2 class="mainSlogan">Language Learning to Connect to the World</h2>
+                    <h2 class="mainSlogan"><span>Language Learning</span> <span>to Connect to the World</span></h2>
                     <div class="sloganContents">
                         <div class="sloganText">
                             <h3>우리는 이렇게 시작했습니다.</h3>
                             <p>
-                                디헤럴드플립은 <strong>“언어는 삶을 바꾼다”</strong>는 믿음에서 출발했습니다. <br>
-                                단순한 영어 교육을 넘어, 사람과 기업의 진짜 성장을 돕기 위해 <br>
-                                기존 방식의 한계를 넘어선 새로운 방법을 고민해왔습니다.
+                                <span>디헤럴드플립은 <strong>“언어는 삶을 바꾼다”</strong>는 믿음에서 출발했습니다.</span>
+                                단순한 영어 교육을 넘어, 사람과 기업의 진짜 성장을 돕기 위해 기존 방식의 한계를 넘어선 새로운 방법을 고민해왔습니다.
                             </p>
                             <p>
-                                우리는 학습자들이 영어를 <br>
-                                <span class="emphasis">‘지식’이 아닌 ‘자신 있게 표현할 수 있는 힘’</span>으로 <br>
-                                만들 수 있도록 돕고자 합니다. <br>
+                                <span>우리는 학습자들이 영어를 <span class="emphasis">‘지식’이 아닌 ‘자신 있게 표현할 수 있는 힘’</span>으로 만들 수 있도록
+                                    돕고자 합니다. </span>
                                 작은 변화들이 모여, 각자의 자리에서 더 큰 가능성을 펼칠 수 있도록 그 여정을 함께합니다.
                             </p>
                         </div>
@@ -139,11 +140,12 @@
         <section id="secCore">
             <div class="inner">
                 <h2>핵심역량</h2>
-                <p class="titleText">Flipped Learning, Flipped Language Education</p>
+                <p class="titleText"><span>Flipped Learning,</span> <span>Flipped Language Education</span></p>
                 <div class="coreList">
                     <div class="card">
                         <h3>정확한 진단과 분석</h3>
-                        <p>ACTFL 기준의 말하기 평가를 기반으로, 학습자 수준과 목표에 따른 정확한 학습 설계가 이루어 집니다. 이를 통해 개인의 강점과 약점을 정확히 파악하고,최적화 된 학습 경로를 제시합니다.</p>
+                        <p>ACTFL 기준의 말하기 평가를 기반으로, 학습자 수준과 목표에 따른 정확한 학습 설계가 이루어 집니다. 이를 통해 개인의 강점과 약점을 정확히 파악하고,최적화 된
+                            학습 경로를 제시합니다.</p>
                     </div>
                     <div class="card">
                         <h3>업종·직급별 맞춤 커리큘럼</h3>
@@ -152,7 +154,8 @@
                     </div>
                     <div class="card">
                         <h3>업계 최고의 원어민 강사진</h3>
-                        <p>실력과 전문성을 겸비한 영어교육 및 MBA 출신의 기업경력 10년 이상의 원어민 강사들이 높은 수준의 수업 퀄리티를 보장합니다. 교사의 마인드를 갖춘 전문강사들이 수준별 학습자들에게 최적의 맞춤형 수업을 제공합니다. </p>
+                        <p>실력과 전문성을 겸비한 영어교육 및 MBA 출신의 기업경력 10년 이상의 원어민 강사들이 높은 수준의 수업 퀄리티를 보장합니다. 교사의 마인드를 갖춘 전문강사들이
+                            수준별 학습자들에게 최적의 맞춤형 수업을 제공합니다. </p>
                     </div>
                     <div class="card">
                         <h3>몰입을 이끄는 플랜</h3>
@@ -251,7 +254,7 @@
                     <div class="eduPhilPic"><img src="img/sub_about/eduphil.png" alt=""></div>
                 </div>
 
-                <div class="philPoints clear">
+                <div class="philPoints">
                     <div class="point">
                         <h3><img src="img/icon/ico_aobut05.png" alt="">개별 맞춤형 접근</h3>
                         <p>모든 학습자는 고유한 학습 목표와 스타일을 가지고 있습니다. 우리는 개개인의 필요에 맞춰 최적화된 학습 설계와 콘텐츠를 제공합니다.</p>
@@ -282,10 +285,13 @@
                         </p>
                     </div>
                     <h2>고객 성공 사례</h2>
-                    <div class="caseCards">
+
+                    <!-- pc cards area -->
+                    <div class="caseCards pc">
                         <div class="caseCard">
                             <p class="text">
-                                본사 회의에서 복잡한 국내 시장의 이슈들을 명확하게 전달할 수 있게 되었습니다. <br><strong>책임이 많은 자리일수록 언어는 전략</strong> 그 자체인 것 같습니다.
+                                본사 회의에서 복잡한 국내 시장의 이슈들을 명확하게 전달할 수 있게 되었습니다. <br><strong>책임이 많은 자리일수록 언어는 전략</strong> 그
+                                자체인 것 같습니다.
                             </p>
                             <span class="author"><span>언더아머 코리아 김○○ CEO </span></span>
                         </div>
@@ -297,12 +303,44 @@
                         </div>
                         <div class="caseCard">
                             <p class="text">
-                                복잡한 상황에서 유연하게 의사소통을 해야할 때가 많은데 <strong>국제 비즈니스</strong> 경험이 풍부한 강사와의 1:1 코칭 수업에서 배운 표현이나 말투가
+                                복잡한 상황에서 유연하게 의사소통을 해야할 때가 많은데 <strong>국제 비즈니스</strong> 경험이 풍부한 강사와의 1:1 코칭 수업에서 배운 표현이나
+                                말투가
                                 도움이 된다고 느꼈어요.
                             </p>
                             <span class="author"><span>한국 화이자 코리아 박○○ 이사 </span></span>
                         </div>
                     </div>
+
+                    <!-- mobile -->
+                    <div class="caseCards swiper myCase">
+                        <div class="swiper-wrapper">
+                            <div class="caseCard swiper-slide">
+                                <p class="text">
+                                    본사 회의에서 복잡한 국내 시장의 이슈들을 명확하게 전달할 수 있게 되었습니다. <br>
+                                    <strong>책임이 많은 자리일수록 언어는 전략</strong> 
+                                    <span>그 자체인 것 같습니다.</span>
+                                </p>
+                                <span class="author"><span>언더아머 코리아 김○○ CEO </span></span>
+                            </div>
+                            <div class="caseCard swiper-slide">
+                                <p class="text">
+                                    금융 경제애 해박한 전담 강사와의 1:1 코칭 덕분에 <strong>FOMC 국제회의</strong>에서 현안관련 논의를 할 때 부담이
+                                    적었습니다.
+                                </p>
+                                <span class="author"><span>한국 금융권 임원</span></span>
+                            </div>
+                            <div class="caseCard swiper-slide">
+                                <p class="text">
+                                    복잡한 상황에서 유연하게 의사소통을 해야할 때가 많은데 <strong>국제 비즈니스</strong> 경험이 풍부한 강사와의 1:1 코칭 수업에서
+                                    배운 표현이나 말투가
+                                    도움이 된다고 느꼈어요.
+                                </p>
+                                <span class="author"><span>한국 화이자 코리아 박○○ 이사 </span></span>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
                     <p class="text">※ 임원 요청에 따라 실명은 공개하지 않습니다.</p>
                 </div>
 
