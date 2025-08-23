@@ -47,7 +47,6 @@ $(".partnerBanner").each(function (index) {
 
 //회사소개 리뷰
 /* 회사소개 */
-document.addEventListener("DOMContentLoaded", function () {
 new Swiper(".myCase", {
   slidesPerView: "auto",
   centeredSlides: true,
@@ -64,18 +63,14 @@ new Swiper(".myCase", {
   observer: true,
   observeParents: true,
 });
-})
 
-document.addEventListener("DOMContentLoaded", function () {
 //기업맞춤교육 - 수업목표
-if (window.innerWidth <= 768) {
-      const swiper = new Swiper(".swiper-goal-steps.swiper", {
-        slidesPerView: 1.5,
-        spaceBetween: 16,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    }
-  })
+new Swiper(".swiper.swiper-goal-steps", {
+  slidesPerView: 1.5,
+  spaceBetween: 25,
+  centeredSlides: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

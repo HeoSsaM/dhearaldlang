@@ -1,0 +1,552 @@
+@charset "utf-8";
+@import url(mobile_common.css);
+
+section strong {
+    color: var(--color-content-blue)
+}
+
+section h3 {
+    color: var(--category-bg);
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section p {
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+.mainVisual {
+    position: relative;
+    margin-top: 80px;
+    width: 100%;
+    height: 65vh;
+    background: url(../../img/sub_custom/m_bg2.png) no-repeat center bottom/cover;    
+}
+.mainVisual .inner {
+    max-width: 960px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainVisual .mainTitleArea {
+    width: 85%;
+}
+.mainTitleArea .title {
+    margin-bottom: 25px;
+    font-family: 'NEXON Lv2 Gothic';
+    font-weight: 700;
+    text-align: center;
+}
+
+.mainTitleArea span {
+    display: block;
+}
+.mainTitleArea .text span {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.4;
+}
+
+.mainTitleArea .title>strong {
+    display: block;
+    font-size: 24px;
+    color: #fff
+}
+.mainVisual .btnArea {
+    text-align: center;
+}
+
+/* 플립러닝 교육과정 */
+.flipped {
+    padding: 50px 0;
+    background: linear-gradient(40deg, #24242c, #4a557a) no-repeat center / 122%, linear-gradient(-85deg, #24242c, #4a557a) no-repeat center;
+    color: #fff;
+}
+
+.flipped .logo_green {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.flipped h2 {
+    margin-bottom: 40px;
+}
+
+.flipped .curriculum {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto 35px;
+}
+
+.flipped .curriculum li {
+    position: relative;
+    width: calc(100%/2 - 10px);
+    height: 105px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #39456b, #495576) padding-box,
+        linear-gradient(135deg, var(--color-content-blue), var(--color-point-green)) border-box;
+    color: #fff;
+    letter-spacing: -1px;
+    padding: 15px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.4;
+    border: 2px solid transparent;
+    /* 선 두께 */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
+    box-sizing: border-box;
+}
+
+.flipped .curriculum li::before {
+    display: none;
+}
+
+.flipped .steps {
+    display: none;
+}
+
+.flipped .smart {
+    display: none;
+}
+
+.flipped .btnArea {
+    margin-top: 0;
+}
+
+/* 강사진소개/교재/hsrt */
+.overview {
+    padding: 50px 0 0;
+    background: linear-gradient(to bottom,
+            #e9f0fd 0%,
+            #ffffff 33%,
+            #ffffff 33%,
+            #e9f0fd 66%,
+            #e9f0fd 66%,
+            #ffffff 100%);
+    text-align: center;
+}
+
+.overview h2 img {
+    width: 32px;
+}
+
+.overview strong {
+    color: #000
+}
+
+.overview h2 {
+    margin-bottom: 25px;
+}
+
+.overview .titleText {
+    margin-bottom: 36px;
+    font-size: 20px;
+}
+
+.overview h2+.titleText strong {
+    font-weight: 700;
+}
+
+.overview .intro * {
+    font-size: 18px;
+}
+
+.overview .intro p+p {
+    margin-top: 40px;
+}
+
+.overview .intro p span,
+.overview .intro p em {
+    display: block;
+    margin-bottom: 0;
+}
+
+.overview .intro .titleText.title02 span {
+    margin-bottom: 25px;
+}
+
+.overview .instructors img {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.overview .textArea .slogan {
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.overview .textArea .slogan span {
+    margin-bottom: 5px;
+}
+
+.overview strong {
+    color: var(--color-content-blue)
+}
+
+.overview .textArea .text span+span {
+    font-weight: 600;
+}
+
+.overview .contRefined {
+    padding: 40px 3%;
+}
+
+.overview .contRefined * {
+    font-size: 18px;
+}
+
+.overview .contRefined .titleArea {
+    margin-bottom: 50px;
+}
+
+.overview .contRefined h2 span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.overview .contRefined h2 span em {
+    color: var(--color-content-blue);
+}
+
+.overview .contRefined h2 img {
+    margin-left: 10px;
+}
+
+.overview .contRefined .titleArea .text {
+    font-size: inherit;
+}
+
+.overview .contRefined .resources img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.overview .hspt h2 {
+    font-size: clamp(22px, 5vw, 44px);
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.overview .hspt h2 strong {
+    color: var(--color-content-blue)
+}
+
+.overview .hspt h2 span {
+    color: #000
+}
+
+.overview .hspt .text * {
+    font-size: 18px;
+}
+
+.overview .hspt .text {
+    width: 80%;
+    margin: 0 auto 40px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.overview .hspt .text>span {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.overview .hsrt .text em {
+    color: #000;
+    display: block;
+}
+
+.overview .proficiency {
+    padding: 50px 25px;
+    background-image: url(../../img/common/light01.png), linear-gradient(#39456b, #0e193b);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.overview .proficiency>h2 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.overview .proficiency>h2 img {
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.overview .icons-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 40px;
+    background: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+    text-align: center;
+}
+
+.overview .icons-wrapper .item {
+    width: calc(100%/3 - 25px);
+    height: auto;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.overview .icons-wrapper .item h3 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.overview .icons-wrapper * {
+    position: static !important;
+}
+
+/* 학습자 맞춤형 수업설계 */
+.plan {
+    padding: 50px 0;
+    background: #f0f0f6;
+}
+
+.plan .inner {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.plan .titleText>span {
+    display: block;
+}
+
+.plan .circle-wrap {
+    height: auto;
+    margin: 0 auto 40px;
+    padding: 25px;
+    border-radius: 60px;
+}
+
+.plan .circle-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.plan .circle-wrap .circle {
+    margin-bottom: 20px;
+}
+
+.plan .circle-wrap img {
+    width: 80%;
+}
+
+.plan .bar-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.plan .bar-wrap img {
+    width: 85%
+}
+
+/* 목표관리형 수업 */
+.goalTrack {
+    padding: 50px 0;    
+    background: linear-gradient(#24242c, #495576);
+}
+
+.goalTrack .titleArea {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #fff
+}
+
+.goalTrack .titleArea .logo_white {
+    display: none;
+}
+.goalTrack .titleArea span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.goalTrack .titleArea span em {
+    display: block;
+    color: inherit;
+}
+.goalTrack .titleArea span strong {
+    color: var(--color-point-green);
+}
+.goalTrack .goal_steps.pc {
+    display: none;
+}
+
+.goalTrack .swiper-goal-steps.swiper {    
+    display: flex;
+    height: auto;
+    width: 94%;
+    margin: 0 auto 40px;
+}
+
+.goalTrack .swiper-goal-steps.swiper .swiper-wrapper {
+    width: 100%;
+    height: auto;
+}
+.goalTrack .swiper-goal-steps.swiper .swiper-slide {
+    width: 100%;
+}
+.goalTrack .swiper-goal-steps .step .num {
+    display: inline-block;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+    color: #fff;
+    background: #6281c5;
+    text-align: center;
+    line-height: 36px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.goalTrack .swiper-goal-steps .step .num::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    width: 186px;
+    height: 4px;
+    background: url(../../img/sub_custom/doline.png) no-repeat center;
+}
+
+.goalTrack .swiper-goal-steps .step:last-child .num::after {
+    background: none;
+}
+
+.goalTrack .swiper-goal-steps .step .title {
+    width: 210px;
+    height: 96px;
+    background: url(../../img/sub_custom/talkbox_bg.png) no-repeat center/contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin: 0 0 15px 10px;
+}
+
+.goalTrack .swiper-goal-steps .step .title strong {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.goalTrack .swiper-goal-steps .step .title p {
+    color: #fff;
+}
+
+.goalTrack .swiper-goal-steps .stepCard {
+    height: auto;
+    border-radius: 15px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.goalTrack .swiper-goal-steps .stepCard .img {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 25px;
+}
+
+.goalTrack .swiper-goal-steps .stepCard .img img {
+    width: 100%;
+}
+
+.goalTrack .swiper-goal-steps .stepCard p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* 파트너사 */
+/* 파트너사 */
+.partners {
+    padding: 50px 0
+}
+.partners .inner {
+    width: 94%;
+    margin: 0 auto;
+}
+.partners h2 {
+    margin-bottom: 40px;
+    font-size: clamp(22px, 5vw, 44px);
+    text-align: center;
+}
+.partners h2 span {
+    display: block;
+    margin-bottom: 5px;
+}
+.partners h2 span:last-child {
+    color: var(--color-content-blue);
+}
+
+.partners_logo {
+    display: flex;
+    flex-wrap: nowrap;          /* 줄바꿈 제거 */
+    gap: 15px;
+    overflow-x: auto;           /* 가로 스크롤 활성화 */
+    padding-bottom: 10px;       /* 스크롤바 공간 */
+    -webkit-overflow-scrolling: touch; /* iOS 부드러운 스크롤 */
+}
+
+.partners_logo::-webkit-scrollbar {
+    height: 8px;                /* 스크롤바 높이 */
+}
+.partners_logo::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+.partners_logo::-webkit-scrollbar-track {
+    background: #f5f5f5;
+}
+
+.partners_logo>div {
+    flex: 0 0 auto;             /* 고정 너비 카드 */
+    text-align: center;
+    font-size: 16px;
+    background: #fff;
+    width: 160px;
+    height: 80px;
+    border-radius: 8px;
+    border: 1px solid #d4d4d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners_logo>div img {
+    display: block;
+    width: 120px;
+    height: auto;
+}
