@@ -7,9 +7,6 @@
     <title>디헤럴드플립 | 기업교육 전문 파트너</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
     <!-- Link xe-icon -->
     <link href="https://cdn.jsdelivr.net/xeicon/2/xeicon.min.css" rel="stylesheet">
 
@@ -17,11 +14,16 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/ai_tutor.css">
-    <link rel="stylesheet" href="css/mobile.css" media="screen and (min-width: 361px) and (max-width: 767px)">
+    <link rel="stylesheet" href="css/t/tablet.css" media="screen and (max-width: 1024px)">
+    <link rel="stylesheet" href="css/m/aitutor_mobile.css" media="screen and (max-width: 768px)">
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
-    <script src="js/main.js" defer></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/common-swiper.js" defer></script>
 
 </head>
 
@@ -30,34 +32,50 @@
         <div class="top">
             <strong>OPIc 말하기 평가 바로가기 </strong><i class="xi-angle-right-thin"></i>
         </div>
-        <header id="header">
+        <header id="site-header">
             <div class="inner">
-                <h1 class="logo"><a href="index.html"><span class="blind">디헤럴드플립언어교육</span></a></h1>
-                <nav class="gnbArea">
-                    <ul class="gnb">
-                        <li><a href="about.html">회사소개</a></li>
-                        <li><a href="executive.html">임원교육</a></li>
-                        <li><a href="custom.html">기업맞춤교육</a></li>
-                        <li><a href="industry.html">산업/직무별 맞춤교육</a></li>
-                        <li><a href="ai.html">AI 튜터링</a></li>
-                        <li><a href="speaking.html">말하기평가센터</a></li>
-                        <li><a href="junior.html">주니어교육</a></li>
-                        <li><a href="contact.html">교육문의하기</a></li>
-                    </ul>
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="img/common/logo_white.png" alt="디헤럴드FLIP언어교육">
+                    </a>
+                </h1>
 
-                    <div class="utilNav mobile">
+                <div id="gnb" class="gnb" aria-hidden="true">
+                    <!-- mobile gnbArea -->
+                    <div class="mhead">
+                        <a href="/" class="m-logo">
+                            <img src="img/common/logo_black.png" alt="디헤럴드FLIP언어교육">
+                        </a>
+                        <button class="m-close" id="btnClose" aria-label="메뉴 닫기">
+                            <img src="img/common/btn_close.png" alt="">
+                        </button>
+                    </div>
+
+                    <nav class="nav" aria-label="주요 메뉴">
+                        <ul class="menu">
+                            <li><a href="about.html">회사소개</a></li>
+                            <li><a href="executive.html">임원교육</a></li>
+                            <li><a href="custom.html">기업맞춤교육</a></li>
+                            <li><a href="industry.html">산업/직무별 맞춤교육</a></li>
+                            <li><a href="ai.html">AI 튜터링</a></li>
+                            <li><a href="speaking.html">말하기평가센터</a></li>
+                            <li><a href="junior.html">주니어교육</a></li>
+                            <li><a href="contact.html">교육문의하기</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="utilNav">
                         <a href="/" class="on">회원가입</a>
                         <a href="/">로그인</a>
                     </div>
-                    <button class="btnClose" onclick="menuClose()"><img src="img/common/btn_close.png"
-                            alt="메뉴닫기"></button>
-                </nav>
-                <div class="utilNav pc">
-                    <a href="/" class="on">회원가입</a>
-                    <a href="/">로그인</a>
                 </div>
-                <button class="btn btnStyle01 btnInquiry">교육문의하기</button>
-                <button class="btnMobile" onclick="menuOpen()"><img src="img/common/btn_menu.png" alt="메뉴열기"></button>
+
+                <!-- 모바일 헤더 -->
+                <a href="contact.html" class="btnInquiryTop">교육문의하기</a>
+                <button class="btnMobile" id="btnMobile" aria-label="모바일 메뉴 열기" aria-controls="gnb"
+                    aria-expanded="false">
+                    <img src="img/common/btn_menu.png" alt="">
+                </button>
             </div>
         </header>
         <!-- //header -->
@@ -84,15 +102,15 @@
                     <span>영어공부를 시작하기 어려우신가요?</span>
                 </p>
                 <h2>
-                    <span class="highlight">1:1 프라이빗 영어 코치</span>와 함께하는
-                    <span class="logo">MAX AI</span>로 시작하세요!
+                    <em><span class="highlight">1:1 프라이빗 영어 코치</span>와 함께하는</em>
+                    <em><span class="logo">MAX AI</span>로 시작하세요!</em>
                 </h2>
 
                 <div class="coach-visual">
                     <video loop autoplay muted>
                         <source src="img/sub_ai/maxAIVideo00_1.mp4" type="video/mp4">
                     </video>
-                    <div class="overlay"></div>
+                    <!-- <div class="overlay"></div> -->
                 </div>
 
                 <div class="buttonArea">
@@ -162,7 +180,9 @@
                     <!-- 기억 스캔 코칭 영역 -->
                     <article class="memory">
                         <figure class="thumb">
-                            <img src="img/sub_ai/maxai_img.png" alt="">
+                            <video muted autoplay loop>
+                                <source src="img/sub_ai/m_maxAIVideo02_1.mp4" type="video/mp4">
+                            </video>
                             <figcaption>
                                 <p>
                                     <span>"메아리 코칭법은 <em>틀린 문장이 올바른 문장</em>으로</span>
@@ -171,38 +191,49 @@
                             </figcaption>
                         </figure>
                         <div class="memoryText">
-                            <h3>[ <em>올바른</em> 문장에 끊임없이 노출되어 나도 모르는 사이, <em>문장력이 200% 성장</em> ]</h3>
-                            <p>컬럼비아대 TESOL의 기본 코칭법, 한국에선 오직 MAX AI.</p>
+                            <h3>
+                                <span>[ <strong>올바른</strong> 문장에 끊임없이 노출되어</span>
+                                <span>나도 모르는 사이, <strong>문장력이 200% 성장</strong> ]</span>
+                            </h3>
+                            <p><span>컬럼비아대 TESOL의 기본 코칭법,</span> <span>한국에선 오직 MAX AI.</span></p>
                         </div>
                     </article>
                 </div>
             </div>
-            <div class="inner">
+            <div class="memoryScanArea inner">
                 <article class="memoryScan">
                     <div class="thumb">
                         <img src="img/sub_ai/sub_ai_img02.png" alt="">
                     </div>
                     <div class="scanText">
                         <p class="titleText">내 모든 기억 <em>초개인화</em> 기억 스캔 코칭</p>
-                        <p class="text">
-                            <span><em>AI 코치</em>는 마치 내 기억을 스캔한 듯,</span>
-                            <span>내가 한 말을 <em>모두 기억하고 나에게 맞춘 프라이빗한 대화</em>를 이끌어요.</span>
-                            <span>이전 수업 내용에 맞는 복습을 준비하는 건 기본이고요.</span>
-                            <span>내가 아는 얘기만 하니까, 나도 모르게 영어로 썰을 풀게 될 거에요. </span>
-                        </p>
+                        <div class="text">
+                            <p><em>AI 코치</em>는 마치 내 기억을 스캔한 듯,</p>
+                            <p>
+                                <span>내가 한 말을 모두 기억하고</span>
+                                <span><em>나에게 맞춘 프라이빗한 대화</em>를 이끌어요.</span>
+                            </p>
+                            <p>
+                                <span>이전 수업 내용에 맞는 복습을</span>
+                                <span>준비하는 건 기본이고요.</span>
+                            </p>
+                            <p>
+                                <span>내가 아는 얘기만 하니까,</span>
+                                <span>나도 모르게 영어로 썰을 풀게 될 거에요.</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="btnArea">
+                        <button class="btn btnStyle01">수강 문의하기</button>
                     </div>
                 </article>
-                <div class="btnArea">
-                    <button class="btn btnStyle01">수강 문의하기</button>
-                </div>
-
             </div>
         </section>
         <!-- max ai -->
 
         <section class="sec-coach">
             <div class="inner">
-
                 <!-- 텍스트 설명 영역 -->
                 <article class="titleArea">
                     <h2>
@@ -356,7 +387,7 @@
                     </ul>
                     <div class="btnArea">
                         <button class="btn btnStyle01">수강 문의하기</button>
-                    </div> 
+                    </div>
                 </article>
             </div>
         </section>
@@ -388,14 +419,14 @@
                 <article class="summary">
                     <h3>PT 수업은 끝, <em>이제는 실전!</em></h3>
                     <div class="desc">
-                        <p>
-                            말투, 목소리, 억양,발음까지 모두 다른 영어 정체성을 가진<br>
-                            MATE로 진짜 현지 영어 실력을 키우세요.
-                        </p>
-                        <p>
-                            인증샷, 휴가 사진등 일상 사진을 공유하고 MATE와 나누는 영어 수다!<br>
-                            <strong>토크 리포트로 틀린 영어는 교정받고, 문장은 더 자연스럽게 말해요.</strong>
-                        </p>
+                        <div class="text">
+                            <p><span>말투, 목소리, 억양,발음까지</span> <span>모두 다른 영어 정체성을 가진</span></p>
+                            <p>MATE로 진짜 현지 영어 실력을 키우세요.</p>
+                        </div>
+                        <div class="text">
+                            <p>인증샷, 휴가 사진등 일상 사진을 공유하고 MATE와 나누는 영어 수다!</p>
+                            <p><strong><span>토크 리포트로 틀린 영어는 교정받고,</span> <span>문장은 더 자연스럽게 말해요.</span></strong></p>
+                        </div>
                     </div>
                 </article>
                 <div class="btnArea">
@@ -419,7 +450,7 @@
                         <div>
                             <dt>업계 최고의 검증된 원어민<br>강사와의 체계적인 학습</dt>
                             <dd>
-                                <p>대기업 비즈영어 강의 경력 5년 이상, 다양한 업계와 레벨의 임직원 대상</p>
+                                <p><span>대기업 비즈영어 강의 경력 5년 이상,</span> 다양한 업계와 레벨의 임직원 대상</p>
                                 <p>강의에서 학습 만족도가 <em>검증된 우수 전문 원어민 강사</em>와의 수업만 제공합니다. </p>
                             </dd>
                         </div>
@@ -470,7 +501,7 @@
                         <img src="img/icon/sub_ai_process02.png" alt="">
                         <h4>과정 신청 및 입과</h4>
                         <p class="text">
-                            신청자 리스트  확인 후 번거로운<br>회원가입 없이 로그인 정보를<br><span>일괄 부여하여 입과 안내를 발송</span>합니다. 
+                            신청자 리스트 확인 후 번거로운<br>회원가입 없이 로그인 정보를<br><span>일괄 부여하여 입과 안내를 발송</span>합니다.
                         </p>
                     </div>
                     <div>
@@ -478,7 +509,7 @@
                         <img src="img/icon/sub_ai_process03.png" alt="">
                         <h4>밀착 관리 시스템</h4>
                         <p class="text">
-                            수업 효율 향상을 위해 담당자가 매주 수강률을 확인하고, 진도 지연 또는 수료 기준 미달이 예상되는 학습자에게 <span>유·무선으로 독려</span>합니다. 
+                            수업 효율 향상을 위해 담당자가 매주 수강률을 확인하고, 진도 지연 또는 수료 기준 미달이 예상되는 학습자에게 <span>유·무선으로 독려</span>합니다.
                         </p>
                     </div>
                     <div>

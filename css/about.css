@@ -21,6 +21,7 @@ section p {
 .mainVisual {
     position: relative;
     width: 100%;
+    margin-top: 100px;
     height: 760px;
     overflow: hidden;
     display: flex;
@@ -44,34 +45,23 @@ section p {
     object-fit: cover;
     z-index: -1;
 }
-
-.mainVisual .mainTitleArea {
+.mainTitleArea {
     position: relative;
+    z-index: 2;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-}
-
-.mainTitleArea .title {
-    margin-bottom: 25px;
-    font-family: 'NEXON Lv2 Gothic';}
-
-.mainTitleArea span {
-    display: block;
-    color: var(--white);
-    margin-bottom: 10px;
 }
 
 .mainTitleArea .title>span {
     display: block;
-    font-weight: 600;
-    font-size: 40px;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.2;
     color: var(--white);
-    margin-bottom: 10px;
 }
-
 .mainTitleArea .title>strong {
     display: block;
     font-size: 40px;

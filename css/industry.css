@@ -21,8 +21,9 @@ section p {
 .mainVisual {
     position: relative;
     width: 100%;
+    margin-top: 100px;
     height: 760px;
-    background: url(../img/sub_industry/sub_edu_main01.png) no-repeat center/cover;
+    background: url(../../img/sub_industry/sub_edu_main01.png) no-repeat center/cover;
 }
 
 .mainVisual .inner {
@@ -74,7 +75,7 @@ section p {
 
 /* esp */
 .esp {
-    background: url(../img/sub_industry/whyneed_bg.png) no-repeat center/cover;
+    background: url(../../img/sub_industry/whyneed_bg.png) no-repeat center/cover;
     padding-bottom: 0;
 }
 
@@ -166,9 +167,11 @@ section p {
 
 .esp .compInfo .features .item {
     position: relative;
+    display: flex;
+    flex-direction: column;
     width: calc(100%/3);
 }
-.esp .compInfo .features .item > .title {
+.esp .compInfo .features .item .title {
     position: relative;
     margin-top: 35px;
     font-size: 20px;
@@ -177,11 +180,11 @@ section p {
     color: #fff;
     text-align: center;
 }
-.esp .compInfo .features .item > .title::before {
+.esp .compInfo .features .item .title::before {
     position: absolute;
     top:-20px; left: 50%;
     transform: translateX(-50%);
-    background: url(../img/icon/ico_arrow_blue_down.png) no-repeat center/cover;
+    background: url(../../img/icon/ico_arrow_blue_down.png) no-repeat center/cover;
     width: 18px; height: 12px;
     content: '';
 }
@@ -198,13 +201,13 @@ section p {
 .esp .flow {
     width: 100%;
     padding: 80px;
-    /* background: url(../img/sub_industry/whyneed_box.png) no-repeat left top/cover; */
+    /* background: url(../../img/sub_industry/whyneed_box.png) no-repeat left top/cover; */
     background: linear-gradient(135deg, #223569, #343b5a);
     text-align: center;
     border-radius: 100px 100px 0 0;
 }
 
-.esp .flow .logo_navy {
+.esp .flow .logo_white {
     text-align: center;
     margin-bottom: 80px;
 }
@@ -266,7 +269,7 @@ section p {
 }
 
 .esp .flow .steps {
-    background: url(../img/sub_industry/trans_bar.png) no-repeat top 25px center /contain;
+    background: url(../../img/sub_industry/trans_bar.png) no-repeat top 25px center /contain;
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;

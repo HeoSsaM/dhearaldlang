@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/t/tablet.css" media="screen and (max-width: 1024px)">
     <link rel="stylesheet" href="css/m/index_mobile.css" media="screen and (max-width: 768px)">
 
     <script src="js/jquery-3.7.1.min.js"></script>
@@ -24,9 +25,8 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/custon_swiper.js" defer></script>
-    <script src="js/main.js" defer></script>
-
+    <script src="js/common.js" defer></script>
+    <script src="js/common-swiper.js" defer></script>
 </head>
 
 <body>
@@ -34,34 +34,50 @@
         <div class="top">
             <strong>OPIc 말하기 평가 바로가기 </strong><i class="xi-angle-right-thin"></i>
         </div>
-        <header id="header">
+        <header id="site-header">
             <div class="inner">
-                <h1 class="logo"><a href="index.html"><span class="blind">디헤럴드플립언어교육</span></a></h1>
-                <nav class="gnbArea">
-                    <ul class="gnb">
-                        <li><a href="about.html">회사소개</a></li>
-                        <li><a href="executive.html">임원교육</a></li>
-                        <li><a href="custom.html">기업맞춤교육</a></li>
-                        <li><a href="industry.html">산업/직무별 맞춤교육</a></li>
-                        <li><a href="ai.html">AI 튜터링</a></li>
-                        <li><a href="speaking.html">말하기평가센터</a></li>
-                        <li><a href="junior.html">주니어교육</a></li>
-                        <li><a href="contact.html">교육문의하기</a></li>
-                    </ul>
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="img/common/logo_white.png" alt="디헤럴드FLIP언어교육">
+                    </a>
+                </h1>                
 
-                    <div class="utilNav mobile">
+                <div id="gnb" class="gnb" aria-hidden="true">
+                    <!-- 모바일 패널 전용 상단바(로고+닫기) -->
+                    <div class="mhead">
+                        <a href="/" class="m-logo">
+                            <img src="img/common/logo_black.png" alt="디헤럴드FLIP언어교육">
+                        </a>
+                        <button class="m-close" id="btnClose" aria-label="메뉴 닫기">
+                            <img src="img/common/btn_close.png" alt="">
+                        </button>
+                    </div>
+
+                    <nav class="nav" aria-label="주요 메뉴">
+                        <ul class="menu">
+                            <li><a href="about.html">회사소개</a></li>
+                            <li><a href="executive.html">임원교육</a></li>
+                            <li><a href="custom.html">기업맞춤교육</a></li>
+                            <li><a href="industry.html">산업/직무별 맞춤교육</a></li>
+                            <li><a href="ai.html">AI 튜터링</a></li>
+                            <li><a href="speaking.html">말하기평가센터</a></li>
+                            <li><a href="junior.html">주니어교육</a></li>
+                            <li><a href="contact.html">교육문의하기</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="utilNav">
                         <a href="/" class="on">회원가입</a>
                         <a href="/">로그인</a>
                     </div>
-                    <button class="btnClose" onclick="menuClose()"><img src="img/common/btn_close.png"
-                            alt="메뉴닫기"></button>
-                </nav>
-                <div class="utilNav pc">
-                    <a href="/" class="on">회원가입</a>
-                    <a href="/">로그인</a>
                 </div>
-                <button class="btn btnStyle01 btnInquiry">교육문의하기</button>
-                <button class="btnMobile" onclick="menuOpen()"><img src="img/common/btn_menu.png" alt="메뉴열기"></button>
+
+                <!-- 모바일 헤더라인에 항상 보이길 원하면 유지, 아니면 삭제 -->
+                <a href="contact.html" class="btnInquiryTop">교육문의하기</a>
+                <button class="btnMobile" id="btnMobile" aria-label="모바일 메뉴 열기" aria-controls="gnb"
+                    aria-expanded="false">
+                    <img src="img/common/btn_menu.png" alt="">
+                </button>
             </div>
         </header>
         <section class="mainVisual">
@@ -83,7 +99,7 @@
                 <!-- <div class="swiper-pagination"></div> -->
             </div>
         </section>
-        <!-- //mainVisual -->       
+        <!-- //mainVisual -->
 
         <section id="secValue">
             <div class="inner">
@@ -157,7 +173,7 @@
             <section id="secPartners">
                 <div class="inner">
                     <h2 class="blind"><span>많은 기업이 선택한</span> <strong>디헤럴드플립언어교육</strong>의 파트너사를 소개합니다.</h2>
-                    <div class="swiper partnerBanner" dir="ltr">
+                    <div class="swiper partnerBanner" dir="ltr" data-run="always">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="img/logo/kftc.png" alt="금융결제원"></div>
                             <div class="swiper-slide"><img src="img/logo/kb.png" alt="국민은행"></div>
@@ -170,7 +186,7 @@
                             <div class="swiper-slide"><img src="img/logo/hanabank.png" alt="하나은행"></div>
                         </div>
                     </div>
-                    <div class="swiper partnerBanner" dir="rtl">
+                    <div class="swiper partnerBanner" dir="rtl" data-run="always">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="img/logo/koreabank.png" alt="한국은행"></div>
                             <div class="swiper-slide"><img src="img/logo/lg_cham.png" alt="lG화학"></div>
@@ -355,7 +371,8 @@
                         <h2>Herald Speaking Proficiency Test (HSPT)</h2>
                         <p class="smallTitle"><span>업무현장에서의 언어별 활용능력까지</span> 평가하는 말하기 평가시험 </p>
                         <p class="titleText">
-                            <span>전문 평가자의 정확한 진단을 바탕으로,</span> <span><strong>정확한 평가 기반의 어학 과정</strong>을</span> <span>제공합니다.</span>
+                            <span>전문 평가자의 정확한 진단을 바탕으로,</span> <span><strong>정확한 평가 기반의 어학 과정</strong>을</span>
+                            <span>제공합니다.</span>
                         </p>
                     </div>
                     <ul class="hsptList">
@@ -425,28 +442,28 @@
             <div class="inner">
                 <h2><span>리더들을 위한 </span><span>프리미엄 1:1 임원 어학교육</span></h2>
                 <p class="titleText"> 임원의 커뮤니케이션 능력이 조직의 전략이 됩니다. </span></p>
-                    <ul class="circle-group">
-                        <li class="circle circleA">
-                            <p class="text">
-                                본사 회의에서 복잡한 국내 시장의 이슈들을 명확하게 전달할 수 있게 되었습니다. <br><strong>책임이 많은 자리일수록 언어는 전략</strong> 그
-                                자체인 것 같습니다.
-                            </p>
-                            <span class="name">- 언더아머 코리아 CEO -</span>
-                        </li>
-                        <li class="circle circleB">
-                            <p class="text">
-                                금융 경제애 해박한 전담 강사와의 1:1 코칭 덕분에 <strong>FOMC 국제회의</strong>에서 현안관련 논의를 할 때 부담이 적었습니다.
-                            </p>
-                            <span class="name">- 한국 금융권 임원 -</span>
-                        </li>
-                        <li class="circle circleC">
-                            <p class="text">
-                                복잡한 상황에서 유연하게 의사소통을 해야할 때가 많은데 <strong>국제 비즈니스</strong> 경험이 풍부한 강사와의 1:1 코칭 수업에서 배운 표현이나 말투가
-                                도움이 된다고 느꼈어요.
-                            </p>
-                            <span class="name">- 화이자 코리아 임원 -</span>
-                        </li>
-                    </ul>
+                <ul class="circle-group">
+                    <li class="circle circleA">
+                        <p class="text">
+                            본사 회의에서 복잡한 국내 시장의 이슈들을 명확하게 전달할 수 있게 되었습니다. <br><strong>책임이 많은 자리일수록 언어는 전략</strong> 그
+                            자체인 것 같습니다.
+                        </p>
+                        <span class="name">- 언더아머 코리아 CEO -</span>
+                    </li>
+                    <li class="circle circleB">
+                        <p class="text">
+                            금융 경제애 해박한 전담 강사와의 1:1 코칭 덕분에 <strong>FOMC 국제회의</strong>에서 현안관련 논의를 할 때 부담이 적었습니다.
+                        </p>
+                        <span class="name">- 한국 금융권 임원 -</span>
+                    </li>
+                    <li class="circle circleC">
+                        <p class="text">
+                            복잡한 상황에서 유연하게 의사소통을 해야할 때가 많은데 <strong>국제 비즈니스</strong> 경험이 풍부한 강사와의 1:1 코칭 수업에서 배운 표현이나 말투가
+                            도움이 된다고 느꼈어요.
+                        </p>
+                        <span class="name">- 화이자 코리아 임원 -</span>
+                    </li>
+                </ul>
                 <div class="btnArea">
                     <button class="btn btnStyle01">교육 문의하기</button>
                 </div>
@@ -612,6 +629,7 @@
                 </div>
             </div>
         </footer>
+        <div class="dim" aria-hidden="true"></div>
     </div>
 </body>
 

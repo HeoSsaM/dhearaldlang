@@ -7,9 +7,6 @@
     <title>디헤럴드플립 | 기업교육 전문 파트너</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
     <!-- Link xe-icon -->
     <link href="https://cdn.jsdelivr.net/xeicon/2/xeicon.min.css" rel="stylesheet">
 
@@ -17,11 +14,16 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/industry.css">
-    <link rel="stylesheet" href="css/mobile.css" media="screen and (min-width: 361px) and (max-width: 767px)">
+    <link rel="stylesheet" href="css/t/tablet.css" media="screen and (max-width: 1024px)">
+    <link rel="stylesheet" href="css/m/industry_mobile.css" media="screen and (max-width: 768px)">
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
-    <script src="js/main.js" defer></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/common-swiper.js" defer></script>
 
 </head>
 
@@ -30,53 +32,69 @@
         <div class="top">
             <strong>OPIc 말하기 평가 바로가기 </strong><i class="xi-angle-right-thin"></i>
         </div>
-        <header id="header">
+        <header id="site-header">
             <div class="inner">
-                <h1 class="logo"><a href="index.html"><span class="blind">디헤럴드플립언어교육</span></a></h1>
-                <nav class="gnbArea">
-                    <ul class="gnb">
-                        <li><a href="about.html">회사소개</a></li>
-                        <li><a href="executive.html">임원교육</a></li>
-                        <li><a href="custom.html">기업맞춤교육</a></li>
-                        <li><a href="industry.html">산업/직무별 맞춤교육</a></li>
-                        <li><a href="ai.html">AI 튜터링</a></li>
-                        <li><a href="speaking.html">말하기평가센터</a></li>
-                        <li><a href="junior.html">주니어교육</a></li>
-                        <li><a href="contact.html">교육문의하기</a></li>
-                    </ul>
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="img/common/logo_white.png" alt="디헤럴드FLIP언어교육">
+                    </a>
+                </h1>
 
-                    <div class="utilNav mobile">
+                <div id="gnb" class="gnb" aria-hidden="true">
+                    <!-- mobile gnbArea -->
+                    <div class="mhead">
+                        <a href="/" class="m-logo">
+                            <img src="img/common/logo_black.png" alt="디헤럴드FLIP언어교육">
+                        </a>
+                        <button class="m-close" id="btnClose" aria-label="메뉴 닫기">
+                            <img src="img/common/btn_close.png" alt="">
+                        </button>
+                    </div>
+
+                    <nav class="nav" aria-label="주요 메뉴">
+                        <ul class="menu">
+                            <li><a href="about.html">회사소개</a></li>
+                            <li><a href="executive.html">임원교육</a></li>
+                            <li><a href="custom.html">기업맞춤교육</a></li>
+                            <li><a href="industry.html">산업/직무별 맞춤교육</a></li>
+                            <li><a href="ai.html">AI 튜터링</a></li>
+                            <li><a href="speaking.html">말하기평가센터</a></li>
+                            <li><a href="junior.html">주니어교육</a></li>
+                            <li><a href="contact.html">교육문의하기</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="utilNav">
                         <a href="/" class="on">회원가입</a>
                         <a href="/">로그인</a>
                     </div>
-                    <button class="btnClose" onclick="menuClose()"><img src="img/common/btn_close.png"
-                            alt="메뉴닫기"></button>
-                </nav>
-                <div class="utilNav pc">
-                    <a href="/" class="on">회원가입</a>
-                    <a href="/">로그인</a>
                 </div>
-                <button class="btn btnStyle01 btnInquiry">교육문의하기</button>
-                <button class="btnMobile" onclick="menuOpen()"><img src="img/common/btn_menu.png" alt="메뉴열기"></button>
+
+                <!-- 모바일 헤더 -->
+                <a href="contact.html" class="btnInquiryTop">교육문의하기</a>
+                <button class="btnMobile" id="btnMobile" aria-label="모바일 메뉴 열기" aria-controls="gnb"
+                    aria-expanded="false">
+                    <img src="img/common/btn_menu.png" alt="">
+                </button>
             </div>
         </header>
+        <!-- //header -->
 
         <section class="mainVisual">
             <div class="inner">
                 <div class="mainTitleArea">
                     <h2>산업&middot;직무별 특화된 영어교육</h2>
-                    <p class="titleText">
+                    <p class="titleText hide">
                         산업별(금융, 의료, 전자등) 직무별(사무직, 서비스직, 영업직) 업무상 언어 환경을 분석해
                         실제 업무현장에서 이루어지는 의사소통 능력향상을 위한 특화된 커리큘럼과 컨텐츠로 교육합니다.
                     </p>
                     <p class="titleText">
                         일반 비즈니스회화과정 대비 고도로 맞춤화 된 직무별 교육으로
-                        단기간에 높은 실전 언어활용능력을 높입니다. 
+                        단기간에 높은 실전 언어활용능력을 높입니다.
                     </p>
-                </div>
-
-                <div class="btnArea">
-                    <button class="btn btnStyle01">[우리 회사에 딱 맞춘 ESP 상담 신청하기]</button>
+                    <div class="btnArea">
+                        <button class="btn btnStyle01">[우리 회사에 딱 맞춘 ESP 상담 신청하기]</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -116,62 +134,77 @@
                     <div class="features">
                         <div class="item">
                             <img src="img/sub_industry/ecu_ico01.png" alt="">
-                            <p class="title">산업특화</p>
-                            <p class="text">
-                                금융.의료.쇼핑.리테일 등 산업군별 소통주제와 목적 중심의 자체 커리큘럼.컨텐츠 제공 
-                            </p>
+                            <div>
+                                <p class="title">산업특화</p>
+                                <p class="text">
+                                    금융.의료.쇼핑.리테일 등 산업군별 소통주제와 목적 중심의 자체 커리큘럼.컨텐츠 제공
+                                </p>
+                            </div>
                         </div>
                         <div class="item">
                             <img src="img/sub_industry/ecu_ico02.png" alt="">
-                            <p class="title">직무 맞춤</p>
-                            <p class="text">
-                                HR, 고객 서비스, 판매, 마켓팅, IT 개발 등 직무별 소통목적에 맞는 집중훈련 
-                            </p>
+                            <div>
+                                <p class="title">직무 맞춤</p>
+                                <p class="text">
+                                    HR, 고객 서비스, 판매, 마켓팅, IT 개발 등 직무별 소통목적에 맞는 집중훈련
+                                </p>
+                            </div>
                         </div>
                         <div class="item">
                             <img src="img/sub_industry/ecu_ico03.png" alt="">
-                            <p class="title">사전.사후 OLT(직무언어평가)</p>
-                            <p class="text">
-                                산업분야의 DB화된 대화내용을 기반으로 교육 전.후 OLT(Occupational Language Test)평가 제공 
-                            </p>
+                            <div>
+                                <p class="title">사전.사후 OLT(직무언어평가)</p>
+                                <p class="text">
+                                    산업분야의 DB화된 대화내용을 기반으로 교육 전.후 OLT(Occupational Language Test)평가 제공
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="btnArea">
-                        <button class="btn btnStyle01">평가 문의하기</button>
+                        <button class="btn btnStyle02">평가 문의하기</button>
                     </div>
                 </article>
 
                 <!-- 직무별 과정 흐름 -->
                 <article class="flow">
-                    <p class="logo_navy"><img src="img/common/top_logo_navy.png" alt="디헤럴드플립언어교육"></p>
+                    <p class="logo_white"><img src="img/common/top_logo_white.png" alt="디헤럴드플립언어교육"></p>
                     <div class="steps">
                         <div class="step">
                             <span class="num">01</span>
-                            <img src="img/sub_industry/ico_check.png" alt="">
+                            <div><img src="img/sub_industry/ico_check.png" alt=""></div>
                             <p><span>고객 니즈</span></p>
                         </div>
                         <div class="step">
                             <span class="num">02</span>
-                            <img src="img/sub_industry/ico_check.png" alt="">
-                            <p><span>분야</span>에 따른 콘텐츠 제작 <br>(어휘 · 표현 · 구문)</p>
+                            <div><img src="img/sub_industry/ico_check.png" alt=""></div>
+                            <div>
+                                <p>분야에 따른 콘텐츠 제작</p>
+                                <p><span>(어휘 · 표현 · 구문)</span></p>
+                            </div>
 
                         </div>
                         <div class="step">
                             <span class="num">03</span>
-                            <img src="img/sub_industry/ico_check.png" alt="">
-                            <p>
-                                해당 분야 <br><span>전문 강사 선발</span><br>사전 수업 준비
-                            </p>
+                            <div><img src="img/sub_industry/ico_check.png" alt=""></div>
+                            <div>
+                                <p>해당 분야전문 강사 선발</p><p>사전 수업 준비</p>
+                            </div>
                         </div>
                         <div class="step">
                             <span class="num">04</span>
-                            <img src="img/sub_industry/ico_check.png" alt="">
-                            <p>전문성과 노하우 과정 <br>관리자의 성실한 <span>밀착케어</span></p>
+                            <div><img src="img/sub_industry/ico_check.png" alt=""></div>
+                            <div>
+                                <p>전문성과 노하우 과정</p>
+                                <p>관리자의 성실한밀착케어</p>
+                            </div>
                         </div>
                         <div class="step">
                             <span class="num">05</span>
-                            <img src="img/sub_industry/ico_check.png" alt="">
-                            <p>성공적인 운영으로 <br>학습자 및 고객사 <br><span>만족 극대화</span></p>
+                            <div><img src="img/sub_industry/ico_check.png" alt=""></div>
+                            <div>
+                                <p>성공적인 운영으로 학습자 및  </p>
+                                <p>고객사만족 극대화</p>
+                            </div>
                         </div>
                     </div>
                     <ul class="curriList">
@@ -281,8 +314,8 @@
                             </div>
                         </li>
                     </ul>
-                    
-                    <div class="bntArea">
+
+                    <div class="btnArea">
                         <button class="btn btnStyle01">평가 홈페이지 바로가기</button>
                         <button class="btn btnStyle02">평가 문의하기</button>
                     </div>

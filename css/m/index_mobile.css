@@ -9,11 +9,12 @@ section h2 {
 
 /* main visual */
 .mainVisual .mainHero {
-    margin-top: 70px;
+    margin-top: 60px;
+    background: url(../../img/main/m_main_bg.png) no-repeat center/cover;
 }
 
 .mainVisual .mainHero {
-    height: 75vh;
+    height: 55vh;
 }
 
 .mainVisual .mainHero .mainTitleArea {
@@ -152,13 +153,13 @@ section h2 {
     margin-top: 10px;
 }
 
-#secValue .valueCard>ul li.value_ico02::before {
-    background-image: url(../img/icon/sec2_ico02.png);
-}
+/* #secValue .valueCard>ul li.value_ico02::before {
+    background-image: url(../../img/logosec2_ico02.png);
+} */
 
-#secValue .valueCard>ul li.value_ico03::before {
-    background-image: url(../img/icon/sec2_ico03.png);
-}
+/* #secValue .valueCard>ul li.value_ico03::before {
+    background-image: url(../../img/logosec2_ico03.png);
+} */
 
 #secValue .valueCard>ul li strong {
     margin-top: 50px;
@@ -342,19 +343,19 @@ section h2 {
 }
 
 #secWhy .whyList .why01 {
-    background: url(../img/main/ico01.png) no-repeat left top / 44px;
+    background: url(../../img/main/ico01.png) no-repeat left top / 44px;
 }
 
 #secWhy .whyList .why02 {
-    background: url(../img/main/ico02.png) no-repeat left top / 44px;
+    background: url(../../img/main/ico02.png) no-repeat left top / 44px;
 }
 
 #secWhy .whyList .why03 {
-    background: url(../img/main/ico03.png) no-repeat left top / 44px;
+    background: url(../../img/main/ico03.png) no-repeat left top / 44px;
 }
 
 #secWhy .whyList .why04 {
-    background: url(../img/main/ico04.png) no-repeat left top / 44px;
+    background: url(../../img/main/ico04.png) no-repeat left top / 44px;
 }
 
 /* secSolution */
@@ -495,7 +496,7 @@ section h2 {
 #secExec {
     position: relative;
     padding: 60px 0;
-    background: url(../img/main/sec04_edu_bg.png) no-repeat center/cover;
+    background: url(../../img/main/sec04_edu_bg.png) no-repeat center/cover;
     color: #fff;
     height: auto;
 }

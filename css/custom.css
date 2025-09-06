@@ -23,8 +23,9 @@ section p {
     margin-top: 80px;
     width: 100%;
     height: 760px;
-    background: url(../img/sub_custom/main_bg2.png) no-repeat center/cover;    
+    background: url(../img/sub_custom/main_bg2.png) no-repeat center/cover;
 }
+
 .mainVisual .inner {
     max-width: 960px;
     height: 100%;
@@ -32,42 +33,40 @@ section p {
     display: flex;
     align-items: center;
 }
+
 .mainVisual .mainTitleArea {
     width: 45%;
 }
+
 .mainTitleArea .title {
     margin-bottom: 25px;
     font-family: 'NEXON Lv2 Gothic';
+    font-size: 40px;
     font-weight: 700;
-    color: #000;
+    color: #fff
 }
 
-.mainTitleArea span {
+.mainTitleArea strong {
     display: block;
 }
-.mainTitleArea .text span {
+
+.mainTitleArea .text {
     display: block;
     font-weight: 500;
     font-size: 22px;
-    color: #000;
     line-height: 1.4;
 }
 
-.mainTitleArea .title>strong {
-    display: block;
-    font-size: 40px;
-    color: #000;
-}
-
-
 .mainTitleArea .btnArea {
-   text-align: left;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 25px;
 }
 
 
 /* 플립러닝 교육과정 */
 .flipped {
-    padding: 120px 0 ;
+    padding: 120px 0;
     background: linear-gradient(40deg, #24242c, #4a557a) no-repeat center / 122%, linear-gradient(-85deg, #24242c, #4a557a) no-repeat center;
     color: #fff;
 }
@@ -262,7 +261,7 @@ section p {
     margin-bottom: 25px;
 }
 
-.overview  strong {
+.overview strong {
     color: var(--color-content-blue)
 }
 
@@ -334,7 +333,10 @@ section p {
     color: #000
 }
 
-.overview .proficiency > h2 {display: none;}
+.overview .proficiency>h2 {
+    display: none;
+}
+
 .overview .icons-wrapper {
     position: relative;
     width: 980px;
@@ -345,6 +347,7 @@ section p {
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(5, 1fr);
 }
+
 .overview .icons-wrapper .item {
     text-align: center;
     font-size: 14px;
@@ -374,7 +377,8 @@ section p {
 
 .overview .icons-wrapper .item:nth-child(3) {
     position: relative;
-    left: -40px; top: 20px;
+    left: -40px;
+    top: 20px;
     grid-row: 4;
     grid-column: 3;
 }
@@ -388,21 +392,23 @@ section p {
 
 .overview .icons-wrapper .item:nth-child(5) {
     position: relative;
-    left: 30px; top: 20px;
+    left: 30px;
+    top: 20px;
     grid-row: 4;
     grid-column: 5;
 }
 
 .overview .icons-wrapper .item:nth-child(6) {
     position: relative;
-    left: 25px; top: 60px;
+    left: 25px;
+    top: 60px;
     grid-row: 3;
     grid-column: 6;
 }
 
 .overview .icons-wrapper .item:nth-child(7) {
     position: relative;
-    left: -60px; 
+    left: -60px;
     grid-row: 2;
     grid-column: 7;
 }
@@ -411,6 +417,7 @@ section p {
 .plan {
     background: #f0f0f6;
 }
+
 .plan .circle-wrap {
     height: 450px;
     margin: 0 auto 80px;
@@ -418,12 +425,14 @@ section p {
     background: #fff;
     border-radius: 60px;
 }
+
 .plan .circle-wrap {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
 }
+
 .plan .bar-wrap {
     display: flex;
     justify-content: center;
@@ -435,36 +444,45 @@ section p {
 .goalTrack {
     background: url(../img/sub_custom/step_bg.png) no-repeat center/cover;
 }
+
 .goalTrack .titleArea {
     text-align: center;
     margin-bottom: 80px;
     color: #fff;
 }
+
 .goalTrack .titleArea .logo_white {
     margin-bottom: 40px;
 }
+
 .goalTrack .titleArea span {
     display: block;
 }
+
 .goalTrack .titleArea span em {
     color: var(--color-point-green);
     font-weight: 600;
 }
+
 .goalTrack .swiper-goal-steps.swiper {
     display: none;
 }
+
 .goalTrack .goal_steps {
     display: flex;
     justify-content: space-between;
     gap: 30px;
 }
+
 .goalTrack .goal_steps .step {
     text-align: center;
 }
+
 .goalTrack .goal_steps .step .num {
     display: inline-block;
     position: relative;
-    width: 36px; height: 36px; 
+    width: 36px;
+    height: 36px;
     border-radius: 5px;
     color: 1;
     background: #6281c5;
@@ -473,18 +491,23 @@ section p {
     font-weight: 800;
     margin-bottom: 30px;
 }
+
 .goalTrack .goal_steps .step .num::after {
     content: '';
     position: absolute;
-    top: 50%; left: 60px;
-    width: 186px; height: 4px;
+    top: 50%;
+    left: 60px;
+    width: 186px;
+    height: 4px;
     background: url(../img/sub_custom/doline.png) no-repeat center;
 }
+
 .goalTrack .goal_steps .step:last-child .num::after {
     background: none;
 }
+
 .goalTrack .goal_steps .step .title {
-    width: 210px; 
+    width: 210px;
     height: 96px;
     background: url(../img/sub_custom/talkbox_bg.png) no-repeat center/contain;
     display: flex;
@@ -493,14 +516,17 @@ section p {
     padding-top: 20px;
     margin-bottom: 30px;
 }
+
 .goalTrack .goal_steps .step .title strong {
     color: #fff;
     font-weight: 700;
     margin-bottom: 5px;
 }
+
 .goalTrack .goal_steps .step .title p {
     color: #fff;
 }
+
 .goalTrack .goal_steps .stepCard {
     height: 200px;
     border-radius: 15px;
@@ -510,13 +536,16 @@ section p {
     align-items: center;
     padding-top: 30px;
 }
+
 .goalTrack .goal_steps .stepCard .img {
     height: 60px;
     margin: 0 auto 40px;
 }
+
 .goalTrack .goal_steps .stepCard .img img {
     height: 100%;
 }
+
 .goalTrack .goal_steps .stepCard p {
     font-size: 18px;
     font-weight: 600;
@@ -527,6 +556,7 @@ section p {
     margin-bottom: 80px;
     font-size: 32px;
 }
+
 .partners_logo {
     display: flex;
     flex-wrap: wrap;
@@ -534,20 +564,21 @@ section p {
     gap: 15px;
 }
 
-.partners_logo > div {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  width: 160px;
-  height: 100px;
-  border-radius: 8px;
-  border: 1px solid #d4d4d4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.partners_logo>div {
+    display: inline-flex;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    width: 160px;
+    height: 100px;
+    border-radius: 8px;
+    border: 1px solid #d4d4d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.partners_logo > div img {
-  display: block;
-  width: 120px;
+.partners_logo>div img {
+    display: block;
+    width: 120px;
 }

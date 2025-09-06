@@ -1,0 +1,213 @@
+@charset "utf-8";
+@import url(mobile_common.css);
+
+/* mainVisual */
+.mainVisual .inner {
+    position: relative;
+}
+.mainVisual .inner::before {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(8, 6, 37, 0.4));
+    position: absolute;
+    inset: 0;
+    content: '';
+}
+.mainVisual .mainTitleArea {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.mainVisual .mainTitleArea h2 {
+    margin-bottom: 30px;
+    color: var(--color-point-green);
+}
+
+.mainVisual .mainTitleArea p {
+    margin-bottom: 20px;
+    text-align: center;
+    word-break: keep-all;
+}
+
+.mainTitleArea .titleText {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
+}
+.mainVisual .btnArea {
+    margin-top: 25px;
+}
+.mainVisual .btnArea .btn {
+    text-align: inherit;
+    width: max-content
+}
+
+.mainVisual .btnArea .btn {
+    width: max-content;
+    padding: 0 20px;
+}
+
+/* esp */
+.esp {
+    /* background: url(../../img/sub_industry/whyneed_bg.png) no-repeat center/cover; */
+    background: var(--bg-light-gray);
+    padding: 60px 0;
+}
+.esp .inner {
+    max-width: 94%;
+    margin: 0 auto;
+}
+.esp .why .titleArea {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.esp .why .titleArea h2  {
+    border-radius: 50px;
+    overflow: hidden;    
+}
+.esp .why .titleArea h2 span {
+    color: var(--color-content-blue);
+    border-color: var(--color-content-blue);
+}
+.esp .why .titleArea .titleText {
+    color: #000
+}
+.esp .why .line {
+    display: none;
+}
+
+.esp .why .comp {
+    position: relative;
+    width: 100%;
+    margin: 0 auto 40px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+.esp .why .comp .esp_eng {
+    outline: 2px solid #fff;
+    background: linear-gradient(135deg, #12508C 0%, #187BA8 100%);
+}
+.esp .why .comp>div>ul {
+    padding: 0 20px;
+}
+.esp .compInfo {
+    margin-bottom: 40px;
+}
+
+.esp .compInfo .features {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.esp .compInfo .features .item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+}
+.esp .compInfo .features .item .title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 25px;
+    color: #000
+}
+.esp .compInfo .features .item .title::before {
+    top: 8px; left: 0;
+    transform: none;
+    transform: rotate(-90deg);
+    width: 14px;
+}
+.esp .compInfo .features .item img {
+    display: block;
+    width: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin: 0 auto 40px;
+}
+.esp .compInfo .features .item p+p {
+    color: #000
+}
+.esp .compInfo .btnArea {
+    margin-top: 25px;
+}
+
+/* esp flow */
+
+.esp .flow {
+    padding: 45px 20px 45px;
+    background: linear-gradient(135deg, #223569, #343b5a);
+    border-radius: 50px;
+}
+
+.esp .flow .logo_white {
+    margin-bottom: 40px;
+}
+
+.esp .flow .steps {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+}
+
+.esp .flow .step {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+.esp .flow .step .num {
+    width: 15%;
+    margin-bottom: 0;
+}
+
+.esp .flow .step figure {
+    width: 14%;
+}
+.esp .flow .step img {
+    margin-bottom: 0;
+}
+
+.esp .flow .step p {
+    width: auto;
+    color: #fff;
+    text-align: left;
+    align-self: stretch;
+}
+.esp .flow .curriList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 0;
+}
+.esp .flow .curriList li {
+    padding: 20px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+}
+.esp .flow .curriList li {
+    border: 2px solid transparent;  
+}
+.esp ul li img {
+    display: none;
+}
+.esp ul h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.esp .flow .btnArea {
+    margin-top: 25px;
+}
+.esp .flow .btnArea .btn {
+    width: auto;
+    padding: 20px 20px;
+    height: auto;
+    line-height: 1;
+}

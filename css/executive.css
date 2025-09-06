@@ -21,19 +21,16 @@ section p {
 }
 
 .mainVisual {
-    position: relative;
-    width: 100%;
-    height: 760px;
-    overflow: hidden;
-    background: url(../img/sub_executive/executive_bg.png) no-repeat center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
+    height: 660px;
+    background: url(../img/sub_executive/executive_bg.png) no-repeat center/cover;
 }
 
 .mainVisual .mainTitleArea {
     text-align: center;
-    margin-top: 50px;
 }
 
 .mainVisual .mainTitleArea .title {
@@ -41,19 +38,17 @@ section p {
     font-family: 'NEXON Lv2 Gothic';
     font-size: 34px;
     font-weight: bold;
-    margin-bottom: 25px;
-    
+    margin-bottom: 50px;    
 }
 
 .mainVisual .mainTitleArea .text {
-    width: 40%;
-    margin: 0 auto 100px;
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
-    opacity: 0.8;
 }
-
-.mainVisual .mainTitleArea span {
+.mainVisual .mainTitleArea .text p + p {
+    margin-top: 20px;
+}
+.mainVisual .mainTitleArea .text span {
     display: block;
 }
 
