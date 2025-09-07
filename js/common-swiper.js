@@ -1,6 +1,5 @@
-// /js/swipers.pc-only.js
+// /js/swiper.init.js
 (() => {
-  // PC 기준 폭(>=769px이면 실행)
   const BREAKPOINT_PX = 769;
 
   if (!window.Swiper) {
@@ -8,15 +7,13 @@
     return;
   }
 
-  // 생성된 인스턴스를 요소별로 보관
   const instances = new Map();
 
-  // 스와이퍼 정의: selector 별 옵션 (모두 PC 전용)
-  // 필요 없으면 항목을 지우고, 필요한 슬라이더만 남기세요.
+  // 공통 CONFIGS (필요없는 항목은 지워도 됨)
   const CONFIGS = [
     {
       selector: '.swiper-topic',
-      mode: 'pc',
+      mode: 'pc', // 기본은 PC 전용
       options: (el) => ({
         slidesPerView: 3,
         spaceBetween: 30,
@@ -25,11 +22,10 @@
       }),
     },
     {
-      // 파트너 배너 여러 개(.partnerBanner) 지원
+      // 배너는 기본적으로 항상 실행 + 반응형
       selector: '.partnerBanner',
-      mode: 'pc',
+      mode: 'always',
       options: (el) => ({
-        slidesPerView: 5,
         spaceBetween: 0,
         loop: true,
         speed: 8000,
@@ -39,10 +35,15 @@
         allowTouchMove: false,
         observer: true,
         observeParents: true,
+        breakpoints: {
+          0:   { slidesPerView: 3 },
+          430: { slidesPerView: 4 },
+          769: { slidesPerView: 5 },
+        },
       }),
     },
     {
-      // 회사소개 리뷰
+      // 회사소개 리뷰(기본은 PC 전용, 필요시 HTML에서 data-run="always")
       selector: '.myCase',
       mode: 'pc',
       options: (el) => ({
@@ -50,7 +51,6 @@
         centeredSlides: true,
         spaceBetween: 10,
         pagination: {
-          // 컨테이너 내부의 페이지네이션을 자동 참조
           el: el.querySelector('.swiper-pagination') || undefined,
           clickable: true,
         },
@@ -59,13 +59,15 @@
       }),
     },
     {
-      // 기업맞춤교육 - 수업목표
+      // 기업맞춤교육 - 수업목표 (PC 기본값)
       selector: '.swiper-goal-steps',
       mode: 'pc',
       options: (el) => ({
-        slidesPerView: 2.5,
+        // common-swiper의 2.5장/centered + custom-swiper의 1장 PC전용 중 택1
+        // 여기선 PC 기본을 2.5장으로 두고, 모바일은 data-run으로 on/off 조절 권장
+        slidesPerView: 1.5,
         spaceBetween: 25,
-        centeredSlides: true,
+        centeredSlides: false,
         pagination: {
           el: el.querySelector('.swiper-pagination') || undefined,
           clickable: true,
@@ -76,7 +78,7 @@
     },
   ];
 
-  // 요소별 data-run으로 모드 덮어쓰기 가능: data-run="pc" | "mobile" | "always"
+  // data-run="pc|mobile|always" 우선
   function shouldRun(mode, isPC) {
     if (mode === 'pc') return isPC;
     if (mode === 'mobile') return !isPC;
@@ -85,6 +87,9 @@
 
   function createInstance(el, cfg) {
     if (instances.has(el)) return instances.get(el);
+
+    // (선택) data-breakpoints, data-slides-per-view 등으로 덮어쓰기 하고 싶다면
+    // 여기서 el.dataset을 읽어 옵션 병합하도록 확장 가능.
     const opts = typeof cfg.options === 'function' ? cfg.options(el) : (cfg.options || {});
     const inst = new Swiper(el, opts);
     instances.set(el, inst);
@@ -94,7 +99,7 @@
   function destroyInstance(el) {
     const inst = instances.get(el);
     if (!inst) return;
-    try { inst.destroy(true, true); } catch(e) {}
+    try { inst.destroy(true, true); } catch (e) {}
     instances.delete(el);
   }
 
@@ -104,14 +109,12 @@
     CONFIGS.forEach(cfg => {
       const nodes = document.querySelectorAll(cfg.selector);
       nodes.forEach(el => {
-        // data-run이 있으면 우선
         const override = (el.dataset.run || '').toLowerCase();
         const mode = (override === 'pc' || override === 'mobile' || override === 'always')
           ? override
           : cfg.mode;
 
         const need = shouldRun(mode, isPC);
-
         if (need) {
           if (!instances.has(el)) createInstance(el, cfg);
         } else {
@@ -121,14 +124,12 @@
     });
   }
 
-  // 초기화
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', updateAll);
   } else {
     updateAll();
   }
 
-  // 리사이즈(디바운스: rAF)
   let raf = null;
   window.addEventListener('resize', () => {
     if (raf) cancelAnimationFrame(raf);

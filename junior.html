@@ -17,11 +17,17 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/junior.css">
-    <link rel="stylesheet" href="css/mobile.css" media="screen and (min-width: 361px) and (max-width: 767px)">
+    <link rel="stylesheet" href="css/t/tablet.css" media="screen and (max-width: 1024px)">
+    <link rel="stylesheet" href="css/m/junior_mobile.css" media="screen and (max-width: 768px)">
+
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
-    <script src="js/main.js" defer></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/common-swiper.js" defer></script>
 
 </head>
 
@@ -30,34 +36,51 @@
         <div class="top">
             <strong>OPIc 말하기 평가 바로가기 </strong><i class="xi-angle-right-thin"></i>
         </div>
-        <header id="header">
+        <header id="site-header">
             <div class="inner">
-                <h1 class="logo"><a href="index.html"><span class="blind">디헤럴드플립언어교육</span></a></h1>
-                <nav class="gnbArea">
-                    <ul class="gnb">
-                        <li><a href="about.html">회사소개</a></li>
-                        <li><a href="executive.html">임원교육</a></li>
-                        <li><a href="custom.html">기업맞춤교육</a></li>
-                        <li><a href="industry.html">산업/직무별 맞춤교육</a></li>
-                        <li><a href="ai.html">AI 튜터링</a></li>
-                        <li><a href="speaking.html">말하기평가센터</a></li>
-                        <li><a href="junior.html">주니어교육</a></li>
-                        <li><a href="contact.html">교육문의하기</a></li>
-                    </ul>
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="img/common/logo_white.png" alt="디헤럴드FLIP언어교육">
+                    </a>
+                </h1>
 
-                    <div class="utilNav mobile">
+                <!-- 모바일 헤더라인에 항상 보이길 원하면 유지, 아니면 삭제 -->
+                <a href="contact.html" class="btnInquiryTop">교육문의하기</a>
+
+                <div id="gnb" class="gnb" aria-hidden="true">
+                    <!-- 모바일 패널 전용 상단바(로고+닫기) -->
+                    <div class="mhead">
+                        <a href="/" class="m-logo">
+                            <img src="img/common/logo_black.png" alt="디헤럴드FLIP언어교육">
+                        </a>
+                        <button class="m-close" id="btnClose" aria-label="메뉴 닫기">
+                            <img src="img/common/btn_close.png" alt="">
+                        </button>
+                    </div>
+
+                    <nav class="nav" aria-label="주요 메뉴">
+                        <ul class="menu">
+                            <li><a href="about.html">회사소개</a></li>
+                            <li><a href="executive.html">임원교육</a></li>
+                            <li><a href="custom.html">기업맞춤교육</a></li>
+                            <li><a href="industry.html">산업/직무별 맞춤교육</a></li>
+                            <li><a href="ai.html">AI 튜터링</a></li>
+                            <li><a href="speaking.html">말하기평가센터</a></li>
+                            <li><a href="junior.html">주니어교육</a></li>
+                            <li><a href="contact.html">교육문의하기</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="utilNav">
                         <a href="/" class="on">회원가입</a>
                         <a href="/">로그인</a>
                     </div>
-                    <button class="btnClose" onclick="menuClose()"><img src="img/common/btn_close.png"
-                            alt="메뉴닫기"></button>
-                </nav>
-                <div class="utilNav pc">
-                    <a href="/" class="on">회원가입</a>
-                    <a href="/">로그인</a>
                 </div>
-                <button class="btn btnStyle01 btnInquiry">교육문의하기</button>
-                <button class="btnMobile" onclick="menuOpen()"><img src="img/common/btn_menu.png" alt="메뉴열기"></button>
+
+                <button class="btnMobile" id="btnMobile" aria-label="모바일 메뉴 열기" aria-controls="gnb"
+                    aria-expanded="false">
+                    <img src="img/common/btn_menu.png" alt="">
+                </button>
             </div>
         </header>
         <!-- //header -->

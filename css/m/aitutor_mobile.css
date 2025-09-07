@@ -332,7 +332,7 @@ section .inner {
     transform: translateX(-50%);
     width: 54px;
     height: 24px;
-    background: url(../img/icon/ico_arrow_dwon_gray.png) no-repeat center;
+    background: url(../../img/icon/ico_arrow_dwon_gray.png) no-repeat center;
 }
 
 .secTutor .titleArea h2 {

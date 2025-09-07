@@ -1,6 +1,5 @@
 // /js/swipers.pc-only.js
 (() => {
-  // PC 기준 폭(>=769px이면 실행)
   const BREAKPOINT_PX = 769;
 
   if (!window.Swiper) {
@@ -8,11 +7,8 @@
     return;
   }
 
-  // 생성된 인스턴스를 요소별로 보관
   const instances = new Map();
 
-  // 스와이퍼 정의: selector 별 옵션 (모두 PC 전용)
-  // 필요 없으면 항목을 지우고, 필요한 슬라이더만 남기세요.
   const CONFIGS = [
     {
       selector: ".swiper-topic",
@@ -25,11 +21,10 @@
       }),
     },
     {
-      // 파트너 배너 여러 개(.partnerBanner) 지원
+      // 파트너 배너: 모바일/PC 모두 실행
       selector: ".partnerBanner",
-      mode: "always", // ← 모바일/PC 모두에서 실행
+      mode: "always",
       options: (el) => ({
-        // 공통 옵션
         spaceBetween: 0,
         loop: true,
         speed: 8000,
@@ -39,26 +34,23 @@
         allowTouchMove: false,
         observer: true,
         observeParents: true,
-
-        // 화면폭별 뷰 개수
         breakpoints: {
-          0: { slidesPerView: 3 }, // 모바일
-          430: { slidesPerView: 4 }, // 작은 태블릿
-          769: { slidesPerView: 5 }, // PC
+          0:   { slidesPerView: 3 },
+          430: { slidesPerView: 4 },
+          769: { slidesPerView: 5 },
         },
       }),
     },
-    ,
     {
       // 회사소개 리뷰
       selector: ".myCase",
-      mode: "pc",
+      mode: "pc", // ← HTML에서 data-run="always"로 덮어쓰는 방식 사용 시 이대로 둬도 됨
+      // mode: "always", // ← 아예 스크립트에서 항상 실행하고 싶다면 이 줄로 교체
       options: (el) => ({
         slidesPerView: "auto",
         centeredSlides: true,
         spaceBetween: 10,
         pagination: {
-          // 컨테이너 내부의 페이지네이션을 자동 참조
           el: el.querySelector(".swiper-pagination") || undefined,
           clickable: true,
         },
@@ -73,7 +65,7 @@
       options: (el) => ({
         slidesPerView: 1,
         spaceBetween: 0,
-        centeredSlides: false, // ← 이걸로 한 장 꽉 차게
+        centeredSlides: false,
         pagination: {
           el: el.querySelector(".swiper-pagination") || undefined,
           clickable: true,
@@ -84,7 +76,6 @@
     },
   ];
 
-  // 요소별 data-run으로 모드 덮어쓰기 가능: data-run="pc" | "mobile" | "always"
   function shouldRun(mode, isPC) {
     if (mode === "pc") return isPC;
     if (mode === "mobile") return !isPC;
@@ -93,8 +84,7 @@
 
   function createInstance(el, cfg) {
     if (instances.has(el)) return instances.get(el);
-    const opts =
-      typeof cfg.options === "function" ? cfg.options(el) : cfg.options || {};
+    const opts = typeof cfg.options === "function" ? cfg.options(el) : (cfg.options || {});
     const inst = new Swiper(el, opts);
     instances.set(el, inst);
     return inst;
@@ -103,9 +93,7 @@
   function destroyInstance(el) {
     const inst = instances.get(el);
     if (!inst) return;
-    try {
-      inst.destroy(true, true);
-    } catch (e) {}
+    try { inst.destroy(true, true); } catch (e) {}
     instances.delete(el);
   }
 
@@ -115,7 +103,6 @@
     CONFIGS.forEach((cfg) => {
       const nodes = document.querySelectorAll(cfg.selector);
       nodes.forEach((el) => {
-        // data-run이 있으면 우선
         const override = (el.dataset.run || "").toLowerCase();
         const mode =
           override === "pc" || override === "mobile" || override === "always"
@@ -123,7 +110,6 @@
             : cfg.mode;
 
         const need = shouldRun(mode, isPC);
-
         if (need) {
           if (!instances.has(el)) createInstance(el, cfg);
         } else {
@@ -133,14 +119,12 @@
     });
   }
 
-  // 초기화
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", updateAll);
   } else {
     updateAll();
   }
 
-  // 리사이즈(디바운스: rAF)
   let raf = null;
   window.addEventListener("resize", () => {
     if (raf) cancelAnimationFrame(raf);
