@@ -8,21 +8,13 @@ section h2 {
 }
 
 /* main visual */
-.mainVisual .mainHero {
+.mainVisual {
+    background-image: url(../../img/main/m_main_bg.png);
     margin-top: 60px;
-    background: url(../../img/main/m_main_bg.png) no-repeat center/cover;
 }
+.mainVisual .mainTitleArea {
+    margin-top: 0;
 
-.mainVisual .mainHero {
-    height: 55vh;
-}
-
-.mainVisual .mainHero .mainTitleArea {
-    position: static;
-    transform: none;
-    display: block;
-    width: 85vw;
-    margin: 85px auto 0;
 }
 
 .mainTitleArea .title>span {
@@ -37,7 +29,6 @@ section h2 {
 .mainTitleArea .text {
     font-size: 17px;
     margin-bottom: 60px;
-    opacity: 0.857;
 }
 
 /* topic */
@@ -58,11 +49,15 @@ section h2 {
 }
 
 #mainTopicArea .topicList {
-    padding: 10px 0;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
 }
 
 #mainTopicArea .topicList li {
-    height: 240px;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 25px;
 }
 
 #mainTopicArea .topicList li a {
@@ -692,4 +687,10 @@ section h2 {
 #secEval .evalArea>div:nth-child(2) {
     right: 0;
     border: 2px solid var(--color-content-blue);
+}
+
+@media screen and (max-width: 390px) {
+    .mainTitleArea .btnArea .btn {
+        margin-bottom: 15px;
+    }
 }

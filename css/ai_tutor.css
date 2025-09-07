@@ -438,7 +438,10 @@ section p {
     font-size: 17px;
     line-height: 1.5;
 }
-
+.whyWrong .titleArea .text span {
+    display: block;
+    margin-bottom: 5px;
+}
 .whyWrong .titleArea .text em {
     font-weight: 700;
 }

@@ -11,6 +11,10 @@ section .inner {
 }
 
 /* mainVisual */
+.mainVisual  {
+    height: 65vh;
+    background: url(../../img/sub_ai/sub_ai_main.png) no-repeat center/cover;
+}
 .mainVisual .mainTitleArea .titleText {
     font-size: 26px;
     margin-top: 0;
@@ -30,8 +34,9 @@ section .inner {
 }
 
 .aiCoatch-area .coach-intro .titleText span {
-    font-size: 24px;
-    font-weight: 600;
+    font-family: 'GmarketSansMedium';
+    font-size: 20px;
+    font-weight: 400;
     color: #000;
 }
 
@@ -55,10 +60,13 @@ section .inner {
 }
 
 .aiCoatch-area .coach-intro h2 {
-    font-weight: 700;
+    font-family: 'GmarketSansMedium';
+    font-weight: 600;
     margin-bottom: 40px;
 }
-
+.aiCoatch-area .coach-intro h2 em {
+    margin-bottom: 0;
+}
 .aiCoatch-area .coach-intro .coach-visual {
     margin-bottom: 0;
 }
@@ -69,14 +77,15 @@ section .inner {
 }
 
 .aiCoatch-area .coach-result h3 {
-    font-size: 24px;
+    font-family: 'GmarketSansMedium';
+    font-size: 22px;
     color: #000;
     margin-bottom: 60px;
 }
 
 .aiCoatch-area .coach-result h3 span {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
 .aiCoatch-area .coach-result h3 img {
@@ -194,14 +203,17 @@ section .inner {
 }
 
 .sec-ai .scanText .titleText {
-    font-size: 24px;
-    margin-bottom: 30px;
+    font-family: 'GmarketSansMedium';
+    font-size: 22px;
+    margin-bottom: 20px;
 }
-
-.sec-ai .scanText .text>p {
-    margin-bottom: 15px;
+.sec-ai .scanText .text {
+    margin-bottom: 0;
+    line-height: 1.2;
 }
-
+.sec-ai .scanText .text p + p {
+    margin-top: 15px;
+}
 .sec-ai .scanText .text span {
     font-size: 18px;
     margin-bottom: 0
@@ -295,7 +307,8 @@ section .inner {
 
 .whyWrong .titleArea {
     position: relative;
-    width: 100%;
+    width: 85%;
+    margin: 0 auto;
     height: auto;
     border-radius: 20px;
     padding: 40px 35px;
@@ -313,7 +326,10 @@ section .inner {
 .whyWrong h2 {
     margin-bottom: 30px;
 }
-
+.whyWrong .titleArea .text span {
+    display: inline;
+    margin-bottom: 5px;
+}
 /* ai 튜터링 */
 .secTutor {padding: 60px 0 0;}
 .secTutor .inner {
@@ -321,7 +337,7 @@ section .inner {
     width: 100%;
 }
 .secTutor article:first-child {
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 .secTutor article:first-child::after {
@@ -336,6 +352,8 @@ section .inner {
 }
 
 .secTutor .titleArea h2 {
+    font-family: 'GmarketSansMedium';
+    font-weight: 500;
     margin-bottom: 30px;
 }
 .secTutor .titleArea .titleText {
@@ -379,9 +397,8 @@ section .inner {
 /* setTurtor 두번째 article */
 .secTutor .forStarter {
     padding: 40px 0;
-    display: block;
+    display: block; 
 }
-
 .forStarter .contWrap h2 {
     margin-bottom: 40px;
     font-size: 24px;
@@ -404,13 +421,21 @@ section .inner {
     margin-bottom: 35px;
 }
 .forStarter .textWrap {
-    padding: 0 40px;
+    padding: 0 20px;
 }
 .forStarter .textWrap li {
     margin-bottom: 25px;
     text-align: left;
 }
-
+.forStarter .textWrap .subtitle {
+    font-family: 'GmarketSansMedium';
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.forStarter .textWrap .text span {
+    display: inline;
+}
 /* ai tutoring 하단 */
 .bot {
     padding: 30px 0 50px;
@@ -603,8 +628,12 @@ section .inner {
 
 /* 프로세스 */
 .sec-process {
-    padding-top: 50px;
+    padding-top: 20px;
 }
+.sec-process h2 {
+    font-family: 'GmarketSansMedium';
+}
+.sec-process h2 span {display: block;}
 .sec-process .process-list {
     display: flex;
     flex-direction: column;
@@ -657,7 +686,7 @@ section .inner {
 .sec-process .process-list p {
     line-height: 1.4;
     color: #424242;
-    font-size: 15px;
+    font-size: 16px;
     letter-spacing: -1px;
     text-align: center;
 }

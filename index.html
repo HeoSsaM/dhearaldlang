@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/t/tablet.css" media="screen and (max-width: 1024px)">
-    <link rel="stylesheet" href="css/m/index_mobile.css" media="screen and (max-width: 400px)">
+    <link rel="stylesheet" href="css/m/index_mobile.css" media="screen and (max-width: 768px)">
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
@@ -40,12 +40,12 @@
                     <a href="index.html">
                         <img src="img/common/logo_white.png" alt="디헤럴드FLIP언어교육">
                     </a>
-                </h1>                
+                </h1>
 
                 <div id="gnb" class="gnb" aria-hidden="true">
                     <!-- 모바일 패널 전용 상단바(로고+닫기) -->
                     <div class="mhead">
-                        <a href="/" class="m-logo">
+                        <a href="index.html" class="m-logo">
                             <img src="img/common/logo_black.png" alt="디헤럴드FLIP언어교육">
                         </a>
                         <button class="m-close" id="btnClose" aria-label="메뉴 닫기">
@@ -81,22 +81,19 @@
             </div>
         </header>
         <section class="mainVisual">
-            <div class="mainHero">
-                <div class="mainTitleArea">
-                    <p class="title">
-                        <span>정확한 평가, 목적에 닿는 교육설계</span>
-                        <span>언어교육의 기준을 높여 온 <em>기업교육 전문기업</em></span>
-                    </p>
-                    <p class="text">
-                        <span>정확하고 체계적인 말하기 평가를 기반으로 한</span>
-                        <span>임원교육과 임직원 1:1 맞춤교육 전문기업</span>
-                    </p>
-                    <div class="btnArea">
-                        <button class="btn btnStyle01">교육문의하기</button>
-                        <button class="btn btnStyle02">교육제안서받기</button>
-                    </div>
+            <div class="mainTitleArea">
+                <p class="title">
+                    <span>정확한 평가, 목적에 닿는 교육설계</span>
+                    <span>언어교육의 기준을 높여 온 <em>기업교육 전문기업</em></span>
+                </p>
+                <p class="text">
+                    <span>정확하고 체계적인 말하기 평가를 기반으로 한</span>
+                    <span>임원교육과 임직원 1:1 맞춤교육 전문기업</span>
+                </p>
+                <div class="btnArea">
+                    <button class="btn btnStyle01">교육문의하기</button>
+                    <button class="btn btnStyle02">교육제안서받기</button>
                 </div>
-                <!-- <div class="swiper-pagination"></div> -->
             </div>
         </section>
         <!-- //mainVisual -->
@@ -412,7 +409,7 @@
         <section id="mainTopicArea">
             <h2>매일 업데이트 되는 <span>다양한 분야별 시사토론 컨텐츠</span></h2>
             <div class="inner">
-                <div class="swiper swiper-topic">
+                <div class="swiper swiper-topic" data-run="mobile">
                     <ul class="swiper-wrapper topicList">
                         <li class="swiper-slide">
                             <a href="#">

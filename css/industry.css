@@ -19,11 +19,9 @@ section p {
 }
 
 .mainVisual {
-    position: relative;
-    width: 100%;
     margin-top: 100px;
     height: 760px;
-    background: url(../../img/sub_industry/sub_edu_main01.png) no-repeat center/cover;
+    background: url(../img/sub_industry/sub_edu_main01.png) no-repeat center/cover;
 }
 
 .mainVisual .inner {

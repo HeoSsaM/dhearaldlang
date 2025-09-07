@@ -13,8 +13,7 @@ section h2 {
 
 /* main visual */
 .mainVisual {
-    margin-top: 60px;
-    height: 55vh;
+    background-image: url(../../img/sub_executive/executive_bg.png);
 }
 .mainVisual .mainTitleArea .title {
     margin-bottom: 20px;
@@ -319,3 +318,10 @@ section h2 {
     font-weight: 600;
 }
 
+
+/* 390이하 */
+@media screen and (max-width: 390px) {
+    .mainVisual .mainTitleArea .text span {
+        display: inline;
+    }
+}

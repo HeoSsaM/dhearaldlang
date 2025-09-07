@@ -23,8 +23,18 @@ section p {
 .mainVisual .inner {
     flex-direction: column;
 }
+.mainVisual .mainTitleArea .text {
+    width: 100%;
+}
+.mainVisual .mainTitleArea h2 {
+    color: #fff;
+    font-size: 24px;
+}
 .mainVisual .mainTitleArea strong {
     color: var(--color-point-green);
+}
+.mainVisual .mainTitleArea .text {
+    font-weight: 400;
 }
 .mainVisual .btnArea {
     text-align: center;
@@ -302,19 +312,16 @@ section p {
 }
 
 .plan .circle-wrap {
+    width: 85%;
     height: auto;
     margin: 0 auto 40px;
-    padding: 25px;
-    border-radius: 60px;
-}
-
-.plan .circle-wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+    border-radius: 20px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;  
     text-align: center;
+    gap: 0;
 }
 
 .plan .circle-wrap .circle {
@@ -322,18 +329,26 @@ section p {
 }
 
 .plan .circle-wrap img {
-    width: 80%;
+    width: 55%;
 }
 
 .plan .bar-wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    text-align: center;
+    width: 85%;
+    height: auto;
+    margin: 0 auto 40px;
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;  
+    text-align: center;    
+    gap: 20px;
 }
+.plan .bar-wrap > div {
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
 
+}
 .plan .bar-wrap img {
     width: 85%
 }

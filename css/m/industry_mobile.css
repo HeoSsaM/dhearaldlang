@@ -2,6 +2,9 @@
 @import url(mobile_common.css);
 
 /* mainVisual */
+.mainVisual {
+    background-image: url(../../img/sub_industry/sub_edu_main01.png);
+}
 .mainVisual .inner {
     position: relative;
 }
@@ -46,8 +49,7 @@
 
 /* esp */
 .esp {
-    /* background: url(../../img/sub_industry/whyneed_bg.png) no-repeat center/cover; */
-    background: var(--bg-light-gray);
+    background: url(../../img/sub_industry/whyneed_bg.png) no-repeat center/cover;
     padding: 60px 0;
 }
 .esp .inner {
@@ -59,15 +61,16 @@
     margin-bottom: 30px;
 }
 .esp .why .titleArea h2  {
+    font-size: 20px;
     border-radius: 50px;
     overflow: hidden;    
 }
 .esp .why .titleArea h2 span {
-    color: var(--color-content-blue);
-    border-color: var(--color-content-blue);
+    color: #fff;
+    border-color:#fff;
 }
 .esp .why .titleArea .titleText {
-    color: #000
+    color: #fff;
 }
 .esp .why .line {
     display: none;
@@ -80,12 +83,19 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
 }
+.esp .why .comp>div {
+    padding: 20px;
+}
 .esp .why .comp .esp_eng {
     outline: 2px solid #fff;
     background: linear-gradient(135deg, #12508C 0%, #187BA8 100%);
 }
 .esp .why .comp>div>ul {
     padding: 0 20px;
+}
+.esp .why .comp>div>ul li {
+    padding: 8px 0 8px 18px;
+    font-size: 17px;
 }
 .esp .compInfo {
     margin-bottom: 40px;
@@ -99,17 +109,20 @@
 
 .esp .compInfo .features .item {
     position: relative;
-    display: flex;
-    flex-direction: row;
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
     gap: 20px;
+    margin-bottom: 15px;
 }
 .esp .compInfo .features .item .title {
     font-size: 18px;
+    margin-top: 0;
     margin-bottom: 10px;
     text-align: left;
     padding-left: 25px;
-    color: #000
+    color: #fff
 }
 .esp .compInfo .features .item .title::before {
     top: 8px; left: 0;
@@ -118,25 +131,22 @@
     width: 14px;
 }
 .esp .compInfo .features .item img {
-    display: block;
-    width: 80px;
-    margin-bottom: 30px;
+    width: 65px;
     text-align: center;
-    margin: 0 auto 40px;
 }
 .esp .compInfo .features .item p+p {
-    color: #000
+    color: #fff
 }
 .esp .compInfo .btnArea {
     margin-top: 25px;
 }
 
 /* esp flow */
-
 .esp .flow {
+    width: 100%;
     padding: 45px 20px 45px;
     background: linear-gradient(135deg, #223569, #343b5a);
-    border-radius: 50px;
+    border-radius: 20px;
 }
 
 .esp .flow .logo_white {
@@ -186,7 +196,7 @@
     margin-bottom: 0;
 }
 .esp .flow .curriList li {
-    padding: 20px;
+    padding: 15px;
     width: auto;
     height: auto;
     border-radius: 10px;
@@ -201,13 +211,14 @@
     font-size: 18px;
     margin-bottom: 10px;
 }
-
+.esp ul li .solText p {
+    font-size: 15px;
+}
 .esp .flow .btnArea {
     margin-top: 25px;
 }
 .esp .flow .btnArea .btn {
-    width: auto;
-    padding: 20px 20px;
-    height: auto;
-    line-height: 1;
+    width: 240px;
+    height: 46px;
+    margin-bottom: 10px;
 }

@@ -5,7 +5,9 @@ section+section {
 section strong {
     color: var(--color-content-blue)
 }
-
+section h2 {
+    font-size: 44px;
+}
 section h3 {
     color: var(--category-bg);
     font-size: 20px;
@@ -13,9 +15,11 @@ section h3 {
     text-align: center;
 }
 
-section p {
+section .text {
+    font-size: 26px;
     line-height: 1.5;
     word-break: keep-all;
+    margin-bottom: 25px;
 }
 
 .mainVisual {
@@ -38,12 +42,9 @@ section p {
     width: 45%;
 }
 
-.mainTitleArea .title {
-    margin-bottom: 25px;
-    font-family: 'NEXON Lv2 Gothic';
-    font-size: 40px;
-    font-weight: 700;
-    color: #fff
+.mainTitleArea h2 {
+    text-align: left;
+    line-height: 1.4;
 }
 
 .mainTitleArea strong {
@@ -232,7 +233,7 @@ section p {
 }
 
 .overview .titleText {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 56px;
 }
 
@@ -265,10 +266,6 @@ section p {
     color: var(--color-content-blue)
 }
 
-.overview .textArea .text {
-    font-size: 24px;
-}
-
 .overview .textArea .text span+span {
     font-weight: 600;
 }
@@ -293,12 +290,6 @@ section p {
 .overview .contRefined h2 img {
     margin-left: 10px;
 }
-
-.overview .contRefined .titleArea .text {
-    font-size: 24px;
-    font-weight: 500;
-}
-
 .overview .contRefined .resources img {
     width: 650px;
 }
@@ -320,9 +311,7 @@ section p {
 .overview .hspt .text {
     width: 70%;
     margin: 0 auto 50px;
-    font-size: 20px;
     color: rgba(0, 0, 0, 0.8);
-    font-weight: 500;
 }
 
 .overview .hspt .text>span {

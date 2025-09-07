@@ -3,7 +3,7 @@
   const BREAKPOINT_PX = 769;
 
   if (!window.Swiper) {
-    console.warn('[swiper] Swiper 라이브러리가 로드되지 않았습니다.');
+    console.warn("[swiper] Swiper 라이브러리가 로드되지 않았습니다.");
     return;
   }
 
@@ -11,20 +11,10 @@
 
   // 공통 CONFIGS (필요없는 항목은 지워도 됨)
   const CONFIGS = [
-    {
-      selector: '.swiper-topic',
-      mode: 'pc', // 기본은 PC 전용
-      options: (el) => ({
-        slidesPerView: 3,
-        spaceBetween: 30,
-        observer: true,
-        observeParents: true,
-      }),
-    },
-    {
+       {
       // 배너는 기본적으로 항상 실행 + 반응형
-      selector: '.partnerBanner',
-      mode: 'always',
+      selector: ".partnerBanner",
+      mode: "always",
       options: (el) => ({
         spaceBetween: 0,
         loop: true,
@@ -36,7 +26,7 @@
         observer: true,
         observeParents: true,
         breakpoints: {
-          0:   { slidesPerView: 3 },
+          0: { slidesPerView: 3 },
           430: { slidesPerView: 4 },
           769: { slidesPerView: 5 },
         },
@@ -44,14 +34,14 @@
     },
     {
       // 회사소개 리뷰(기본은 PC 전용, 필요시 HTML에서 data-run="always")
-      selector: '.myCase',
-      mode: 'pc',
+      selector: ".myCase",
+      mode: "pc",
       options: (el) => ({
-        slidesPerView: 'auto',
+        slidesPerView: "auto",
         centeredSlides: true,
         spaceBetween: 10,
         pagination: {
-          el: el.querySelector('.swiper-pagination') || undefined,
+          el: el.querySelector(".swiper-pagination") || undefined,
           clickable: true,
         },
         observer: true,
@@ -60,8 +50,8 @@
     },
     {
       // 기업맞춤교육 - 수업목표 (PC 기본값)
-      selector: '.swiper-goal-steps',
-      mode: 'pc',
+      selector: ".swiper-goal-steps",
+      mode: "pc",
       options: (el) => ({
         // common-swiper의 2.5장/centered + custom-swiper의 1장 PC전용 중 택1
         // 여기선 PC 기본을 2.5장으로 두고, 모바일은 data-run으로 on/off 조절 권장
@@ -69,7 +59,7 @@
         spaceBetween: 25,
         centeredSlides: false,
         pagination: {
-          el: el.querySelector('.swiper-pagination') || undefined,
+          el: el.querySelector(".swiper-pagination") || undefined,
           clickable: true,
         },
         observer: true,
@@ -80,8 +70,8 @@
 
   // data-run="pc|mobile|always" 우선
   function shouldRun(mode, isPC) {
-    if (mode === 'pc') return isPC;
-    if (mode === 'mobile') return !isPC;
+    if (mode === "pc") return isPC;
+    if (mode === "mobile") return !isPC;
     return true; // 'always'
   }
 
@@ -90,7 +80,8 @@
 
     // (선택) data-breakpoints, data-slides-per-view 등으로 덮어쓰기 하고 싶다면
     // 여기서 el.dataset을 읽어 옵션 병합하도록 확장 가능.
-    const opts = typeof cfg.options === 'function' ? cfg.options(el) : (cfg.options || {});
+    const opts =
+      typeof cfg.options === "function" ? cfg.options(el) : cfg.options || {};
     const inst = new Swiper(el, opts);
     instances.set(el, inst);
     return inst;
@@ -99,20 +90,23 @@
   function destroyInstance(el) {
     const inst = instances.get(el);
     if (!inst) return;
-    try { inst.destroy(true, true); } catch (e) {}
+    try {
+      inst.destroy(true, true);
+    } catch (e) {}
     instances.delete(el);
   }
 
   function updateAll() {
     const isPC = window.innerWidth >= BREAKPOINT_PX;
 
-    CONFIGS.forEach(cfg => {
+    CONFIGS.forEach((cfg) => {
       const nodes = document.querySelectorAll(cfg.selector);
-      nodes.forEach(el => {
-        const override = (el.dataset.run || '').toLowerCase();
-        const mode = (override === 'pc' || override === 'mobile' || override === 'always')
-          ? override
-          : cfg.mode;
+      nodes.forEach((el) => {
+        const override = (el.dataset.run || "").toLowerCase();
+        const mode =
+          override === "pc" || override === "mobile" || override === "always"
+            ? override
+            : cfg.mode;
 
         const need = shouldRun(mode, isPC);
         if (need) {
@@ -124,14 +118,14 @@
     });
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', updateAll);
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", updateAll);
   } else {
     updateAll();
   }
 
   let raf = null;
-  window.addEventListener('resize', () => {
+  window.addEventListener("resize", () => {
     if (raf) cancelAnimationFrame(raf);
     raf = requestAnimationFrame(updateAll);
   });

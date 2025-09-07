@@ -13,9 +13,8 @@ section h2 {
 
 /* main visual */
 .mainVisual {
-    height: 55vh;
+    margin-top: ;
 }
-
 .mainTitleArea .title span {
     font-size: 24px;
 }
@@ -367,4 +366,11 @@ section h2 {
 #secReviews .contactArea .text strong {
     font-weight: 600;
     color: #fff;
+}
+
+/* 390이사 */
+@media screen and (max-width: 390px) {
+    #secEduPhil .eduPhilText .text strong {
+        display: inline;
+    }
 }

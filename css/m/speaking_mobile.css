@@ -2,16 +2,26 @@
 @import url(mobile_common.css);
 
 .mainVisual {
-    background-size: auto 120%;
+    background-image: url(../../img/sub_speaking/m_hero_bg1.png);
+    background-position: center bottom;
+}
+.mainVisual::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+    z-index: 0;
 }
 .mainVisual .inner {
     justify-content: center;
 }
 .mainVisual .mainTitleArea {
+    position: relative;
     width: 90%;
     height: auto;
     text-align: left;
     align-items: flex-start;
+    z-index: 5;
 }
 
 .mainVisual .mainTitleArea h2 {
@@ -19,15 +29,21 @@
     font-size: 24px;
     margin-bottom: 30px;
     text-align: left;
+    color: #fff;
 }
 .mainVisual .mainTitleArea h2 span {
     font-size: 18px;
+    color: var(--color-point-green)
 }
 .mainVisual .mainTitleArea .titleText {
     margin-bottom: 25px;
     font-size: 18px;   
     word-break: keep-all;
     letter-spacing: -1px;
+}
+.mainVisual .mainTitleArea .titleText span {
+    color: #fff;
+    font-weight: 400;
 }
 .mainVisual .mainTitleArea .btnArea {
     text-align: center;
@@ -42,7 +58,7 @@
 
 /* 모의테스트 특장점 */
 .sec-benefit {
-    padding: 30px 0 40px;
+    padding: 50px 0 40px;
     background: #f1f1f1
 }
 .sec-benefit .titleArea h2 img {
@@ -95,7 +111,7 @@
 .sec_hspi {
     padding: 0 0 50px;
     height: auto;
-    background: #4c6ed0 url(../../../img/sub_speaking/m_mid_bg.png) no-repeat center top/100%;
+    background: #4c6ed0 url(../../img/sub_speaking/m_mid_bg.png) no-repeat center top/100%;
 }
 .sec_hspi .titleArea {
     width: 90%;
@@ -206,7 +222,7 @@
 .sec-speak .flow-tags .flow {
     flex: 1;
     height: auto;
-    background-size: 50px, cover;
+    background-size: 40px, cover;
     margin-bottom: 0;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border: none;
@@ -419,4 +435,72 @@
 .bottomText .btn {
     width: auto;
     padding: 0 20px;
+}
+
+@media screen and (max-width: 390px) {
+    .mainVisual .mainTitleArea .titleText {
+        font-size: 17px;
+    }
+    .mainVisual .mainTitleArea .btnArea .btn {
+        width: 220px;
+        height: 44px;
+        margin-bottom: 10px;
+    }
+    .sec-benefit .benefit-list {
+        gap: 10px;
+    }
+    .sec-benefit .benefit-list .card_bg {
+        height: 160px;
+        padding: 10px;
+    }
+    .sec-benefit .benefit-list .card_bg h3 {
+        font-size: 17px;
+        letter-spacing: -1px;
+    }
+    .sec-benefit .benefit-list .card_bg h3 strong {
+        font-size: 17px;
+    }
+    .sec-benefit .benefit-list>div p {
+        font-size: 15px;
+    }
+    .sec-benefit .btn {
+        margin-bottom: 10px;
+    }
+    .sec_hspi .titleArea {
+        margin-top: 350px;
+    }
+    .sec_hspi .titleArea h2 {
+        font-size: 20px;;
+    }
+    .sec_hspi .titleArea p {
+        font-size: 16px;
+    }
+    .sec_hspi .btn {margin-bottom: 10px;}
+    .sec-speak h2 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .sec-speak .criteria {
+        width: 92%;
+        margin: 0 auto;
+    }
+    .sec-speak .criteria .crit-list {
+        width: 100%;
+    }
+    .sec-speak .criteria .crit-list li .img {
+        width: 90px;
+        height: 90px;
+    }
+    .sec-speak .criteria .crit-list li .img img {
+        width: 50px;
+    }
+    .sec-speak .criteria .crit-list li span {
+        font-size: 15px;
+    }
+    .sec-speak .flow-process .tag-list span {
+        padding: 6px 10px;
+    }
+    .usage-box .usage-list {
+        width: 80%;
+    }
 }

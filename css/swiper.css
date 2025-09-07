@@ -41,3 +41,6 @@
   width: 260px;
   height: 260px;
 }
+
+/* main-topc */
+.swiper-topic { overflow: visible; }
