@@ -209,7 +209,7 @@ body.no-scroll {
 /* //section */
 section h2 {
     font-size: clamp(24px, 5vw, 44px);
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 30px;
 }
 

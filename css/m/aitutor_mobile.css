@@ -63,6 +63,7 @@ section .inner {
     font-family: 'GmarketSansMedium';
     font-weight: 600;
     margin-bottom: 40px;
+    font-size: 20px;
 }
 .aiCoatch-area .coach-intro h2 em {
     margin-bottom: 0;
@@ -358,8 +359,11 @@ section .inner {
 }
 .secTutor .titleArea .titleText {
     font-size: 22px;
+    font-family: 'GmarketSansMedium';
 }
-
+.secTutor .titleArea .titleText strong {
+    color: #ff6446
+}
 .secTutor .titleArea .titleText span {
     color: #353536
 }
@@ -694,4 +698,14 @@ section .inner {
 .sec-process .process-list p span {
     color: #000;
     font-weight: 600;
+}
+
+@media screen and (max-width: 390px) {
+    .sec-ai .scanText .titleText {
+        font-size: 20px;
+    }
+    .aiCoatch-area .coach-intro h2 {
+        font-size: 22px;
+    }
+    
 }
