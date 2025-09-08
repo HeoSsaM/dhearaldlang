@@ -30,7 +30,9 @@ section h2 {
     font-size: 17px;
     margin-bottom: 60px;
 }
-
+.mainTitleArea .btnArea .btn + .btn {
+    margin-top: 20px;
+}
 /* topic */
 /* mainTopicArea */
 #mainTopicArea {
