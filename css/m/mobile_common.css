@@ -58,7 +58,8 @@
     z-index: 1100;
     pointer-events: none;
     transition: right .35s ease;
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .gnb.open {
@@ -78,6 +79,7 @@
     position: sticky;
     top: 0;
     z-index: 1;
+    order: -1;
 }
 
 .m-logo img {
@@ -87,11 +89,12 @@
 
 #btnClose {
     display: block;
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     background: none;
     border: 0;
     padding: 0;
+    margin-left: 25px;
 }
 
 #btnClose img {
@@ -107,13 +110,12 @@
 
 .gnb .nav .menu {
     display: grid;
-    gap: 8px;
+    gap: 12px;
 }
 
 .gnb .nav a {
     color: #111;
     text-align: center;
-    padding: 12px 10px;
     font-size: 18px;
     line-height: 1.6;
 }
@@ -122,7 +124,7 @@
 .utilNav {
     position: absolute;
     left: 50%;
-    bottom: 100px;
+    bottom: 50px;
     transform: translateX(-50%);
     width: 100%;
 }
@@ -210,12 +212,11 @@ body.no-scroll {
 /* //section */
 section h2 {
     font-size: clamp(24px, 5vw, 44px);
-    font-weight: 700;
     margin-bottom: 30px;
 }
 
 section .titleText {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
     margin-bottom: 40px;
 }

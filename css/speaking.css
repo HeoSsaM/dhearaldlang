@@ -42,11 +42,7 @@ section p {
 }
 
 .mainVisual .mainTitleArea h2 {
-    font-family: 'NEXON Lv2 Gothic';
-    font-size: 40px;
-    font-weight: 700;
     color: #000;
-    margin-bottom: 80px;
     text-align: left;
 }
 
@@ -59,8 +55,7 @@ section p {
 
 .mainVisual .mainTitleArea .titleText {
     text-align: left;
-    margin-bottom: 40px;
-    font-size: 22px;   
+    margin-bottom: 20px;
 }
 
 .mainVisual .mainTitleArea .titleText span {

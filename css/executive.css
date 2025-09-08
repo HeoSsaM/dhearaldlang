@@ -36,13 +36,15 @@ section p {
 .mainVisual .mainTitleArea .title {
     color: #fff;
     font-family: 'NEXON Lv2 Gothic';
-    font-size: 34px;
-    font-weight: bold;
+    font-size: 44px;
+    font-weight: 700;
     margin-bottom: 50px;    
 }
-
+.mainVisual .mainTitleArea .title span {
+    display: block;
+}
 .mainVisual .mainTitleArea .text {
-    font-size: 20px;
+    font-size: 24px;
     color: #fff;
 }
 .mainVisual .mainTitleArea .text p + p {

@@ -38,21 +38,6 @@ html {
     --font-size-small: 14px;
     /* 보조 텍스트 */
 }
-
-@font-face {
-    font-family: 'NEXON Lv2 Gothic';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-weight: 400;
@@ -282,14 +267,15 @@ body.no-scroll {
 /* ========================= section ================================== */
 section h2 {
     font-family: 'NEXON Lv2 Gothic';
-    font-size: 36px;
+    font-size: 44px;
     font-weight: 700;
     margin-bottom: 30px;
     text-align: center;
+    letter-spacing: -1px;
 }
 
 section .titleText {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.5;
     font-weight: 500;
     text-align: center;

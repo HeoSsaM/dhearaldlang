@@ -39,7 +39,6 @@ section p {
 .mainVisual .mainTitleArea h2 {
     text-align: left;
     color: #fff;
-    margin-bottom: 80px;
 }
 
 .mainVisual .mainTitleArea p {
@@ -53,7 +52,7 @@ section p {
 
 .mainTitleArea .titleText {
     text-align: left;
-    color: rgba(255, 255, 255, 0.7)
+    color: rgba(255, 255, 255, 0.9)
 }
 
 .mainVisual .btnArea .btn {
