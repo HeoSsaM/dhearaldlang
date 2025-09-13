@@ -211,7 +211,7 @@ body.no-scroll {
 }
 /* //section */
 section h2 {
-    font-size: clamp(24px, 5vw, 44px);
+    font-size: clamp(26px, 5vw, 44px);
     margin-bottom: 30px;
 }
 
@@ -295,5 +295,9 @@ body.hidden {
     width: 34px;
 }
 
-
+@media screen and (max-width: 440px) {
+    .btnArea .btn {
+        margin-bottom: 10px;
+    }
+}
 

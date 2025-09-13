@@ -23,6 +23,7 @@ section p {
 .mainVisual {
     position: relative;
     width: 100%;
+    margin-top: 100px;
     height: 760px;
     background: #f5f9fd url(../img/sub_junior/sub_junior_main.png) no-repeat center/100% 100%;
 }
@@ -131,23 +132,27 @@ section p {
 .sec-edu-cont02 .edu-content {
     margin-bottom: 80px;
 }
+
 .sec-edu-cont02 h2 {
     font-size: 40px;
     line-height: 1.4;
 }
+
 .sec-edu-cont02 .titleText {
     font-size: 22px;
-    font-family: 'NEXON Lv2 Gothic'; 
+    font-family: 'NEXON Lv2 Gothic';
     font-weight: 700;
     margin-bottom: 40px;
 }
+
 .sec-edu-cont02 .titleText span {
     display: block;
 }
+
 .sec-edu-cont02 .text {
     font-size: 18px;
     font-weight: 500;
-    color:#3f4b6d
+    color: #3f4b6d
 }
 
 .sec-edu-cont02 .text span {
@@ -196,9 +201,11 @@ section p {
     border-radius: 40px;
     margin-bottom: 70px;
 }
+
 .sec-teacher .titleArea {
     margin-bottom: 60px;
 }
+
 .sec-teacher .titleArea .text {
     margin-bottom: 25px;
     font-size: 20px;
@@ -253,9 +260,11 @@ section p {
     align-items: flex-start;
     gap: 30px
 }
-.sec-teacher .teacher-cards > div {
+
+.sec-teacher .teacher-cards>div {
     flex: 1;
 }
+
 .sec-teacher .teacher-cards .card .slogan {
     position: relative;
     background: #fff;
@@ -727,26 +736,35 @@ section p {
     height: 860px;
     background: #b5c7f5 url(../img/sub_junior/sub_junior_img04.png) no-repeat center
 }
-.sec-dogo .titleArea .h_logo {margin-bottom: 40px;}
+
+.sec-dogo .titleArea .h_logo {
+    margin-bottom: 40px;
+}
+
 .sec-dogo .titleArea h2 {
     text-align: left;
 }
+
 .sec-dogo .titleArea .titleText {
     margin-bottom: 30px;
     font-size: 18px;
     text-align: left;
     color: #444
 }
+
 .sec-dogo .titleArea .titleText span {
     display: block;
 }
+
 .sec-dogo .titleArea .titleText em {
     font-weight: 600;
     color: #000
 }
+
 .sec-dogo .floating-msg {
     position: absolute;
-    bottom: -30%; left: 50%;
+    bottom: -30%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
 }
@@ -759,16 +777,22 @@ section p {
     background-color: #b5c7f5;
     padding-bottom: 0;
 }
+
 .sec-manage .box_round {
     padding: 120px 0;
     border-radius: 0 400px 0 0;
     background: #f7f7f7;
 }
+
 .sec-manage .inner {
-    width: 1080px;
-    
+    max-width: 1080px;
+
 }
-.sec-manage .manageImg {text-align: center;}
+
+.sec-manage .manageImg {
+    text-align: center;
+}
+
 .sec-manage.manage-area01 .manage_top {
     position: relative;
     display: flex;
@@ -776,87 +800,115 @@ section p {
     align-items: flex;
     z-index: 2;
 }
-.manage_top .h_logo {margin-bottom: 40px;}
+
+.manage_top .h_logo {
+    margin-bottom: 40px;
+}
+
 .manage_top .titleArea {
     width: 45%;
 }
+
 .manage_top .titleArea h2 {
     text-align: left;
     line-height: 1.4;
 }
+
 .manage_top .titleArea .titleText {
     text-align: left;
 }
+
 .manageImg {
     text-align: center;
 }
-.manageImg img + img {
+
+.manageImg img+img {
     width: 500px;
 }
+
 /* 결론 */
 .sec-summary {
     height: 640px;
     background: url(../img/sub_junior/sub_junior_img06.png) no-repeat center /cover;
 }
+
 .sec-summary .inner {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
+
 .sec-summary .titleArea {
     width: 40%;
     color: #fff;
 }
+
 .sec-summary .titleArea h2 {
     text-align: left;
     line-height: 1.4;
     margin-bottom: 60px;
 }
+
 .sec-summary .titleText {
     text-align: left;
     margin-bottom: 30px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.8);
 }
+
 .sec-summary .titleText span {
     display: block;
 }
+
 .sec-summary .titleText strong {
     color: #fff;
 }
 
 /* 하단 */
-.sec-learn {background: #f3f2f7;}
+.sec-learn {
+    background: #f3f2f7;
+}
+
 .sec-learn .learn-cont-wrap {
     margin-bottom: 100px;
 }
+
 .learn-cont-wrap .learn-cont-top {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
 }
+
 .learn-cont-wrap .learn-cont-top h2 {
     text-align: left;
     margin-bottom: 80px;
 }
+
 .learn-cont-wrap .learn-cont-top .titleText {
     text-align: left;
     margin-bottom: 50px;
 }
+
 .learn-cont-wrap .learn-cont-top img {
     width: 440px;
 }
-.learn-cont-mid {text-align: center;}
+
+.learn-cont-mid {
+    text-align: center;
+}
+
 .learn-cont-mid .sub-copy {
     text-align: center;
     font-size: 22px;
     margin-bottom: 40px;
 }
+
 .learn-cont-mid em {
     font-size: 19px;
     font-weight: 600;
 }
+
 .learn-cont-mid h3,
 .learn-cont-mid .slogan {
     font-size: 40px;

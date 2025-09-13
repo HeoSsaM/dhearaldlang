@@ -25,6 +25,7 @@
 }
 
 .mainVisual .mainTitleArea p {
+    font-size: 18px;
     margin-bottom: 20px;
     text-align: center;
     word-break: keep-all;
