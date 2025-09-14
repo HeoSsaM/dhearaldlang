@@ -50,8 +50,8 @@
 
 /* esp */
 .esp {
-    background: url(../../img/sub_industry/whyneed_bg.png) no-repeat center/cover;
-    padding: 60px 0;
+    background: none;
+    padding: 50px 0;
 }
 .esp .inner {
     max-width: 94%;
@@ -67,12 +67,15 @@
     overflow: hidden;    
 }
 .esp .why .titleArea h2 span {
-    color: #fff;
-    border-color:#fff;
+    color:#1e3893;
+    border-color: #1e3893;
     padding: 15px 20px;
 }
 .esp .why .titleArea .titleText {
-    color: #fff;
+    color: #000;
+    font-weight: 600;
+    margin: 0 25px;
+
 }
 .esp .why .line {
     display: none;
@@ -87,6 +90,7 @@
 }
 .esp .why .comp>div {
     padding: 20px;
+    box-shadow: none;
 }
 .esp .why .comp .esp_eng {
     outline: 2px solid #fff;
@@ -114,8 +118,10 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    align-items: start;
-    gap: 20px;
+    border-radius: 15px;
+    border: 1px solid #cdcdcd;
+    justify-items: center;
+    align-items: center;
     margin-bottom: 15px;
 }
 .esp .compInfo .features .item .title {
@@ -124,7 +130,7 @@
     margin-bottom: 10px;
     text-align: left;
     padding-left: 25px;
-    color: #fff
+    color: #000
 }
 .esp .compInfo .features .item .title::before {
     top: 8px; left: 0;
@@ -132,12 +138,29 @@
     transform: rotate(-90deg);
     width: 14px;
 }
-.esp .compInfo .features .item img {
-    width: 65px;
+.esp .compInfo .features .item figure {
+   /*  position: absolute;
+    top: 50%; left: 10px;
+    transform: translateY(-50%); */
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(45deg, #f7f4f4, #f0f0f0);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
+.esp .compInfo .features .item figure img {
+    width: 44px;
+    margin: 0;
+}
+.esp .compInfo .features .item > div {
+    
+    padding: 20px;
+}
 .esp .compInfo .features .item p+p {
-    color: #fff
+    color: #000
 }
 .esp .compInfo .btnArea {
     margin-top: 25px;

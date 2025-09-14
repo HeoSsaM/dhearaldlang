@@ -64,11 +64,10 @@
 }
 
 .mainVisual .mainTitleArea .btnArea .btn {
-    width: auto;
+    width: 220px;
     padding: 12px 10px;
     line-height: 0;
     font-size: 16px;
-    margin: 0;
 }
 
 /* 모의테스트 특장점 */
@@ -100,7 +99,7 @@
 }
 
 .sec-benefit .titleArea h2+p span {
-    display: inline-block;
+    display: inline;
 }
 
 .sec-benefit .benefit-list {
@@ -184,7 +183,8 @@
 }
 
 .sec-speak .criteria {
-    margin-bottom: 60px;
+    width: 90%;
+    margin: 0 auto 50px;
 }
 
 .sec-speak .criteria .crit-list {
@@ -194,6 +194,16 @@
     place-items: center;
     align-items: start;
     margin-bottom: 20px;
+}
+
+.sec-speak .criteria .crit-list li .img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 5px;
+}
+
+.sec-speak .criteria .crit-list li .img img {
+    width: 44px;
 }
 
 .sec-speak .criteria .crit-list strong {
@@ -255,7 +265,12 @@
     flex-direction: column;
     gap: 20px;
 }
-.sec-speak .flow-tags .flow {margin-bottom: 0; text-align: center;}
+
+.sec-speak .flow-tags .flow {
+    margin-bottom: 0;
+    text-align: center;
+}
+
 .sec-speak .flow-tags .flow.flow01 {
     flex: 1;
     height: auto;
@@ -264,13 +279,16 @@
     border: none;
     background: url(../../img/sub_speaking/bg-gradient.jpg) no-repeat left top;
 }
+
 .sec-speak .flow-tags .flow.flow02 {
     background: url(../../img/sub_speaking/bg-gradient.jpg) no-repeat center;
     margin-bottom: 0;
 }
+
 .sec-speak .flow-tags .flow.flow03 {
     background: url(../../img/sub_speaking/bg-gradient.jpg) no-repeat right top
 }
+
 .sec-speak .flow-tags .flow .desc span {
     display: block;
     font-weight: 600;
@@ -566,22 +584,17 @@
         font-weight: 600;
     }
 
-    .sec-speak .criteria {
-        width: 92%;
-        margin: 0 auto;
-    }
-
     .sec-speak .criteria .crit-list {
         width: 100%;
     }
 
     .sec-speak .criteria .crit-list li .img {
-        width: 90px;
-        height: 90px;
+        width: 80px;
+        height: 80px;
     }
 
     .sec-speak .criteria .crit-list li .img img {
-        width: 50px;
+        width: 44px;
     }
 
     .sec-speak .criteria .crit-list li span {
@@ -591,6 +604,7 @@
     .sec-speak .flow-process .tag-list {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .sec-speak .flow-process .tag-list span {
         padding: 8px 15px;
     }
@@ -598,6 +612,7 @@
     .usage-box .usage-list {
         width: 80%;
     }
+
     .usage-box .usage-list li {
         padding: 10px 20px
     }
@@ -606,9 +621,11 @@
     .sec-logos h2 {
         font-size: 22px;
     }
+
     .sec-logos .inner {
         padding: 0 4%;
     }
+
     .sec-logos .titleText {
         font-size: 17px;
         letter-spacing: -1px;

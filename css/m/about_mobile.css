@@ -13,7 +13,6 @@ section h2 {
 
 /* main visual */
 .mainVisual {
-    margin-top: ;
 }
 .mainTitleArea .title span {
     font-size: 24px;
@@ -163,9 +162,9 @@ section h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 25px;
+    color: #fff;
 }
-
 #secWhyus .whyusCard>div h3 {
     color: #fff;
 }
@@ -228,7 +227,6 @@ section h2 {
 #secEduPhil .philPoints>div {
     position: relative;
     width: 100%;
-    text-align: center;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 15px;
@@ -251,7 +249,10 @@ section h2 {
     margin-bottom: 15px;
     font-size: 17px;
 }
-
+#secEduPhil .philPoints>div p {
+    font-size: 17px;
+    letter-spacing: -1px;
+}
 #secEduPhil .philPoints>div img {
     width: 32px;
     display: inline-block;
@@ -325,13 +326,13 @@ section h2 {
 }
 
 .caseCard p {
+    margin-top: 10px;
     margin-bottom: 20px;
-    font-size: 15px;
     word-break: keep-all;
 }
-
+.caseCard p br {display: none;}
 .caseCard p span {
-    display: block;
+    display: inline;
 }
 .caseCard .author span {
     position: relative;
@@ -343,7 +344,7 @@ section h2 {
 }
 
 .reviewBg>.text {
-    margin-top: 10px;
+    margin-top: 0;
     text-align: center;
     color: rgba(255,255,255,0.7);
     font-size: 14px;
@@ -361,6 +362,7 @@ section h2 {
 #secReviews .contactArea .text {
     color: #fff;
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
 #secReviews .contactArea .text strong {

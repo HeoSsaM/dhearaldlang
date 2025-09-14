@@ -22,12 +22,16 @@ section h2 {
     text-align: center;
 }
 .mainTitleArea .title>span {
+    display: inline;
     font-size: 24px;
     margin-bottom: 5px;
 }
 .mainVisual .mainTitleArea .text {
     font-size: 18px;
     color: rgba(255, 255, 255, 0.85)
+}
+.mainVisual .mainTitleArea .text span {
+    display: inline;
 }
 .mainTitleArea .text p + p {
     margin-bottom: 25px;
@@ -41,10 +45,11 @@ section h2 {
 
 .secIntro .slogan span {
     display: block;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     padding: 10px 30px;
     margin-bottom: 30px;
+    line-height: 1.2;
 }
 
 .secIntro .slogan span em {
@@ -61,7 +66,7 @@ section h2 {
 }
 
 .secIntro .desc {
-    font-size: 16px;
+    font-size: 17px;
     text-align: center;
     margin-bottom: 15px;
 }
@@ -320,8 +325,6 @@ section h2 {
 
 
 /* 390이하 */
-@media screen and (max-width: 390px) {
-    .mainVisual .mainTitleArea .text span {
-        display: inline;
-    }
+@media screen and (max-width: 430px) {
+    
 }

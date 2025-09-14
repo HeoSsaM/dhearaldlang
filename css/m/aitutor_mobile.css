@@ -34,7 +34,7 @@ section .inner {
 }
 
 .aiCoatch-area .coach-intro .titleText span {
-    font-family: 'GmarketSansMedium';
+    font-family: 'GmarketSans';
     font-size: 20px;
     font-weight: 400;
     color: #000;
@@ -60,7 +60,7 @@ section .inner {
 }
 
 .aiCoatch-area .coach-intro h2 {
-    font-family: 'GmarketSansMedium';
+    font-family: 'GmarketSans';
     font-weight: 600;
     margin-bottom: 40px;
     font-size: 20px;
@@ -78,7 +78,7 @@ section .inner {
 }
 
 .aiCoatch-area .coach-result h3 {
-    font-family: 'GmarketSansMedium';
+    font-family: 'GmarketSans';
     font-size: 22px;
     color: #000;
     margin-bottom: 60px;
@@ -204,7 +204,7 @@ section .inner {
 }
 
 .sec-ai .scanText .titleText {
-    font-family: 'GmarketSansMedium';
+    font-family: 'GmarketSans';
     font-size: 22px;
     margin-bottom: 20px;
 }
@@ -248,15 +248,11 @@ section .inner {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     margin-top: 50px;
 }
-
+.sec-coach .titleArea p br {display: none;}
+.sec-coach .titleArea p span {display: inline;}
 .sec-coach .titleArea p {
     margin-bottom: 0;
 }
-
-.sec-coach .titleArea p+p {
-    margin-top: 25px;
-}
-
 .sec-coach .titleArea .logo {
     bottom: 10px;
 }
@@ -353,13 +349,13 @@ section .inner {
 }
 
 .secTutor .titleArea h2 {
-    font-family: 'GmarketSansMedium';
+    font-family: 'GMarketSans';
     font-weight: 500;
     margin-bottom: 30px;
 }
 .secTutor .titleArea .titleText {
     font-size: 22px;
-    font-family: 'GmarketSansMedium';
+    font-family: 'GMarketSans';
 }
 .secTutor .titleArea .titleText strong {
     color: #ff6446
@@ -432,10 +428,14 @@ section .inner {
     text-align: left;
 }
 .forStarter .textWrap .subtitle {
-    font-family: 'GmarketSansMedium';
+    font-family: 'GmarketSans';
     font-size: 20px;
     font-weight: 500;
     padding-bottom: 10px;
+}
+.forStarter .textWrap .text {
+    font-size: 18px;
+    letter-spacing: -1px;
 }
 .forStarter .textWrap .text span {
     display: inline;
@@ -520,7 +520,7 @@ section .inner {
 }
 .step-item::before {
     content: '01';
-    font-family: 'GmarketSansMedium';
+    font-family: 'GmarketSans';
     font-weight: 700;
     font-size: 36px;
     position: absolute;
@@ -548,7 +548,7 @@ section .inner {
 }
 
 .sec-flow .desc {
-    font-family: 'GmarketSansMedium';
+    font-family: 'GmarketSans';
     font-size: 26px;
 }
 
@@ -562,7 +562,7 @@ section .inner {
 }
 
 .sec-flow .summary h3 {
-    font-family: 'GmarketSansMedium';
+    font-family: 'GmarketSans';
     font-size: 26px;
 }
 .sec-flow .summary .desc {
@@ -635,7 +635,7 @@ section .inner {
     padding-top: 20px;
 }
 .sec-process h2 {
-    font-family: 'GmarketSansMedium';
+    font-family: 'GmarketSans';
 }
 .sec-process h2 span {display: block;}
 .sec-process .process-list {

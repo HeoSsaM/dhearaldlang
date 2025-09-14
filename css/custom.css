@@ -205,7 +205,8 @@ section .text {
 }
 
 /* 강사진소개/교재/hsrt */
-.overview {
+.sec_overview {
+    padding: 50px 0;
     background: linear-gradient(to bottom,
             #e9f0fd 0%,
             #ffffff 33%,

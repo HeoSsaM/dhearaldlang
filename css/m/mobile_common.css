@@ -21,23 +21,22 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 34px;
-    line-height: 34px;
-    padding: 0 12px;
-    margin-left: auto;
-    margin-right: 8px;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 20px;
+    margin-left: 40px;
     border-radius: 9999px;
     background: #3f5aff;
     color: #fff;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 15px;
     white-space: nowrap;
 }
 
 /* 햄버거 보이기 */
 .btnMobile {
     display: block !important;
-    width: 36px;
+    width: 40px;
     background: none;
     border: 0;
 }

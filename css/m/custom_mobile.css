@@ -104,8 +104,8 @@ section p {
 }
 
 /* 강사진소개/교재/hsrt */
-.overview {
-    padding: 50px 0 0;
+.sec_overview {
+    padding: 40px 0;
     background: linear-gradient(to bottom,
             #e9f0fd 0%,
             #ffffff 33%,
@@ -115,7 +115,9 @@ section p {
             #ffffff 100%);
     text-align: center;
 }
-
+.sec_overview .inner {
+    max-width: 90%;
+}
 .overview h2 img {
     width: 32px;
 }
@@ -131,18 +133,18 @@ section p {
 .overview .titleText {
     margin-bottom: 36px;
     font-size: 20px;
+    font-weight: 500;
 }
 
 .overview h2+.titleText strong {
     font-weight: 700;
 }
 
-.overview .intro * {
-    font-size: 18px;
-}
-
 .overview .intro p+p {
-    margin-top: 40px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 30px;
+    letter-spacing: -1px;
 }
 
 .overview .intro p span,
@@ -162,7 +164,6 @@ section p {
 }
 
 .overview .textArea .slogan {
-    font-family: 'NEXON Lv2 Gothic';
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 5px;
@@ -184,10 +185,6 @@ section p {
     padding: 40px 3%;
 }
 
-.overview .contRefined * {
-    font-size: 18px;
-}
-
 .overview .contRefined .titleArea {
     margin-bottom: 50px;
 }
@@ -206,7 +203,7 @@ section p {
 }
 
 .overview .contRefined .titleArea .text {
-    font-size: inherit;
+    font-size: 20px;
 }
 
 .overview .contRefined .resources img {
@@ -237,7 +234,7 @@ section p {
     margin: 0 auto 40px;
     color: rgba(0, 0, 0, 0.8);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .overview .hspt .text>span {

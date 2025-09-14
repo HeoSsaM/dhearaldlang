@@ -15,6 +15,7 @@ section p {
 }
 
 .mainVisual {
+    height: 75vh;
     background: #f5f9fd url(../../img/sub_junior/m_bg.png) no-repeat center/cover;
 }
 
@@ -134,16 +135,17 @@ section p {
 }
 
 .sec-edu-cont02 h2 {
-    font-size: clamp(26px, 5vw, 44px);
+    font-size: clamp(24px, 5vw, 44px);
     line-height: 1.4;
 }
 
 .sec-edu-cont02 .titleText {
-    font-size: 22px;
+    font-size: 20px;
     font-family: 'NEXON Lv2 Gothic';
     font-weight: 500;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     word-break: keep-all;
+    letter-spacing: -1px
 }
 
 .sec-edu-cont02 .text {
@@ -183,7 +185,7 @@ section p {
 
 .sec-teacher .titleArea .text {
     margin-bottom: 25px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .sec-teacher .titleArea span {
@@ -201,9 +203,9 @@ section p {
     overflow: hidden;
     border-radius: 30px;
     width: 100%;
-    height: 400px;
+    height: 360px;
     background: transparent no-repeat center top/contain;
-    padding-top: 60px;
+    padding-top: 40px;
 }
 
 .sec-teacher .t-feature>div:nth-child(1) {
@@ -223,7 +225,7 @@ section p {
 }
 
 .sec-teacher .t-feature>div .label {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -553,7 +555,7 @@ section p {
 }
 
 .sec-steps .steps-wrap .titleArea {
-    text-align: ct;
+    text-align: center;
 }
 
 .sec-steps .steps-wrap .titleArea .badge {
@@ -608,6 +610,7 @@ section p {
 .steps-wrap .cont-list .text {
     margin-bottom: 20px;
     text-align: left;
+    font-size: 18px;
 }
 
 .steps-wrap .contImg {
@@ -759,7 +762,7 @@ section p {
 .sec-dogo {
     padding: 50px 0;
     height: auto;
-    background: #f7f4f4 url(../../img/sub_junior/sub_junior_img04.png) no-repeat left 70% top/cover
+    background: #f7f4f4 url(../../img/sub_junior/sub_junior_img04.png) no-repeat left 40% top/cover
 }
 .sec-dogo .inner {
     max-width: 90%;
@@ -904,15 +907,16 @@ section p {
     text-align: center;
     margin-bottom: 30px;
 }
-
 .learn-cont-wrap .learn-cont-top .titleText {
     text-align: center;
     margin-bottom: 25px;
 }
-
+.learn-cont-wrap .learn-cont-top .img-area {
+    text-align: center;
+}
 .learn-cont-wrap .learn-cont-top img {
-    max-width: 100%;
-    margin-bottom: 25px;
+    max-width: 85%;
+    margin: 0 auto 25px;
 }
 
 .learn-cont-mid {
