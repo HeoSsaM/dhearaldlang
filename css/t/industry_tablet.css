@@ -1,0 +1,72 @@
+@charset "utf-8";
+@import url(../m/mobile_common.css);
+
+*, *::before, *::after {box-sizing: border-box;}
+
+section {
+    padding: 80px 0 40px;
+}
+section .titleText {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+#site-header .inner {
+    justify-content: flex-end;
+}
+#site-header .inner .logo {
+    margin-left: auto;
+    position: absolute;
+    top: 20px; left: 4%
+}
+
+.mhead {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+.m-logo img {
+    height: 50px
+}
+.gnb .nav a {
+    font-size: 22px;
+    line-height: 40px;
+}
+.btn {
+    width: 220px;
+    line-height: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+.mainVisual {
+    display: block;
+    background-image: url(../../img/sub_industry/sub_edu_main01.png);
+}
+.mainVisual .inner {
+    display: block;
+    position: relative;
+    height: 100%;
+}
+.mainVisual .mainTitleArea {
+    position: absolute;
+    top: 50%; left: 0;
+    transform: translateY(-50%);
+    width: 50%;
+}
+.mainVisual .mainTitleArea h2 {
+    font-size: 36px;
+}
+
+.mainTitleArea .text {
+    color: #000
+}
+
+.overview .icons-wrapper {
+
+}
+
+.plan .circle-wrap {
+    height: auto;
+    gap: 30px;
+    flex-direction: column;
+}

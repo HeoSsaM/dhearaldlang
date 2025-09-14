@@ -1,8 +1,11 @@
 @charset "utf-8";
 @import url(mobile_common.css);
 
+/* =========================================================
+   Base: Section Typography
+========================================================= */
 section strong {
-    color: var(--color-content-blue)
+    color: var(--color-content-blue);
 }
 
 section h3 {
@@ -17,33 +20,45 @@ section p {
     word-break: keep-all;
 }
 
-.mainVisual {    
-    background: url(../../img/sub_custom/m_bg2.png) no-repeat center bottom/cover;    
+/* =========================================================
+   Main Visual
+========================================================= */
+.mainVisual {
+    background: url(../../img/sub_custom/m_bg2.png) no-repeat center bottom/cover;
 }
+
 .mainVisual .inner {
     flex-direction: column;
 }
+
 .mainVisual .mainTitleArea .text {
     width: 100%;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 25px;
 }
+
 .mainVisual .mainTitleArea h2 {
     color: #fff;
-    font-size: 24px;
 }
+
 .mainVisual .mainTitleArea strong {
     color: var(--color-point-green);
+    display: block;
 }
-.mainVisual .mainTitleArea .text {
-    font-weight: 400;
-}
+
 .mainVisual .btnArea {
     text-align: center;
 }
 
-/* 플립러닝 교육과정 */
+/* =========================================================
+   플립러닝 교육과정 (flipped)
+========================================================= */
 .flipped {
     padding: 50px 0;
-    background: linear-gradient(40deg, #24242c, #4a557a) no-repeat center / 122%, linear-gradient(-85deg, #24242c, #4a557a) no-repeat center;
+    background:
+        linear-gradient(40deg, #24242c, #4a557a) no-repeat center / 122%,
+        linear-gradient(-85deg, #24242c, #4a557a) no-repeat center;
     color: #fff;
 }
 
@@ -70,7 +85,8 @@ section p {
     width: calc(100%/2 - 10px);
     height: 105px;
     border-radius: 20px;
-    background: linear-gradient(45deg, #39456b, #495576) padding-box,
+    background:
+        linear-gradient(45deg, #39456b, #495576) padding-box,
         linear-gradient(135deg, var(--color-content-blue), var(--color-point-green)) border-box;
     color: #fff;
     letter-spacing: -1px;
@@ -82,7 +98,7 @@ section p {
     text-align: center;
     line-height: 1.4;
     border: 2px solid transparent;
-    /* 선 두께 */
+    /* border thickness */
     box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
     box-sizing: border-box;
 }
@@ -91,10 +107,7 @@ section p {
     display: none;
 }
 
-.flipped .steps {
-    display: none;
-}
-
+.flipped .steps,
 .flipped .smart {
     display: none;
 }
@@ -103,9 +116,11 @@ section p {
     margin-top: 0;
 }
 
-/* 강사진소개/교재/hsrt */
+/* =========================================================
+   강사진소개/교재/HSRT (overview)
+========================================================= */
 .sec_overview {
-    padding: 40px 0;
+    padding: 40px 0 0;
     background: linear-gradient(to bottom,
             #e9f0fd 0%,
             #ffffff 33%,
@@ -115,24 +130,19 @@ section p {
             #ffffff 100%);
     text-align: center;
 }
-.sec_overview .inner {
-    max-width: 90%;
-}
+
 .overview h2 img {
     width: 32px;
-}
-
-.overview strong {
-    color: #000
 }
 
 .overview h2 {
     margin-bottom: 25px;
 }
 
+/* 잘못된 빈 선택자 블록 수정 → .overview .titleText */
 .overview .titleText {
     margin-bottom: 36px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
 }
 
@@ -173,10 +183,6 @@ section p {
     margin-bottom: 5px;
 }
 
-.overview strong {
-    color: var(--color-content-blue)
-}
-
 .overview .textArea .text span+span {
     font-weight: 600;
 }
@@ -211,6 +217,7 @@ section p {
     width: 100%;
 }
 
+/* HSRT/문구 */
 .overview .hspt h2 {
     font-size: clamp(22px, 5vw, 44px);
     line-height: 1.4;
@@ -218,11 +225,11 @@ section p {
 }
 
 .overview .hspt h2 strong {
-    color: var(--color-content-blue)
+    color: var(--color-content-blue);
 }
 
 .overview .hspt h2 span {
-    color: #000
+    color: #000;
 }
 
 .overview .hspt .text * {
@@ -247,10 +254,11 @@ section p {
     display: block;
 }
 
+/* 숙련도 박스 */
 .overview .proficiency {
-    padding: 50px 25px;
+    padding: 50px 25px 50px;
     background-image: url(../../img/common/light01.png), linear-gradient(#39456b, #0e193b);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat, repeat;
     background-position: left center;
 }
 
@@ -266,20 +274,20 @@ section p {
     margin-right: 15px;
 }
 
+/* 아이콘 래퍼 */
 .overview .icons-wrapper {
     width: 100%;
-    height: auto;
     margin: 0 auto 40px;
     background: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 25px;
     text-align: center;
 }
 
 .overview .icons-wrapper .item {
-    width: calc(100%/3 - 25px);
+    width: calc(100%/4 - 25px);
     height: auto;
     color: rgba(255, 255, 255, 0.8);
 }
@@ -293,7 +301,9 @@ section p {
     position: static !important;
 }
 
-/* 학습자 맞춤형 수업설계 */
+/* =========================================================
+   학습자 맞춤형 수업설계 (plan)
+========================================================= */
 .plan {
     padding: 50px 0;
     background: #f0f0f6;
@@ -309,16 +319,14 @@ section p {
 }
 
 .plan .circle-wrap {
-    width: 85%;
+    flex-direction: row;
+    justify-content: space-between;
     height: auto;
     margin: 0 auto 40px;
-    border-radius: 20px;
-    padding: 15px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    place-items: center;  
+    padding: 25px;
+    border-radius: 30px;
+    gap: 40px;
     text-align: center;
-    gap: 0;
 }
 
 .plan .circle-wrap .circle {
@@ -326,7 +334,7 @@ section p {
 }
 
 .plan .circle-wrap img {
-    width: 55%;
+    width: 65%;
 }
 
 .plan .bar-wrap {
@@ -334,37 +342,40 @@ section p {
     height: auto;
     margin: 0 auto 40px;
     display: grid;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    place-items: center;  
-    text-align: center;    
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    text-align: center;
     gap: 20px;
 }
-.plan .bar-wrap > div {
+
+.plan .bar-wrap>div {
     background: #fff;
     border-radius: 20px;
     padding: 25px;
-
 }
+
 .plan .bar-wrap img {
-    width: 85%
+    width: 85%;
 }
 
-/* 목표관리형 수업 */
+/* =========================================================
+   목표관리형 수업 (goalTrack)
+========================================================= */
 .goalTrack {
-    padding: 50px 0;    
+    padding: 50px 0;
     background: linear-gradient(#24242c, #495576);
 }
 
 .goalTrack .titleArea {
     text-align: center;
     margin-bottom: 35px;
-    color: #fff
+    color: #fff;
 }
 
 .goalTrack .titleArea .logo_white {
     display: none;
 }
+
 .goalTrack .titleArea span {
     display: block;
     margin-bottom: 10px;
@@ -374,31 +385,34 @@ section p {
     display: block;
     color: inherit;
 }
+
 .goalTrack .titleArea span strong {
     color: var(--color-point-green);
 }
+
 .goalTrack .goal_steps.pc {
     display: none;
 }
 
-.goalTrack .swiper-goal-steps.swiper {    
+.goalTrack .swiper-goal-steps {
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.goalTrack .swiper-goal-steps.swiper {
     display: flex;
     height: auto;
     width: 94%;
     margin: 0 auto 40px;
 }
 
-.goalTrack .swiper-goal-steps { 
-  width: 100%;
-  padding: 0;                 /* 좌우 패딩 있으면 일단 제거 */
-  overflow: hidden;           /* 삐져나오는 것 가림 */
-  box-sizing: border-box;
-}
-
 .goalTrack .swiper-goal-steps.swiper .swiper-wrapper {
     width: 100%;
     height: auto;
 }
+
 .goalTrack .swiper-goal-steps .step .num {
     display: inline-block;
     position: relative;
@@ -473,50 +487,57 @@ section p {
     font-weight: 600;
 }
 
-/* 파트너사 */
-/* 파트너사 */
+/* =========================================================
+   파트너사 (partners)
+========================================================= */
 .partners {
-    padding: 50px 0
+    padding: 50px 0;
 }
+
 .partners .inner {
     width: 94%;
     margin: 0 auto;
 }
+
 .partners h2 {
     margin-bottom: 40px;
     font-size: clamp(22px, 5vw, 44px);
     text-align: center;
 }
+
 .partners h2 span {
     display: block;
     margin-bottom: 5px;
 }
+
 .partners h2 span:last-child {
     color: var(--color-content-blue);
 }
 
 .partners_logo {
     display: flex;
-    flex-wrap: nowrap;          /* 줄바꿈 제거 */
+    flex-wrap: nowrap;
     gap: 15px;
-    overflow-x: auto;           /* 가로 스크롤 활성화 */
-    padding-bottom: 10px;       /* 스크롤바 공간 */
-    -webkit-overflow-scrolling: touch; /* iOS 부드러운 스크롤 */
+    overflow-x: auto;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
 }
 
 .partners_logo::-webkit-scrollbar {
-    height: 8px;                /* 스크롤바 높이 */
+    height: 8px;
 }
+
 .partners_logo::-webkit-scrollbar-thumb {
     background: #ccc;
     border-radius: 4px;
 }
+
 .partners_logo::-webkit-scrollbar-track {
     background: #f5f5f5;
 }
 
 .partners_logo>div {
-    flex: 0 0 auto;             /* 고정 너비 카드 */
+    flex: 0 0 auto;
     text-align: center;
     font-size: 16px;
     background: #fff;
@@ -533,4 +554,52 @@ section p {
     display: block;
     width: 120px;
     height: auto;
+}
+
+/* =========================================================
+   ≤ 430px
+========================================================= */
+@media (max-width: 430px) {
+    .mainVisual .mainTitleArea .text {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .overview .intro p+p {
+        font-size: 20px;
+    }
+
+    /* 아이콘 래퍼: 4열 → 3열 */
+    .overview .icons-wrapper {
+        justify-content: space-between;
+    }
+
+    .overview .icons-wrapper .item {
+        width: calc(100%/3 - 25px);
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .plan .circle-wrap {
+        width: 85%;
+        height: auto;
+        margin: 0 auto 40px;
+        border-radius: 20px;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        text-align: center;
+        gap: 0;
+    }
+
+    .plan .bar-wrap {
+        grid-template-columns: 1fr;
+        place-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .overview .titleText {
+        font-size: 20px;
+    }
 }

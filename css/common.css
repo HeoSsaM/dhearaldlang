@@ -7,7 +7,7 @@ html {
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 #wrap {
@@ -81,16 +81,6 @@ body {
 }
 
 /* 레이아웃 기본 */
-/* ========================= PC ONLY (기본) ========================= */
-:root {
-    /* 프로젝트에서 이미 쓰는 변수들만 예시로 둡니다 */
-    --nav-bg: #0b1548;
-    --white: #fff;
-    --color-point-green: #3fe0a7;
-    --btn-light-blue1: #3f5aff;
-}
-
-/* 레이아웃 기본 */
 body {
     overflow-x: hidden;
 }
@@ -103,13 +93,13 @@ body {
     height: 70px;
     z-index: 1000;
     background: var(--nav-bg);
+    box-sizing: border-box;
 }
 
 #site-header .inner {
     max-width: 1440px;
     margin: 0 auto;
-    height: 100%;
-    padding: 15px 2.5%;
+    height: 100%;    
     display: flex;
     align-items: center;
     justify-content: space-between;

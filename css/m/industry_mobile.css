@@ -3,16 +3,19 @@
 
 /* mainVisual */
 .mainVisual {
+    position: relative;
     background-image: url(../../img/sub_industry/sub_edu_main01.png);
 }
 .mainVisual .inner {
     position: relative;
 }
-.mainVisual .inner::before {
+.mainVisual::before {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(8, 6, 37, 0.4));
     position: absolute;
+    width: 100%; height: 100%;
     inset: 0;
     content: '';
+
 }
 .mainVisual .mainTitleArea {
     width: 85%;

@@ -1,9 +1,9 @@
 @charset "utf-8";
 @import url(../fonts.css);
 
-
+*, *::before, *::after {box-sizing: border-box;}
 #site-header {
-    top: 0;
+    top: 40px;
     height: 64px;
 }
 
@@ -13,7 +13,7 @@
 }
 
 #site-header .logo {
-    width: 180px;
+    width: 160px;
 }
 
 /* 모바일 헤더 우측 버튼(원하면 사용) */
@@ -23,8 +23,8 @@
     justify-content: center;
     height: 38px;
     line-height: 38px;
-    padding: 0 20px;
-    margin-left: 40px;
+    padding: 0 15px;/* 
+    margin-left: 50px; */
     border-radius: 9999px;
     background: #3f5aff;
     color: #fff;
@@ -166,14 +166,10 @@ body.no-scroll {
 
 /* main visual */
 .mainVisual {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 60px;
     height: 60vh;
     background: no-repeat center/cover;
 }
-.mainVisual .inner {height: 100%;}
 .mainVisual .mainTitleArea {
     position: relative;
     text-align: center;
