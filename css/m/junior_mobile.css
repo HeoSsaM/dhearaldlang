@@ -612,7 +612,7 @@ section p {
     text-align: left;
     font-size: 18px;
 }
-
+.steps-wrap .cont-list .text  br {display: none;}
 .steps-wrap .contImg {
     text-align: center;
     margin-bottom: 50px;
@@ -649,6 +649,7 @@ section p {
 .steps-wrap .cont-list h3 {
     display: inline-block;
     margin-left: 10px;
+    letter-spacing: -1px;
 }
 
 .steps-wrap .step-advance .titleArea .badge {
