@@ -1,0 +1,105 @@
+@charset "utf-8";
+@import url(../m/mobile_common.css);
+
+*, *::before, *::after {box-sizing: border-box;}
+
+section {
+    padding: 80px 0 40px;
+}
+section .inner {
+    max-width: 90%;
+}
+section .titleText {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+#site-header .inner {
+    justify-content: flex-end;
+}
+#site-header .inner .logo {
+    margin-left: auto;
+    position: absolute;
+    top: 20px; left: 4%
+}
+
+.mhead {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+.m-logo img {
+    height: 50px
+}
+.gnb .nav a {
+    font-size: 22px;
+    line-height: 40px;
+}
+.btn {
+    width: 220px;
+    line-height: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+.mainVisual {
+    background-image: url(../../img/sub_about/vid/vid02.mp4);
+}
+
+.mainTitleArea .title>strong {
+    font-size: 44px;
+}
+
+#secIntro::before {display: none;}
+
+#secCore {
+    padding: 80px 0
+}
+#secCore .coreList {
+    flex-wrap: wrap;
+}
+#secCore .coreList>div {
+    width: calc(100%/2 - 20px) ;
+}
+
+#secWhyus {
+    padding: 200px 0 50px;
+    height: 900px;
+}
+
+.valuesCircle {
+    column-gap: 50px;
+    background-size: 460px auto;
+}
+.valueItem {padding: 25px}
+.btnArea {margin: 60px;}
+
+#secEduPhil .eduPhilText .text span {display: inline;}
+
+#secWhyus .inner {
+    width: 100%;
+}
+#secWhyus .whyusCard {
+    width: 100%;
+    gap: 25px
+}
+#secWhyus .whyusCard>div {
+    padding: 25px;
+}
+#secReviews {
+    padding: 50px 0;
+
+}
+#secReviews .reviewBg {
+    background: none;
+    padding: 0;
+}
+#secReviews .titleText {
+    color: #fff;
+}
+#secReviews h2 {
+    color: #fff;
+}
+#secReviews .caseCards {
+    height: auto;
+    gap: 20px;
+}

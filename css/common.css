@@ -286,12 +286,6 @@ section strong {
     font-weight: 600;
 }
 
-/* === button set ====== */
-.btnArea {
-    text-align: center;
-    margin-top: 60px;
-}
-
 .btn {
     width: 260px;
     height: 60px;

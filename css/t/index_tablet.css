@@ -1,0 +1,148 @@
+@charset "utf-8";
+@import url(../m/mobile_common.css);
+
+*, *::before, *::after {box-sizing: border-box;}
+
+section {
+    padding: 80px 0 40px;
+}
+section .inner {
+    max-width: 90%;
+}
+section .titleText {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+#site-header .inner {
+    justify-content: flex-end;
+}
+#site-header .inner .logo {
+    margin-left: auto;
+    position: absolute;
+    top: 20px; left: 4%
+}
+
+.mhead {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+.m-logo img {
+    height: 50px
+}
+.gnb .nav a {
+    font-size: 22px;
+    line-height: 40px;
+}
+.btn {
+    width: 220px;
+    line-height: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+.mainVisual {
+    background-image: url(../../img/main/main_slidebg02.png);
+}
+.mainTitleArea .title {
+        margin-bottom: 25px;
+        font-family: 'NEXON Lv2 Gothic';
+        font-size: 36px;
+}
+.mainTitleArea .text {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+#secValue::before {display: none;}
+
+#secValue h2 span {display: block;}
+
+#secWhy .whyList {
+    background-position: left -10% top;
+    background-size: 500px auto;
+}
+#secWhy .whyList .whyListText {margin-left: 50%;}
+#secWhy .whyList .why03 {
+    top: 360px;
+    left: -150px
+}
+#secWhy .whyList .why04 {
+    top: 450px;
+    left: -440px;
+}
+
+#secSolution h2 span {display: block;}
+#secSolution .text {font-size: 22px;}
+
+#secSolution .curriList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#secSolution ul li {
+    width: 100%;
+}
+#secSolution .hsptList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#secSolution .hsptList li {width: 100%}
+
+#mainTopicArea h2 {margin-bottom: 30px;}
+#mainTopicArea .topicList {
+    width: 100% !important;
+    gap: 10px;
+}
+
+#mainTopicArea .topicList li {
+    width: 280px;
+    height: 250px
+}
+#mainTopicArea .topicList li a {
+    padding: 50px 30px 0;
+    gap: 30px;
+    text-align: center;
+}
+#mainTopicArea .topicList li h3 {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+#secExec {height: auto;}
+#secExec h2 span {padding-left: 0;}
+#secExec .titleText {
+    margin-bottom: 30px;
+}
+#secExec .circle-group {
+    width: 100%;
+}
+#secExec .circle {
+    width: 300px;
+    height: 240px;
+    
+}
+#secExec .circle.circleA,
+#secExec .circle.circleB,
+#secExec .circle.circleC {
+    border: 5px solid transparent;
+    background:
+        linear-gradient(transparent,rgba(248, 248, 248, 0.267)) padding-box,
+        linear-gradient(135deg, var(--color-content-blue), var(--color-point-green)) border-box;
+    /* 테두리 */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
+    border-radius: 30px;
+    padding: 30px
+}
+
+#secPrograms {
+    padding: 80px 0 40px;
+}
+#secPrograms .contArea {
+    width: 100%;
+    padding: 20px;
+}
+#secPrograms .contArea h2 {
+    font-size: 22px;
+}
+#secPrograms .contArea h2 br {display: none;}
+#secPrograms .titleText span {display: inline;}
+.btnArea {margin-top: 30px;}
