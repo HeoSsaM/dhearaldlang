@@ -18,16 +18,9 @@
     z-index: 0;
 }
 
-.mainVisual .inner {
-    justify-content: center;
-}
-
 .mainVisual .mainTitleArea {
     position: relative;
     width: 90%;
-    height: auto;
-    text-align: left;
-    align-items: flex-start;
     z-index: 5;
 }
 

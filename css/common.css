@@ -63,7 +63,7 @@ body {
     align-items: center;
     font-size: 14px;
     color: var(--color-content-blue);
-    z-index: 5;
+    z-index: 9999;
 }
 
 .top strong {

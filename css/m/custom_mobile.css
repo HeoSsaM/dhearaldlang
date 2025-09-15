@@ -130,7 +130,10 @@ section p {
             #ffffff 100%);
     text-align: center;
 }
-
+.overview .intro {
+    max-width: 94%;
+    margin: 0 auto;
+}
 .overview h2 img {
     width: 32px;
 }

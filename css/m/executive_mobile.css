@@ -269,7 +269,7 @@ section h2 {
     display: block;
 }
 
-.info-list {
+.info-visual .info-list {
     position: static;
     transform: none;
     width: 100%;

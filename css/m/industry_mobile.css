@@ -23,6 +23,7 @@
 }
 
 .mainVisual .mainTitleArea h2 {
+    font-family: 'NexonLv2Gothic';
     margin-bottom: 30px;
     color: var(--color-point-green);
 }
@@ -37,6 +38,9 @@
 .mainTitleArea .titleText {
     color: rgba(255, 255, 255, 0.9);
     font-weight: 300;
+}
+.mainVisual .mainTitleArea h2 {
+    font-size: clamp(26px, 5vw, 44px);
 }
 .mainVisual .btnArea {
     margin-top: 25px;
@@ -133,7 +137,8 @@
     margin-bottom: 10px;
     text-align: left;
     padding-left: 25px;
-    color: #000
+    color: #000;
+    letter-spacing: -1px;
 }
 .esp .compInfo .features .item .title::before {
     top: 8px; left: 0;

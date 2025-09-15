@@ -24,10 +24,6 @@ section p {
     margin: 0 auto;
 }
 
-.mainVisual .mainTitleArea .titleText.hide {
-    display: none;
-}
-
 .mainVisual .mainTitleArea .titleText {
     font-size: 20px;
     margin-top: 0;
@@ -40,22 +36,15 @@ section p {
 
 .mainVisual .mainTitleArea h2 {
     font-family: 'NEXON Lv2 Gothic';
-    font-size: 28px;
+    font-size: clamp(26px, 5vw, 44px);
     font-weight: 600;
     margin-bottom: 40px;
     text-align: center;
     color: #fff;
 }
-
-.mainVisual .mainTitleArea .title {}
-
-.mainVisual .mainTitleArea .title span {
-    display: block;
-    color: var(--color-content-blue);
-}
-
+.mainVisual .mainTitleArea h2 span {display: block;}
 .mainVisual .mainTitleArea .titleText {
-    text-align: center;
+    display: none;
 }
 
 .mainVisual .mainTitleArea .titleText span {
@@ -137,8 +126,11 @@ section p {
 .sec-edu-cont02 h2 {
     font-size: clamp(24px, 5vw, 44px);
     line-height: 1.4;
+    letter-spacing: -1px;
 }
-
+.sec-edu-cont02 h2 strong {
+    display: block;
+}
 .sec-edu-cont02 .titleText {
     font-size: 20px;
     font-family: 'NEXON Lv2 Gothic';

@@ -98,10 +98,12 @@ section h2 {
 
 #secCore .coreList {
     display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
 #secCore .coreList>div {
+    width: 100%;
     padding: 25px 20px;
 }
 
