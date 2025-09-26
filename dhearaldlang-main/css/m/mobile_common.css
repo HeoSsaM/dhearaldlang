@@ -1,0 +1,334 @@
+@charset "utf-8";
+@import url(../fonts.css);
+
+#wrap {
+    overflow-x: clip;
+}
+body {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+main { flex: 1; min-height: 0; }         /* 스크롤 버그 방지 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#site-header {
+    top: 40px;
+    height: 64px;
+}
+
+#site-header .inner {
+    padding: 12px 2.5%;
+    gap: 20px;
+}
+
+#site-header .logo {
+    width: 160px;
+}
+
+/* 모바일 헤더 우측 버튼(원하면 사용) */
+.btnInquiryTop {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
+    border-radius: 9999px;
+    background: #3f5aff;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+/* 햄버거 보이기 */
+.btnMobile {
+    display: block !important;
+    width: 40px;
+    background: none;
+    border: 0;
+    margin-left: 0;
+}
+
+.btnMobile img {
+    width: 100%;
+    display: block;
+}
+
+/* 오프캔버스 패널 */
+.gnb {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75vw;
+    height: 100%;
+    background: #fff;
+    z-index: 1100;
+    pointer-events: none;
+    transition: right .35s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.gnb.open {
+    right: 0;
+    pointer-events: auto;
+}
+
+/* 모바일 패널 상단바(로고+닫기) */
+.mhead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 16px;
+    background: #fff;
+    border-bottom: 1px solid #eef1f6;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    order: -1;
+}
+
+.m-logo img {
+    height: 30px;
+    display: block;
+}
+
+#btnClose {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: none;
+    border: 0;
+    padding: 0;
+    margin-left: 25px;
+}
+
+#btnClose img {
+    width: 100%;
+    display: block;
+}
+
+/* 메뉴 */
+.gnb .nav {
+    margin: 16px auto 0;
+    width: min(50vw, 520px);
+}
+
+.gnb .nav .menu {
+    display: grid;
+    gap: 12px;
+}
+
+.gnb .nav a {
+    color: #111;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* 유틸 */
+.utilNav {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.gnb.open .utilNav a:last-child {
+    color: #111;
+    margin-left: 20px;
+}
+
+/* 딤 */
+.dim {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .7);
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s;
+}
+
+body.menu-open .dim {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* 바디 잠금 */
+body.no-scroll {
+    overflow: hidden;
+}
+
+
+/* 바디 스크롤 잠금 */
+body.no-scroll {
+    overflow: hidden;
+}
+
+/* 바디 스크롤 잠금 */
+body.no-scroll {
+    overflow: hidden;
+}
+
+/* main visual */
+.mainVisual {
+    margin-top: 100px;
+    height: 70vh;
+    background: no-repeat center/cover;
+}
+
+.mainVisual .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainVisual .mainTitleArea {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.mainVisual .mainTitleArea  h2 {
+    font-size: clamp(22px, 5vw, 44px);
+}
+.mainTitleArea span {
+    margin-bottom: 5px;
+}
+
+.mainVisual .mainTitleArea h2 {
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: clamp(24px, 5vw, 44px);
+    margin-bottom: 20px;
+}
+
+.mainTitleArea .title>strong {
+    font-size: 24px;
+}
+
+.mainTitleArea .title span {
+    display: block;
+}
+
+.mainTitleArea .text {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #fff;
+}
+
+.mainTitleArea {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section .titleText {
+    font-size: clamp(18px, 3.3vw, 24px);
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+section strong {
+    font-weight: 600;
+}
+
+/* button Style */
+.btnArea {
+    margin-top: 0;
+}
+
+.btn {
+    width: 200px;
+    height: 46px;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 44px
+}
+
+.btnStyle02 {
+    background: #2c40c8;
+}
+
+.btnStyle03 {
+    font-size: 16px;
+}
+
+
+body.hidden {
+    overflow: hidden;
+}
+
+/* footer */
+.footer {
+    padding: 30px 0;
+    font-size: 13px;
+    letter-spacing: -1px;
+    z-index: 5;
+}
+
+.footer .inner {
+    display: block;
+}
+
+.footer .f_company {
+    width: 90%;
+    margin: 0 auto 25px;
+}
+
+.footer .f_title {
+    display: none;
+}
+
+.footer .f_nav {
+    display: none;
+}
+
+.footer .f_contact {
+    text-align: center;
+}
+
+.footer .f_contact .f_text {
+    font-size: 16px;
+    color: #fff;
+}
+
+.footer .f_contact i {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 12px;
+    vertical-align: 5px;
+}
+
+.footer .f_contact img {
+    width: 34px;
+}
+
+.footer .inner {
+    max-width: 96%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .f_company {
+    width: 50%;
+    margin: 0;
+}
+@media screen and (max-width: 440px) {
+    .btnArea .btn {
+        margin-bottom: 10px;
+    }
+}

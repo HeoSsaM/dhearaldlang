@@ -1,0 +1,256 @@
+@charset "utf-8";
+@import url(mobile_common.css);
+
+/* mainVisual */
+.mainVisual {
+    position: relative;
+    background-image: url(../../img/sub_industry/sub_edu_main01.png);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-top: 0;
+}
+
+.mainVisual .inner {
+    position: relative;
+}
+
+.mainVisual::before {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(8, 6, 37, 0.4));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    content: '';
+
+}
+
+.mainVisual .mainTitleArea {
+    position: static;
+    width: 85%;
+    margin: 0 auto;
+    transform: none;
+}
+
+.mainVisual .mainTitleArea h2 {
+    font-family: 'NexonLv2Gothic';
+    margin-bottom: 30px;
+    color: var(--color-point-green);
+}
+
+.mainVisual .mainTitleArea p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    word-break: keep-all;
+}
+
+.mainTitleArea .titleText {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
+}
+
+.mainVisual .mainTitleArea h2 {
+    font-size: clamp(26px, 5vw, 44px);
+}
+
+.mainVisual .btnArea {
+    margin-top: 25px;
+}
+
+.mainVisual .btnArea .btn {
+    text-align: inherit;
+    width: max-content
+}
+
+.mainVisual .btnArea .btn {
+    width: max-content;
+    padding: 0 20px;
+}
+
+/* esp */
+.esp {
+    background: none;
+    padding: 50px 0;
+}
+
+.esp .inner {
+    max-width: 94%;
+    margin: 0 auto;
+}
+
+.esp .why .titleArea {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.esp .why .titleArea h2 {
+    font-size: 20px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.esp .why .titleArea h2 span {
+    color: #1e3893;
+    border-color: #1e3893;
+    padding: 15px 20px;
+}
+
+.esp .why .titleArea .titleText {
+    color: #000;
+    font-weight: 600;
+    margin: 0 25px;
+
+}
+
+.esp .why .line {
+    display: none;
+}
+
+.esp .why .comp {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.esp .why .comp>div {
+    padding: 20px;
+    box-shadow: none;
+}
+
+.esp .why .comp .esp_eng {
+    outline: 2px solid #fff;
+    background: linear-gradient(135deg, #12508C 0%, #187BA8 100%);
+}
+
+.esp .why .comp>div>ul {
+    padding: 0 20px;
+}
+
+.esp .why .comp>div>ul li {
+    padding: 8px 0 8px 18px;
+    font-size: 17px;
+}
+
+.esp .compInfo {
+    margin-bottom: 40px;
+}
+
+
+/* esp flow */
+.esp .flow {
+    width: 100%;
+    padding: 45px 20px 45px;
+    background: linear-gradient(135deg, #223569, #343b5a);
+    border-radius: 20px;
+}
+
+.esp .flow .logo_white {
+    margin-bottom: 40px;
+}
+.esp .flow .steps {
+    width: 100%;
+    display: block;
+    margin-bottom: 25px;
+    background: none;
+}
+.esp .flow .step {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px 50px auto;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.esp .flow .step .num {
+    margin-bottom: 0;
+    text-align: center;
+}
+.esp .flow .step div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.esp .flow .step img {
+    margin-bottom: 0;
+}
+
+.esp .flow .step p {
+    display: inline;
+    color: #fff;
+    text-align: left;
+}
+
+.esp .flow .curriList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 0;
+}
+
+.esp .flow .curriList li {
+    padding: 15px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+}
+
+.esp .flow .curriList li {
+    border: 2px solid transparent;
+}
+
+.esp .compInfo .features {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.esp .compInfo .features .item {
+    width: 100%;
+}
+.esp .compInfo .features .item figure {
+    top: 50%; 
+    transform: translateY(-50%);
+    left: 15px;
+}
+.esp .compInfo .features .item img {
+    margin-bottom: 0;
+}
+.esp .compInfo .features .item > div {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 120px;
+}
+.esp .compInfo .features .item .title {
+    color: #000
+}
+
+.esp .compInfo .features .item p+p {
+    color: #000
+}
+
+.esp ul li img {
+    display: none;
+}
+
+.esp ul h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.esp ul li .solText p {
+    font-size: 15px;
+}
+
+.esp .flow .btnArea {
+    margin-top: 25px;
+}
+
+.esp .flow .btnArea .btn {
+    width: 240px;
+    height: 46px;
+    margin-bottom: 10px;
+}
+

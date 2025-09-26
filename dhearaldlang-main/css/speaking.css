@@ -1,0 +1,595 @@
+@charset "utf-8";
+
+section+section {
+    padding: 120px 0;
+}
+
+section strong {
+    color: var(--color-content-blue)
+}
+
+section h3 {
+    color: var(--category-bg);
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section p {
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+.mainVisual {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    height: 760px;
+    background: url(../img/sub_speaking/m_hero_bg2.png) no-repeat center/cover;
+}
+
+.mainVisual .inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.mainVisual .mainTitleArea {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.mainVisual .mainTitleArea h2 {
+    color: #000;
+    text-align: left;
+}
+
+.mainVisual .mainTitleArea h2 span {
+    display: block;
+    color: var(--color-content-blue);
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.mainVisual .mainTitleArea .titleText {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.mainVisual .mainTitleArea .titleText span {
+    display: block;
+    color: #000;
+}
+
+.mainVisual .mainTitleArea .titleText em {
+    font-weight: 700;
+}
+
+.mainVisual .mainTitleArea .btnArea {
+    text-align: left;
+}
+
+/* 모의테스트 특장점 */
+.sec-benefit .titleArea h2 span {
+    display: block;
+}
+
+.sec-benefit .titleArea h2 img {
+    vertical-align: middle;
+}
+
+.sec-benefit .titleArea h2+p {
+    width: 60%;
+    margin: 40px auto;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.sec-benefit .titleArea h2+p span {
+    display: block;
+}
+
+.sec-benefit .benefit-list {
+    margin: 0 auto;
+    background: url(../img/sub_speaking/sec2_cardbg02.png) no-repeat center 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 0 100px;
+}
+
+.sec-benefit .benefit-list>div {
+    
+}
+
+.sec-benefit .benefit-list .card_bg {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 200px;
+    background: no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sec-benefit .benefit-list>div:nth-child(1) .card_bg {
+    background-image: url(../img/sub_speaking/testcenter_card01.png);
+}
+
+.sec-benefit .benefit-list>div:nth-child(2) .card_bg {
+    background-image: url(../img/sub_speaking/testcenter_card02.png);
+}
+
+.sec-benefit .benefit-list>div:nth-child(3) .card_bg {
+    background-image: url(../img/sub_speaking/testcenter_card03.png);
+}
+
+.sec-benefit .benefit-list>div:nth-child(4) .card_bg {
+    background-image: url(../img/sub_speaking/testcenter_card04.png);
+}
+
+.sec-benefit .benefit-list .card_bg h3 {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #474b5b
+}
+
+.sec-benefit .benefit-list .card_bg h3 strong {
+    font-size: 18px;
+}
+
+.sec-benefit .benefit-list>div p {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #444;
+    line-height: 1.2;
+}
+
+.sec-benefit .benefit-list .point {
+    color: #000;
+    font-weight: 600;
+}
+
+/* hspi */
+.sec_hspi {
+    height: 900px;
+    background: url(../img/sub_speaking/mid_bg.png) no-repeat center/100% 100%;
+}
+
+.sec_hspi .inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sec_hspi .titleArea {
+    width: 55%;
+}
+
+.sec_hspi .titleArea h2 {
+    text-align: left;
+    color: #fff;
+    line-height: 1.5;
+    font-size: 36px;
+}
+
+.sec_hspi .titleArea h2 span {
+    display: block;
+}
+
+.sec_hspi .titleArea h2 strong {
+    display: block;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+
+}
+
+.sec_hspi .titleArea p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.sec_hspi .titleArea p span {
+    display: block;
+}
+
+/* 말하기실력 평가 */
+.sec-speak {
+    position: relative;
+    background: #e4e6fa;
+}
+
+.sec-speak::before {
+    content: '';
+    width: 1px;
+    height: 80px;
+    background: #aaacbc;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sec-speak h2 {
+    text-align: center;
+    font-family: 'NEXON Lv2 Gothic';
+    font-weight: 400;
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.sec-speak h2 span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.sec-speak .titleArea h2 strong {
+    font-weight: 700;
+    color: #000
+}
+
+.sec-speak .criteria {
+    margin-bottom: 120px;
+}
+
+.sec-speak .criteria .crit-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 60px;
+}
+
+.sec-speak .criteria .crit-list li {
+    text-align: center;
+}
+
+.sec-speak .criteria .crit-list li .img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-speak .criteria .crit-list strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+    font-size: 20px;
+}
+
+.sec-speak .speak-info h2 {
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.sec-speak .speak-info .textArea {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sec-speak .speak-info .textArea span {
+    display: block;
+}
+
+.sec-speak .speak-info .title {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.sec-speak .speak-info .title>p {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 25px;
+    border: 2px solid var(--color-content-blue);
+    color: var(--color-content-blue);
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.sec-speak .flow-tags {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.sec-speak .flow-tags .flow {
+    flex: 1;
+    height: 200px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: right 20px bottom 20px, center;
+    background-size: 70px, cover;
+    background-clip: padding-box;
+    border: 1px solid #fff;
+    padding: 25px;
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+.sec-speak .flow-tags .flow.flow01 {
+    background-image:
+        url(../img/sub_speaking/ico_spek01.png),
+        linear-gradient(127deg, #cad6f3, #fff);
+}
+
+.sec-speak .flow-tags .flow.flow02 {
+    background-image:
+        url(../img/sub_speaking/ico_spek02.png), linear-gradient(127deg, #cad6f3, #fff)
+}
+
+.sec-speak .flow-tags .flow.flow03 {
+    background-image:
+        url(../img/sub_speaking/ico_spek03.png), linear-gradient(127deg, #cad6f3, #fff);
+}
+
+.sec-speak .flow-tags .flow .title {
+    display: inline-block;
+    padding: 6px 15px;
+    border-radius: 30px;
+    background: #233e85;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.sec-speak .flow-tags .flow .desc {
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.sec-speak .flow-tags .flow .desc span {
+    display: block;
+    font-weight: 500;
+}
+
+.sec-speak .flow-tags img {
+    max-width: 980px
+}
+
+.sec-speak .flow-process {
+    background: url(../img/sub_speaking/sub_test_img_arrow_bg.png) no-repeat center top;
+}
+
+.sec-speak .flow-process .titleArea {
+    margin-bottom: 60px;
+}
+
+.sec-speak .flow-process .titleArea img {
+    width: 40px;
+    margin-bottom: 25px;
+}
+
+.sec-speak .flow-process .titleArea .subtitle {
+    font-size: 30px;
+    font-weight: 300;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.sec-speak .flow-process .subtext span {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sec-speak .flow-process .titleArea strong {
+    font-weight: 500;
+}
+
+.sec-speak .flow-process .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.sec-speak .flow-process .tag-list span {
+    padding: 12px 30px;
+    border-radius: 60px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sec-speak .flow-process .tag-list span:nth-child(odd) {
+    background: #d2d5f2;
+}
+
+.sec-speak .flow-process .tag-list span:nth-child(even) {
+    background: #cdcfe4;
+}
+
+.sec-speak .flow-process .tag-list span.indent {
+    margin-left: 120px;
+}
+
+.sec-speak .flow-process .subtext {
+    font-weight: 500;
+    text-align: center;
+    font-size: 22px;
+}
+
+.sec-speak .flow-process .subtext strong {
+    font-weight: 700;
+    color: var(--color-content-blue)
+}
+
+/* 모의테스트 기관 로고들 */
+.sec-logos .titleText {
+    margin-bottom: 80px;
+}
+
+.sec-logos .titleText strong {
+    color: #000;
+    font-weight: 700;
+}
+
+.sec-logos .logos {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    gap: 20px;
+}
+
+.sec-logos .company_logo li {
+    border-radius: 15px;
+    border: 1px solid #cdcdcd;
+    text-align: center;
+}
+
+.sec-logos .company_logo li img {
+    width: 60%;
+}
+
+.sec-logos .titleArea {
+    text-align: center;
+    margin: 80px 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* 활용사례 */
+.sec-usage {
+    overflow: hidden;
+    position: relative;
+    background-color: #496cd0;
+    background-image: url(../img/common/light01.png), url(../img/common/light02.png);
+    background-repeat: no-repeat;
+    background-size: 800px, 900px;
+    background-position: left top, right bottom;
+    z-index: 2;
+}
+
+.sec-usage::after {
+    content: "";
+    position: absolute;
+    inset: -40%;
+    /* 살짝 키워서 회전해도 모서리 안 보이게 */
+    background: url(../img/common/light01.png) no-repeat center bottom/contain;
+    transform: rotate(-30deg);
+    transform-origin: center;
+    opacity: .5;
+    /* 겹침 확인용 (선택) */
+    pointer-events: none;
+    /* 클릭 막지 않기 */
+    z-index: 0;
+}
+
+.sec-usage .inner {
+    max-width: 1080px;
+}
+
+.sec-usage h2 {
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+.sec-usage .usage-group {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    z-index: 1
+}
+
+.sec-usage .usage-box {
+    width: 50%;
+}
+
+.sec-usage .usage-box .usage-title {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 40px;
+    background: #fff;
+    margin-bottom: 25px;
+}
+
+.sec-usage .usage-box .usage-title img {
+    width: 32px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.usage-box {
+    position: relative;
+    border: 1px solid #efefef;
+    border-radius: 30px 30px 0 0;
+    padding: 25px;
+}
+
+.usage-box:first-child {
+    background: rgba(255, 255, 255, 0.1) url(../img/sub_speaking/ico_book.png) no-repeat right 20px bottom 20px/130px;
+}
+
+.usage-box:last-child {
+    background: rgba(255, 255, 255, 0.1) url(../img/sub_speaking/ico_build.png) no-repeat right 20px bottom 20px/150px;
+}
+
+.usage-box .usage-list li {
+    color: #fff;
+    border-radius: 0 30px 30px 0;
+    padding: 20px 35px 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.usage-box .usage-list li:first-child {
+    padding-top: 0;
+}
+
+/* siteInfo */
+.siteInfo figure {
+    text-align: center;
+}
+
+.siteInfo figcaption {
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.siteInfo .btnArea .btn {
+    width: auto;
+    padding: 0 15px;
+}
+
+/* 하단 텍스트 */
+.bottomText {
+    background: #233e85;
+    padding: 50px 5%;
+}
+
+.bottomText .text {
+    font-family: 'GmarketSansMedium';
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 26px;
+    text-align: center;
+    color: #fff;
+}
+
+.bottomText .text span {
+    display: block;
+}

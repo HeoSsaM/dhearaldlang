@@ -1,0 +1,102 @@
+@charset "utf-8";
+@import url(../m/mobile_common.css);
+
+
+html, body { margin: 0; overflow-x: clip; }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#wrap {
+    overflow: hidden;
+}
+
+section + section {
+    padding: 80px 0 40px;
+}
+
+section .titleText {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+#site-header {
+  position: fixed;
+  inset: 40px 0 auto 0;  
+  height: 70px;          
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+#site-header .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  height: 100%;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding-inline: 20px; 
+  box-sizing: border-box;
+}
+
+#site-header .logo { width: 220px; }
+#site-header .logo a { display:block; }
+
+#site-header .right { display:flex; align-items:center; gap:12px; }
+
+#site-header .btnMobile {
+    height: 50px;
+}
+.mhead {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+.m-logo img {
+    height: 50px
+}
+.gnb .nav a {
+    font-size: 22px;
+    line-height: 40px;
+}
+.btn {
+    width: 220px;
+    line-height: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+.mainVisual {
+    display: block;
+    background-image: url(../../img/sub_industry/sub_edu_main01.png);
+}
+.mainVisual .inner {
+    display: block;
+    position: relative;
+    height: 100%;
+}
+.mainVisual .mainTitleArea {
+    position: absolute;
+    top: 50%; left:6vw;
+    transform: translateY(-50%);
+    width: 50%;
+}
+.mainTitleArea .text {
+    color: #000
+}
+.esp .why .titleArea {
+    color: #fff
+}
+.esp .flow {
+    padding: 40px;
+}
+.esp .flow .curriList {
+    grid-template-columns: repeat(3, 1fr);
+}
+.plan .circle-wrap {
+    height: auto;
+    gap: 30px;
+    flex-direction: column;
+}

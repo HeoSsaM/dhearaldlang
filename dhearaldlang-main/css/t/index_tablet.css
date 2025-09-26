@@ -1,0 +1,157 @@
+@charset "utf-8";
+@import url(../m/mobile_common.css);
+
+html,
+body {
+    margin: 0;
+    overflow-x: clip;
+}
+*, *::before, *::after {box-sizing: border-box;}
+
+section + section {
+    padding: 80px 0 40px;
+}
+section .inner {
+    max-width: 95%;
+}
+section .titleText {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+#site-header {
+  position: fixed;
+  inset: 40px 0 auto 0;  
+  height: 70px;          
+  z-index: 1000;  box-sizing: border-box;
+}
+
+#site-header .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  height: 100%;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding-inline: 20px;       
+  box-sizing: border-box;
+}
+
+#site-header .logo { width: 220px; }
+#site-header .logo a { display:block; }
+
+#site-header .right { display:flex; align-items:center; gap:12px; }
+.gnb .nav a {
+    font-size: 22px;
+    line-height: 40px;
+}
+.btn {
+    width: 220px;
+    line-height: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+.mainVisual {
+    background-image: url(../../img/main/main_slidebg02.png);
+}
+.mainTitleArea .title {
+        margin-bottom: 25px;
+        font-family: 'NEXON Lv2 Gothic';
+        font-size: 36px;
+}
+.mainTitleArea .text {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+#secValue::before {display: none;}
+
+#secValue h2 span {display: block;}
+#secWhy .whyList {
+    background-position: left -10% top;
+    background-size: 500px auto;
+}
+#secWhy .whyList .whyListText {margin-left: 50%;}
+#secWhy .whyList .why03 {
+    top: 360px;
+    left: -150px
+}
+#secWhy .whyList .why04 {
+    top: 450px;
+    left: -440px;
+}
+#secSolution {padding: 80px 0}
+#secSolution .sol02 h2 {font-size: clamp(24px, 5vw, 44px);}
+#secSolution h2 span {display: block;}
+#secSolution .text {font-size: 22px;}
+#secSolution .hsptList li {padding-top: 30px;}
+#secSolution .curriList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#secSolution ul li {
+    width: 100%;
+}
+#mainTopicArea h2 {margin-bottom: 30px;}
+#mainTopicArea .topicList {
+    width: 100% !important;
+    gap: 25px;
+}
+
+#mainTopicArea .topicList li {
+    height: 240px
+}
+#mainTopicArea .topicList li h3 {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+#secExec {height: auto;}
+#secExec h2 span {padding-left: 0;}
+#secExec .titleText {
+    margin-bottom: 30px;
+}
+#secExec .circle-group {
+    width: 100%;
+}
+#secExec .circle {
+    width: 300px;
+    height: 240px;
+    
+}
+#secExec .circle.circleA,
+#secExec .circle.circleB,
+#secExec .circle.circleC {
+    border: 5px solid transparent;
+    background:
+        linear-gradient(transparent,rgba(248, 248, 248, 0.267)) padding-box,
+        linear-gradient(135deg, var(--color-content-blue), var(--color-point-green)) border-box;
+    /* 테두리 */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
+    border-radius: 30px;
+    padding: 30px
+}
+
+#secPrograms {
+    padding: 80px 0 40px;
+}
+#secPrograms .contArea {
+    width: 100%;
+    padding: 20px;
+}
+#secPrograms .contArea h2 {
+    font-size: 22px;
+}
+#secPrograms .contArea h2 br {display: none;}
+#secPrograms .titleText span {display: inline;}
+.btnArea {margin-top: 30px;}
+
+.footer .inner {
+    max-width: 96%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .f_company {
+    width: 50%;
+    margin: 0;
+}

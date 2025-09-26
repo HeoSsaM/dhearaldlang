@@ -1,0 +1,211 @@
+@charset "utf-8";
+@import url(../m/mobile_common.css);
+
+html,
+body {
+    margin: 0;
+    overflow-x: clip;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#wrap {
+    overflow: hidden;
+}
+
+section + section {
+    padding: 80px 0 40px;
+}
+
+section .titleText {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+html,
+body {
+    margin: 0;
+    overflow-x: clip;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+section {
+    padding: 80px 0 40px;
+}
+
+section .inner {
+    max-width: 95%;
+}
+
+section .titleText {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+#site-header {
+    position: fixed;
+    inset: 40px 0 auto 0;
+    height: 70px;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+#site-header .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: min(1200px, 100%);
+    margin: 0 auto;
+    padding-inline: 20px;
+    box-sizing: border-box;
+}
+
+#site-header .logo {
+    width: 220px;
+}
+
+#site-header .logo a {
+    display: block;
+}
+
+#site-header .right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#site-header .btnMobile {
+    height: 50px;
+}
+
+/* mainVisual */
+.mainVisual {
+    background-image: url(../../img/sub_ai/sub_ai_main.png)
+}
+.mainVisual .mainTitleArea .text>span {
+    font-size: 22px;
+}
+.aiCoatch-area .coach-intro .coach-visual {
+    margin-bottom: 0;
+}
+
+.sec-ai {
+    padding: 80px 0;
+}
+
+.sec-ai .sec-ai-intro .intro {
+    height: 600px
+}
+
+.sec-ai .sec-ai-intro .intro>img {
+    width: 480px
+}
+
+.sec-coach .inner {
+    max-width: 95%;
+}
+
+.whyWrong {
+    background-size: cover;
+}
+
+.whyWrong .inner {
+    max-width: 95%;
+}
+
+.whyWrong .titleArea {
+    width: 360px;
+    height: 420px;
+}
+
+.whyWrong .titleArea .icon {
+    position: absolute;
+    right: 15px;
+    margin-bottom: 15px;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.whyWrong h2 {
+    font-size: 36px;
+    margin-top: 25px;
+}
+
+.secTutor {
+    padding: 50px 0;
+}
+
+.secTutor .inner {
+    max-width: 95%;
+    margin: 0 auto;
+}
+.secTutor .tutorCards {
+    max-width: 100%;
+    width: 100%;
+    padding: 25px 25px 0;
+}
+.secTutor .tutorCards .card {
+    position: relative;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.secTutor .tutorCards .card .icon {
+    display: none;
+}
+.secTutor .tutorCards .card .img {
+    position: static;
+    width: 140px;
+    margin: 20px auto 0;
+    transform: none;
+}
+.secTutor .tutorCards .card .img img {
+    max-width: 100%;
+}
+.secTutor .tutorCards .card  p {margin-bottom: 0;}
+.bot .icon-list {
+    background-size: contain;
+}
+
+.sec-flow {
+    padding: 60px 0;
+}
+
+.sec-flow .promo .mockup {
+    max-width: 100%;
+}
+
+.sec-flow .promo .mockup img {
+    max-width: 85%;
+}
+
+.sec-flow .summary {
+    margin-bottom: 30px;
+}
+
+.sec-program {
+    padding: 80px 0
+}
+
+.sec-process .inner {
+    max-width: 95%;
+}
+
+.sec-process .process-list {
+    margin-bottom: 40px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.sec-process .process-list div+div::before {
+    display: none;
+}

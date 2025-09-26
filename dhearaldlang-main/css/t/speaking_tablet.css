@@ -1,0 +1,196 @@
+@charset "utf-8";
+@import url(../m/mobile_common.css);
+
+
+html, body { margin: 0; overflow-x: clip; }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#wrap {
+    overflow: hidden;
+}
+
+section + section {
+    padding: 80px 0 40px;
+}
+
+section .titleText {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+#site-header {
+  position: fixed;
+  inset: 40px 0 auto 0;  
+  height: 70px;          
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+#site-header .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  height: 100%;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding-inline: 20px; 
+  box-sizing: border-box;
+}
+
+#site-header .logo { width: 220px; }
+#site-header .logo a { display:block; }
+
+#site-header .right { display:flex; align-items:center; gap:12px; }
+
+#site-header .btnMobile {
+    height: 50px;
+}
+
+.gnb .nav a {
+    font-size: 22px;
+    line-height: 40px;
+}
+.btnArea .btn {
+    width: 280px;
+    line-height: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+.mainVisual.speaking {
+    height: 70vh;
+    margin-top: 110px;
+    background-image: url(../../img/sub_speaking/m_hero_bg2.png);
+}
+.mainVisual::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+    z-index: 0;
+}
+
+.mainVisual.speaking .inner {
+    height: 70vh;
+}
+.mainVisual .mainTitleArea {
+    width: 55%;
+    position: absolute;
+    top: 50%; left: 5%;
+    transform: translateY(-50%);
+    align-items: flex-start
+
+}
+.mainVisual .mainTitleArea h2 {
+    font-size: 36px;
+    text-align: left;
+    color: #fff;
+}
+.mainVisual .mainTitleArea h2 span {
+    color: var(--color-point-green);
+}
+.mainVisual .mainTitleArea .titleText {
+    color: #fff;
+    font-size: 20px;
+}
+.mainVisual .mainTitleArea .titleText span {
+    color: #fff;
+    margin-bottom: 0;
+    display: inline;
+}
+.mainVisual .mainTitleArea .btnArea {
+    margin-top: 40px;
+    display: flex
+}
+.mainVisual .mainTitleArea .btnArea .btn {
+    font-size: 18px;
+}
+
+.sec-benefit .titleArea h2 span {
+    display: block;
+}
+.sec-benefit .titleArea h2+p {
+    width: 70%
+}
+.sec-benefit .benefit-list {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.sec-benefit .benefit-list .card_bg {
+    width: 100%;
+    height: 180px;
+    background-size: 100% 100%;    
+}
+.sec-benefit .btnArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec_hspi {
+    height: 780px;
+    background-size: 140% 100%;
+}
+.sec_hspi .inner {
+    display: block;
+}
+.sec_hspi .titleArea {
+    width: 45%;
+}
+.sec_hspi .titleArea h2 {
+    line-height: 1.2;
+}
+.sec_hspi .titleArea h2 span {display: inline; }
+.sec_hspi .titleArea p {
+    font-size: 20px;
+}
+.sec_hspi .btnArea {
+    margin-top: 80px;
+}
+.sec-speak .flow-tags .flow {
+    background-size: 50px, cover;
+}
+.sec-speak .flow-process .btnArea {
+    margin-top: 40px;
+}
+.sec-logos .titleText {
+    margin-bottom: 40px;
+}
+
+.sec-usage .inner {
+    max-width: 95%;
+}
+.siteInfo figure {
+    margin-bottom: 35px;
+}
+.siteInfo figure img {
+    width: 45%;
+    border: 1px solid #ccc;
+    vertical-align: top;
+}
+.siteInfo .btnArea .btn {
+    width: 250px
+}
+.bottomText .text span {
+    display: block;
+}
+.bottomText .btnArea .btn {
+    width: 320px;
+}
+
+.footer .inner {
+    max-width: 96%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .f_company {
+    width: 50%;
+    margin: 0;
+}

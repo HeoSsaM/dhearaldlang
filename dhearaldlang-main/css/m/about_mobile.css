@@ -1,0 +1,372 @@
+@charset "utf-8";
+@import url(mobile_common.css);
+
+
+section+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    letter-spacing: -1px;
+    word-break: keep-all;
+    line-height: 1.4;
+}
+
+/* main visual */
+.mainVisual {
+    height: 60vh
+}
+.mainVisual .mainTitleArea h2 span em {
+    display: block;
+}
+.mainTitleArea .title span {
+    font-size: 24px;
+}
+
+.mainTitleArea .title em {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.mainTitleArea .title strong {
+    font-size: 26px;
+}
+
+
+/* secIntro */
+#secIntro::before {
+    display: none;
+}
+
+#secIntro h2 {
+    font-family: "Lato", sans-serif;
+    font-size: clamp(28px, 5vw, 44px);
+    font-weight: 600;
+    margin-bottom: 35px;
+    line-height: initial;
+}
+
+#secIntro h2 span {
+    display: block;
+}
+
+#secIntro .sloganContents {
+    flex-direction: column;
+    padding: 0 3%;
+}
+
+#secIntro .sloganContents>div {
+    width: 100%
+}
+
+#secIntro .sloganContents h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.sloganArea .sloganContents .sloganText p {
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-size: 18px;
+    word-break: keep-all;
+}
+
+.sloganArea .sloganContents .sloganImg img {
+    max-width: 100%;
+    width: 100%;
+}
+
+/* secCore */
+#secCore {
+    position: relative;
+    background: #f5f6fa;
+    padding: 50px 5% 50px
+}
+
+#secCore h2 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+#secCore .titleText span {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    display: block;
+}
+
+#secCore .titleText {
+    font-size: 20px;
+}
+
+#secCore .coreList {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#secCore .coreList>div {
+    width: 100%;
+    padding: 25px 20px;
+}
+
+#secCore .coreList>div::before {
+    margin-bottom: 20px;
+}
+
+/* secWhyus */
+#secWhyus {
+    position: relative;
+    height: auto;
+    padding: 50px 0;
+    background: linear-gradient(#2649ac, #4278e9) no-repeat;
+    display: flex;
+    z-index: 2;
+}
+#secWhyus .inner {
+    max-width: 90%;
+}
+#secWhyus h2 {
+    margin: 0 0 30px;
+    font-weight: 500;
+}
+
+#secWhyus h2::before {
+    height: 30px;
+    top: -25px;
+}
+
+#secWhyus h2 span {
+    margin-top: 25px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border-width: 1px;
+}
+
+#secWhyus .whyusCard {
+    width: 100%;
+    padding: 0;
+    gap: 10px;
+    /* grid-template-columns: repeat(2, 1fr); */
+}
+
+#secWhyus .whyusCard>div {
+    padding: 25px 20px;
+    height: auto;
+}
+#secWhyus .whyusCard > div:nth-child(1),
+#secWhyus .whyusCard > div:nth-child(2),
+#secWhyus .whyusCard > div:nth-child(3) {
+    background: #1b306d;
+}
+#secWhyus .whyusCard>div>.whyText {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+#secWhyus .whyusCard>div h3 {
+    color: var(--color-point-green)
+}
+
+#secOurValues {
+    display: none;
+}
+
+/* section#eduPhilosophy */
+#secEduPhil {
+    padding: 50px 0;
+}
+
+#secEduPhil .inner {
+    width: 100%;
+    padding: 0 5%;
+}
+
+#secEduPhil .top_logo_navy {
+    display: none;
+}
+
+#secEduPhil .edu_phil_top {
+    display: block;
+}
+
+#secEduPhil .edu_phil_top .eduPhilText {
+    width: 100%;
+}
+
+#secEduPhil .edu_phil_top .eduPhilText h2 {
+    margin-bottom: 25px;
+}
+
+#secEduPhil .eduPhilText .text {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+#secEduPhil .eduPhilText .text span {
+    display: initial;
+}
+
+#secEduPhil .eduPhilText .text strong {
+    color: var(--color-content-blue);
+}
+
+#secEduPhil .edu_phil_top .eduPhilPic {
+    display: none;
+}
+
+#secEduPhil .philPoints {
+    position: relative;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+#secEduPhil .philPoints>div {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 2px solid transparent;
+    background:
+        linear-gradient(white, var(--bg-light-gray)) padding-box,
+        linear-gradient(135deg, var(--color-content-blue), var(--color-point-green)) border-box;
+    /* 테두리 */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
+}
+
+#secEduPhil .philPoints>div+div:before {
+    display: none;
+}
+
+#secEduPhil .philPoints>div h3 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+#secEduPhil .philPoints>div p {
+    font-size: clamp(16px, 3.3vw, 18px);
+    letter-spacing: -1px;
+}
+#secEduPhil .philPoints>div img {
+    width: 32px;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+
+/* review */
+#secReviews {
+    padding: 50px 0;
+    background: linear-gradient(to bottom, #2043a4, #3357bd 22%, #4a89ff 100%);
+}
+
+#secReviews .reviewBg {
+    padding: 0 5%;
+    background: none;
+}
+
+#secReviews .titleArea {
+    text-align: center;
+}
+
+#secReviews .titleArea>p>strong {
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#secReviews .titleText {
+    margin: 25px 0;
+}
+
+#secReviews .titleText span {
+    display: block;
+    font-size: clamp(16px, 3.3vw, 18px);
+    color: #fff;
+    font-weight: 400;
+}
+
+#secReviews h2 {
+    font-size: clamp(24px, 5vw, 44px);
+    color: #fff;
+    margin-bottom: 40px;
+}
+#secReviews .caseCards.pc {display: none;}
+
+#secReviews .caseCards.swiper {
+    display: flex;
+    gap: 20px;
+    height: 260px;
+    width: 90%;
+}
+#secReviews .caseCards .swiper-wrapper {
+    height: 220px
+}
+#secReviews .caseCards .swiper-slide {    
+    width: 100%;
+    padding: 50px 20px 20px;    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-sizing: border-box;
+}
+.caseCard::before {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background: url(../../img/icon/quotation.png) no-repeat center/contain;
+    content: '';
+}
+
+.caseCard p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    word-break: keep-all;
+}
+.caseCard p br {display: none;}
+.caseCard p span {
+    display: inline;
+}
+.caseCard .author span {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 0 15px;
+}
+
+.reviewBg>.text {
+    margin-top: 0;
+    text-align: center;
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+}
+
+#secReviews .contactArea {
+    margin-top: 40px;
+}
+
+#secReviews .contactArea .emphasis {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#secReviews .contactArea .text {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#secReviews .contactArea .text strong {
+    font-weight: 600;
+    color: #fff;
+}

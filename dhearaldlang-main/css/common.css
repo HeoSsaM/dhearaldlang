@@ -1,0 +1,397 @@
+@charset "utf-8";
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#wrap {
+    overflow: hidden;
+}
+
+:root {
+    --bg: #0d1b44;
+    --nav-bg: #0d1041;
+    --color-point-green: #4dffa1;
+    --color-content-blue: #3f5aff;
+    --color-card-title-blue: #466ad0;
+    --bg-light-gray: #f5f6fa;
+    --bg-dary-gray: #333642;
+    --category-bg: #1e3893;
+    --category-card: #292632;
+    --btn-light-blue1: #205aff;
+    --btn-light-blue2: #9aa2dc;
+    --white: #fff;
+    --color-hightlight: #0da3fa;
+    --font-heading: 'NEXON Lv2 Gothic', 'Pretendard', 'Noto Sans KR', sans-serif;
+    --font-content: 'Pretendard', 'Noto Sans KR', sans-serif;
+    --font-size-h2: 36px;
+    /* 제목 */
+    --font-size-subTitle: 20px;
+    --font-size-base: 16px;
+    /* 본문 */
+    --font-size-small: 14px;
+    /* 보조 텍스트 */
+}
+
+body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 400;
+    /* color: rgba(255,255,255,0.85) */
+    overflow-x: hidden;
+}
+
+.inner {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* top */
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 40px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: var(--color-content-blue);
+    z-index: 1000;
+}
+
+.top strong {
+    margin-right: 10px;
+}
+
+/* ========================= heaeer ================================== */
+#site-header {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+    background: var(--nav-bg);
+    box-sizing: border-box;
+}
+
+#site-header .inner {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#site-header .logo {
+    max-width: 220px;
+    z-index: 10;
+}
+
+#site-header .logo img {
+    width: 100%;
+    display: block;
+}
+
+.gnb {
+    position: static;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-left: 40px;
+}
+
+.gnb .nav {
+    position: static;
+}
+
+.gnb .nav .menu {
+    display: flex;
+    gap: 20px;
+}
+
+.gnb .nav a {
+    display: block;
+    padding: 4px;
+    color: var(--white);
+    font-weight: 500;
+    transition: color .2s;
+    letter-spacing: -1px;
+    font-size: 15px;
+}
+
+.gnb .nav a:hover {
+    color: var(--color-point-green);
+}
+
+.utilNav {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.utilNav>a {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    border-radius: 8px;
+    font-size: 15px;
+    color: var(--white);
+    padding: 12px;
+}
+
+.utilNav>a:first-child {
+    padding-left: 30px;
+}
+.utilNav>a:last-child {
+    padding-right: 0;
+}
+
+.utilNav>a.on {
+    background: var(--btn-light-blue1);
+    color: #fff;
+}
+
+.utilNav>a:first-child::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 14px;
+    height: 20px;
+    background: url(../img/icon/ico_mypage.png) no-repeat center/contain;
+}
+
+/* PC에서는 숨김 */
+.btnMobile,
+.mhead,
+.btnInquiryTop,
+.dim {
+    display: none;
+}
+
+/* ===== 공통 버튼 (필요 시) ===== */
+.btn {
+    width: 260px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 10px;
+    background: #3f5aff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background-color .3s ease;
+    /* 하이픈 표기 */
+}
+
+.btnStyle02 {
+    background: #2c40c8;
+}
+
+.btnStyle01:hover,
+.btnStyle02:hover {
+    background: #121ab4;
+}
+
+.btnStyle03 {
+    border: 2px solid #3f5aff;
+    background: #fff;
+    color: #3f5aff;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/* 섹션 공통 (PC) */
+section h2 {
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: clamp(24px, 5vw, 44px);
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+section .titleText {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+section strong {
+    font-weight: 600;
+}
+
+.btnArea {
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* 스크롤 잠금 클래스 – PC에서는 쓰지 않지만 정의만 유지 */
+body.no-scroll {
+    overflow: hidden;
+}
+
+
+
+/* ========================= section ================================== */
+section strong {
+    font-weight: 600;
+}
+
+.btn {
+    width: 260px;
+    height: 60px;
+    border-radius: 10px;
+    background: #3f5aff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 60px;
+    margin: 0 5px;
+    transition: backgroundColor 0.3s;
+}
+
+.btnStyle02 {
+    background: #2c40c8;
+}
+
+.btnStyle01:hover,
+.btnStyle02:hover {
+    background: #121ab4;
+}
+
+.btnStyle03 {
+    border: 2px solid #3f5aff;
+    background: #fff;
+    border-radius: 40px;
+    color: #3f5aff;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.dim {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    background: rgba(19, 105, 114, .5);
+}
+
+body.menu-open .dim {
+    display: block;
+}
+
+body.hidden {
+    overflow: hidden;
+}
+
+/* footer */
+.footer {
+    padding: 60px 0;
+    background: #111;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 15px;
+}
+
+.footer .inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .f_company {
+    width: 40%;
+}
+
+.footer .f_company h1 {
+    margin-bottom: 15px;
+}
+
+.footer .f_company .f_slogan {
+    margin-bottom: 5px;
+}
+
+.footer .f_company .f_desc {
+    margin-bottom: 20px;
+}
+
+.footer .f_company .com_ceo {
+    margin-bottom: 10px;
+}
+
+.footer .f_company .com_info {
+    margin-top: 10px;
+}
+
+.footer .f_company .com_call {
+    margin-top: 10px;
+}
+
+.footer .f_company .com_call>span {
+    margin-right: 10px;
+}
+
+.footer .f_company .com_call>span+span {
+    margin-left: 10px;
+}
+
+.footer .f_company .copyright {
+    margin-top: 10px;
+}
+
+.footer .f_title {
+    color: #eee;
+    margin-bottom: 25px;
+}
+
+.footer .f_nav li {
+    margin-bottom: 15px;
+}
+
+.footer .f_nav li:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer .f_contact .f_text {
+    font-size: 18px;
+    font-size: 500;
+    color: #fff;
+}
+
+.footer .f_contact i {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 12px;
+    vertical-align: 5px;
+}
+
+.footer .f_contact img {
+    width: 34px;
+}
+
+@media screen and (max-width: 1280px) {
+    .inner {
+        max-width: 1080px;
+        margin: 0 auto;
+    }    
+}

@@ -1,0 +1,302 @@
+section+section {
+    padding: 120px 0;
+}
+
+section strong {
+    color: var(--color-content-blue)
+}
+
+section h3 {
+    color: var(--category-bg);
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section p {
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+.mainVisual {
+    margin-top: 100px;
+    height: 760px;
+    background: url(../img/sub_industry/sub_edu_main01.png) no-repeat center/cover;
+}
+
+.mainVisual .inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainVisual .mainTitleArea {
+    position: relative;
+    width: 50%;
+}
+
+.mainVisual .mainTitleArea h2 {
+    text-align: left;
+    color: #fff;
+}
+
+.mainVisual .mainTitleArea p {
+    margin-bottom: 40px;
+}
+
+.mainTitleArea span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.mainTitleArea .titleText {
+    text-align: left;
+    color: rgba(255, 255, 255, 0.9)
+}
+
+.mainVisual .btnArea .btn {
+    text-align: inherit;
+    width: max-content
+}
+
+.mainVisual .btnArea {
+    text-align: inherit;
+}
+
+.mainVisual .btnArea .btn {
+    width: max-content;
+    padding: 0 20px;
+}
+
+
+/* esp */
+.esp {
+    /* background: url(../img/sub_industry/whyneed_bg.png) no-repeat center/cover; */
+    background: linear-gradient(#E6F0FF, #F8FAFC);
+    padding-bottom: 0;
+}
+
+.esp .why .titleArea {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.esp .why .titleArea .titleText {
+    margin: 0 50px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.esp .why .titleArea h2 span {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 2px solid var(--category-bg);
+    color: var(--category-bg)
+}
+
+.esp .why .comp {
+    position: relative;
+    width: 760px;
+    margin: 0 auto 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+.esp .why .comp>div {
+    position: relative;
+    --radius: 16px;
+    --edge: rgba(255, 255, 255, .22);
+    --shadow: 0 10px 20px rgba(0, 0, 0, .18), 0 2px 6px rgba(0, 0, 0, .10);
+    border-radius: var(--radius);
+    /* background: linear-gradient(135deg, #1D7ED6 0%, #2BB7F5 100%); */
+    background: var(--category-bg);
+    padding: 28px 32px;
+    box-shadow: var(--shadow);
+    outline: 20px solid var(--edge);
+    outline-offset: -10px;
+}
+
+.esp .why .comp div>h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 25px;
+    background: var(--category-bg);
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.esp .why .comp>div>ul li {
+    position: relative;
+    padding: 12px 0 6px 20px;
+    font-size: 18px;
+    color: #fff;
+}
+.esp .why .comp>div>ul li::before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background:var(--btn-light-blue2)
+}
+.esp .compInfo {
+    margin-bottom: 80px;
+}
+.esp .compInfo .features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.esp .compInfo .features .item {
+    position: relative;
+    display: flex;   
+    width: 100%;    
+}
+.esp .compInfo .features .item figure {
+    width: 90px; height: 90px;
+    background: #fff;
+    box-shadow: 0 0 25px rgba(0,0,0,0.15);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -35px; left: 35px;
+}
+.esp .compInfo .features .item img {    
+    width: 55px;
+    
+}
+.esp .compInfo .features .item > div {
+    width: calc(100% - 100px);
+    background: #fff;
+    padding: 25px 25px 25px 50px;
+    border-radius: 12px;
+    margin-left: 90px;
+    border: 1px solid rgba(123, 160, 182, 0.61);
+}
+.esp .compInfo .features .item .title {
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--category-bg);
+    letter-spacing: -1px;
+}
+.esp .compInfo .features .item p+p {
+    font-size: 17px;
+}
+
+.esp .flow {
+    width: 100%;
+    padding: 80px;
+    /* background: url(../../img/sub_industry/whyneed_box.png) no-repeat left top/cover; */
+    background: linear-gradient(135deg, #223569, #343b5a);
+    text-align: center;
+    border-radius: 100px 100px 0 0;
+}
+
+.esp .flow .logo_white {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.esp .flow .curriList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 50px;
+    gap: 25px;
+}
+
+.esp .flow .curriList li {
+    position: relative;
+    padding: 25px 20px;
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    text-align: center;
+}
+.esp .flow .curriList li {
+    border: 4px solid transparent;
+    /* 테두리 두께 */
+    background:
+        linear-gradient(#fff, #fff) padding-box,
+        /* 내부 배경색 */
+        linear-gradient(45deg, #7ddfab, #3f5aff) border-box;
+    /* 테두리 그라디언트 */
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+.esp ul li img {
+    width: 42px;
+    margin-bottom: 10px;
+}
+
+.esp ul h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.esp ul li>span {
+    display: inline-block;
+    padding: 6px 15px;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.esp .curriList li>span {
+    background: var(--btn-light-blue1);
+    color: var(--color-point-green);
+}
+
+.esp ul li .solText {
+    word-break: keep-all;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+}
+
+.esp .flow .steps {
+    background: url(../../img/sub_industry/trans_bar.png) no-repeat top 25px center /contain;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.esp .flow .step {
+    width: calc(100%/5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.esp .flow .step .num {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    background: #8592c7;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 50px;
+    margin-bottom: 40px;
+}
+
+.esp .flow .step img {
+    margin-bottom: 25px;
+}
+
+.esp .flow .step p {
+    color: #fff;
+}

@@ -1,0 +1,571 @@
+section+section {
+    padding: 120px 0;
+}
+section strong {
+    color: var(--color-content-blue)
+}
+section h3 {
+    color: var(--category-bg);
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section .text {
+    font-size: 26px;
+    line-height: 1.5;
+    word-break: keep-all;
+    margin-bottom: 25px;
+}
+
+.mainVisual {
+    position: relative;
+    margin-top: 80px;
+    width: 100%;
+    height: 760px;
+    background: url(../img/sub_custom/main_bg2.png) no-repeat center/cover;
+}
+
+.mainVisual .inner {
+    max-width: 960px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.mainVisual .mainTitleArea {
+    width: 45%;
+}
+
+.mainTitleArea h2 {
+    text-align: left;
+    line-height: 1.4;
+}
+
+.mainTitleArea strong {
+    display: block;
+}
+
+.mainTitleArea .text {
+    display: block;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+.mainTitleArea .btnArea {
+    text-align: left;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+
+/* 플립러닝 교육과정 */
+.flipped {
+    padding: 120px 0;
+    background: linear-gradient(40deg, #24242c, #4a557a) no-repeat center / 122%, linear-gradient(-85deg, #24242c, #4a557a) no-repeat center;
+    color: #fff;
+}
+
+.flipped .logo_green {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.flipped h2 {
+    margin-bottom: 100px;
+}
+
+.flipped .curriculum {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 80px;
+}
+
+.flipped .curriculum li {
+    position: relative;
+    width: calc(100%/6);
+    height: 140px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #39456b, #495576);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.flipped .curriculum li::before {
+    display: none;
+}
+
+.flipped .steps {
+    margin: 0 auto;
+    background: url(../img/sub_custom/line_bg.png) no-repeat center/contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.flipped .steps .step {
+    display: inline-block;
+    width: 240px;
+    height: 60px;
+    border-radius: 30px;
+    background: #21273c;
+    border: 1px solid #4f66a5;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 60px;
+}
+
+.flipped .smart {
+    border-radius: 40px;
+    width: 100%;
+    height: 780px;
+    background: url(../img/sub_custom/circle_bg.png) no-repeat left center/cover;
+    margin-left: -50px;
+}
+
+.flipped .smart .smart-list {
+    margin-left: 360px;
+    margin-top: 44px;
+}
+
+.flipped .smart .smart-list>.item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.flipped .smart .smart-list>.item>.itemGoal {
+    position: relative;
+    background: url(../img/sub_custom/textbox_bg01.png) no-repeat center/contain;
+    width: 400px;
+    height: 60px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 30px;
+}
+
+.flipped .smart .smart-list>.item>.itemGoal::after {
+    content: '';
+    width: 40px;
+    height: 2px;
+    border-top: 2px dotted #4f66a5;
+    position: absolute;
+    top: 50%;
+    right: -40px;
+}
+
+.flipped .smart .smart-list>.item>.itemGoal>p:first-child {
+    width: 160px
+}
+
+.flipped .smart .smart-list>.item>.itemGoal>p:first-child span {
+    color: var(--color-point-green);
+}
+
+.flipped .smart .smart-list>.item>.itemGoal>p:last-child {
+    width: calc(100% - 176px);
+}
+
+.flipped .smart .smart-list>.item>.itemText {
+    width: 460px;
+    height: 90px;
+    background: #28292f;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.flipped .smart .smart-list>.item>.itemText img {
+    width: 24px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.flipped .smart .smart-list>.item>.itemText p {
+    margin-bottom: 10px;
+}
+
+.flipped .btnArea {
+    margin-top: 0;
+}
+
+/* 강사진소개/교재/hsrt */
+.sec_overview {
+    padding: 50px 0;
+    background: linear-gradient(to bottom,
+            #e9f0fd 0%,
+            #ffffff 33%,
+            #ffffff 33%,
+            #e9f0fd 66%,
+            #e9f0fd 66%,
+            #ffffff 100%);
+    text-align: center;
+}
+
+.overview h2 img {
+    width: 34px;
+    vertical-align: -5px;
+}
+
+.overview strong {
+    color: #000
+}
+
+.overview h2 {
+    margin-bottom: 45px;
+}
+
+.overview .titleText {
+    font-size: 28px;
+    margin-bottom: 56px;
+}
+
+.overview h2+.titleText strong {
+    font-weight: 700;
+    display: block;
+}
+
+.overview .intro p+p {
+    margin-top: 40px;
+}
+
+.overview .intro p span {
+    display: block;
+}
+
+.overview .instructors img {
+    width: 750px;
+    margin-bottom: 60px;
+}
+
+.overview .textArea .slogan {
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.overview strong {
+    color: var(--color-content-blue)
+}
+
+.overview .textArea .text span+span {
+    font-weight: 600;
+}
+
+.overview .contRefined {
+    padding: 60px 0 80px;
+}
+
+.overview .contRefined .titleArea {
+    margin-bottom: 100px;
+}
+
+.overview .contRefined h2 span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.overview .contRefined h2 span em {
+    color: var(--color-content-blue);
+}
+
+.overview .contRefined h2 img {
+    margin-left: 10px;
+}
+.overview .contRefined .resources img {
+    width: 650px;
+}
+
+.overview .hspt h2 {
+    font-size: 36px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.overview .hspt h2 strong {
+    color: var(--color-content-blue)
+}
+
+.overview .hspt h2 span {
+    color: #000
+}
+
+.overview .hspt .text {
+    width: 70%;
+    margin: 0 auto 50px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.overview .hspt .text em {
+    color: var(--color-content-blue);
+    font-weight: 500;
+}
+
+.overview .proficiency>h2 {
+    display: none;
+}
+
+.overview .icons-wrapper {
+    position: relative;
+    width: 980px;
+    height: auto;
+    margin: 0 auto 40px;
+    background: url(../img/sub_custom/hsts_card_bg.png) no-repeat center top/75%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.overview .icons-wrapper .item {
+    text-align: center;
+    font-size: 14px;
+    grid-row: 2;
+    height: 100px;
+}
+
+.overview .icons-wrapper .item h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.overview .icons-wrapper .item:nth-child(1) {
+    position: relative;
+    left: 50px
+}
+
+.overview .icons-wrapper .item:nth-child(2) {
+    position: relative;
+    left: -40px;
+    top: 30px;
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.overview .icons-wrapper .item:nth-child(3) {
+    position: relative;
+    left: -40px;
+    top: 20px;
+    grid-row: 4;
+    grid-column: 3;
+}
+
+.overview .icons-wrapper .item:nth-child(4) {
+    grid-row: 5;
+    grid-column: 4;
+    position: relative;
+    top: -40px;
+}
+
+.overview .icons-wrapper .item:nth-child(5) {
+    position: relative;
+    left: 30px;
+    top: 20px;
+    grid-row: 4;
+    grid-column: 5;
+}
+
+.overview .icons-wrapper .item:nth-child(6) {
+    position: relative;
+    left: 25px;
+    top: 60px;
+    grid-row: 3;
+    grid-column: 6;
+}
+
+.overview .icons-wrapper .item:nth-child(7) {
+    position: relative;
+    left: -60px;
+    grid-row: 2;
+    grid-column: 7;
+}
+
+/* 학습자 맞춤형 수업설계 */
+.plan {
+    background: #f0f0f6;
+}
+
+.plan .circle-wrap {
+    height: 450px;
+    margin: 0 auto 80px;
+    padding: 80px;
+    background: #fff;
+    border-radius: 60px;
+}
+
+.plan .circle-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.plan .bar-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+/* 목표관리형 수업 */
+.goalTrack {
+    background: url(../img/sub_custom/step_bg.png) no-repeat center/cover;
+}
+
+.goalTrack .titleArea {
+    text-align: center;
+    margin-bottom: 80px;
+    color: #fff;
+}
+
+.goalTrack .titleArea .logo_white {
+    margin-bottom: 40px;
+}
+
+.goalTrack .titleArea span {
+    display: block;
+}
+
+.goalTrack .titleArea span em {
+    color: var(--color-point-green);
+    font-weight: 600;
+}
+
+.goalTrack .swiper-goal-steps.swiper {
+    display: none;
+}
+
+.goalTrack .goal_steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+}
+
+.goalTrack .goal_steps .step {
+    text-align: center;
+}
+
+.goalTrack .goal_steps .step .num {
+    display: inline-block;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+    color: 1;
+    background: #6281c5;
+    text-align: center;
+    line-height: 36px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.goalTrack .goal_steps .step .num::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    width: 186px;
+    height: 4px;
+    background: url(../img/sub_custom/doline.png) no-repeat center;
+}
+
+.goalTrack .goal_steps .step:last-child .num::after {
+    background: none;
+}
+
+.goalTrack .goal_steps .step .title {
+    width: 210px;
+    height: 96px;
+    background: url(../img/sub_custom/talkbox_bg.png) no-repeat center/contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+.goalTrack .goal_steps .step .title strong {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.goalTrack .goal_steps .step .title p {
+    color: #fff;
+}
+
+.goalTrack .goal_steps .stepCard {
+    height: 200px;
+    border-radius: 15px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.goalTrack .goal_steps .stepCard .img {
+    height: 60px;
+    margin: 0 auto 40px;
+}
+
+.goalTrack .goal_steps .stepCard .img img {
+    height: 100%;
+}
+
+.goalTrack .goal_steps .stepCard p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* 파트너사 */
+.partners h2 {
+    margin-bottom: 80px;
+    font-size: 32px;
+}
+
+.partners_logo {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+}
+
+.partners_logo>div {
+    display: inline-flex;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: 100px;
+    border-radius: 8px;
+    border: 1px solid #d4d4d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners_logo>div img {
+    display: block;
+    width: 120px;
+}
+
+@media screen and (max-width: 1280px) {
+    .partners h2 em {
+        display: block;
+        margin-bottom: 5px;
+    }
+}

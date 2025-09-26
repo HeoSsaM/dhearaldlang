@@ -1,0 +1,587 @@
+@charset "utf-8";
+
+.btnArea {
+    flex-direction: column;
+}
+.btnArea .btn {
+    width: 240px;
+    font-size: 16px;
+}
+
+/* index */
+section .titleText {
+    font-size: 18px;
+}
+section h2 {
+    letter-spacing: -1px;
+    word-break: keep-all;
+    line-height: 1.4;
+}
+section .inner {max-width: 92%;}
+
+/* main visual */
+.mainVisual.index .mainTitleArea {
+    margin-top: 0;
+    left: 0;
+    transform: none;
+    position: static;
+}
+.mainTitleArea .title>span {
+    font-size: clamp(22px, 3.3vw, 44px);
+}
+.mainTitleArea .title>span em {
+    display: block;
+}
+
+/* topic */
+#mainTopicArea .topicList {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+}
+#mainTopicArea .topicList li .category {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#mainTopicArea .topicList li .category>span {
+    display: block;
+}
+
+#mainTopicArea .topicList li h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+/* about */
+#secCore .coreList, 
+#secWhyus .whyusCard,
+#secEduPhil .philPoints,
+.secIntro .features .feature-list,
+.secIntro .recommend .caseCards,
+.info-visual .info-list,
+.esp .why .comp  {
+    grid-template-columns: repeat(1, 1fr)
+}
+.secIntro .circle-diagram {
+    width: 100%;
+    background-size: contain;
+    height: 180px;
+}
+.secIntro .circle-diagram strong {
+    font-size: 16px;
+}
+.secIntro .circle-diagram strong span {display: block;}
+.info-visual .info-list {
+    gap: 0;
+}
+.mainTitleArea h2>strong {
+    font-size: 24px;
+}
+#secEduPhil .eduPhilText .text strong {display: inline;}
+
+/* industry */
+.mainVisual.industry {
+    margin-top: 100px;
+    height: 70vh;
+}
+/* executive */
+.mainVisual.executive,
+.mainVisual.speaking {
+    height: 70vh;
+}
+.mainVisual.speaking .mainTitleArea h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.mainVisual.executive .mainTitleArea {
+    max-width: 85%;
+}
+.mainVisual.speaking .mainTitleArea .titleText {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.mainVisual.executive .mainTitleArea .titleText span {
+    display: inline;
+}
+.mainVisual.speaking .mainTitleArea .btnArea {
+    margin-top: 25px;
+}
+.esp .why {margin-bottom: 60px;}
+.esp .why .comp {
+    margin-bottom: 40px;
+}
+.esp .compInfo .features {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 40px;
+}
+
+.esp .compInfo .features .item {
+    width: 100%;
+    display: grid;
+    margin-bottom: 25px;
+}
+.esp .compInfo .features .item figure {
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+.esp .compInfo .features .item > div {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 120px;
+}
+.esp .compInfo .features .item .title {
+    color: #000;
+    margin-top: 0;
+    text-align: left;
+    margin-bottom: 5px;
+    color: var(--category-bg);
+}
+.esp .compInfo .features .item .title::before {
+    display: none;
+}
+.esp .compInfo .features .item p+p {
+    color: #000
+}
+.esp .flow .curriList {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* 기업맞춤교육 */
+.mainVisual.custom .mainTitleArea .text p {
+    font-size: 18px;
+}
+
+/* ai */
+.mainVisual .mainTitleArea .titleText {
+    font-size: clamp(22px, 3.3vw, 44px);
+    font-family: 'NEXON Lv2 Gothic';
+    font-weight: 600;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.mainVisual .mainTitleArea .text>span {
+   font-size: 16px;
+}
+.sec-ai {padding: 0;}
+.sec-coach .cards,
+.secTutor .tutorCards {
+    grid-template-columns: repeat(1, 1fr);
+}
+.secTutor .tutorCards {
+    height: auto;
+}
+.secTutor .tutorCards .card {
+    padding: 30px;
+    border-radius: 25px;
+}
+.secTutor .tutorCards .card .img {
+    width: 120px;
+}
+.sec-process .process-list {
+    grid-template-columns: 1fr;
+}
+.sec-process .process-list > div {
+    margin-bottom: 20px;
+    padding: 25px;
+}
+/*  말하기평가센터 */
+.mainVisual.speaking {
+    height: 70vh;
+}
+.mainVisual.speaking .mainTitleArea {
+    top: 0;
+    transform: none;
+}
+.mainVisual.speaking .mainTitleArea .titleText.hide {
+    display: none;
+}
+/* Value */
+#secValue h2 {
+    font-size: 20px;
+    margin-top: 25px;
+}
+#secValue .valueCard>ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+#secValue .textArea p {
+    font-size: 18px;
+}
+
+#secValue .trustText {
+    margin-top: 0;
+    text-align: center;
+    background: var(--bg-light-gray);
+    padding: 40px 2.5% 20px;
+}
+
+#secValue .trustText p {
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 24px;
+    color: #000;
+    line-height: 1.5;
+}
+
+#secValue .trustText p strong {
+    color: var(--color-content-blue)
+}
+
+#secValue .trustText p>span {
+    display: block;
+}
+
+#secValue .trustText .trustNum {
+    margin: 0 auto 60px;
+    max-width: 95%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#secValue .trustText .trustNum>li {
+    width: calc(100%/2 - 10px);
+    height: 150px;
+}
+
+#secValue .trustText .trustNum>li+li::before {
+    display: none;
+}
+
+#secValue .trustText .trustNum>li strong {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#secValue .trustText .trustNum>li span {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+.plan .circle-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.plan .circle-wrap img,
+.plan .bar-wrap img {
+    width: 65%
+}
+.plan .bar-wrap {
+    width: 100%;
+     grid-template-columns: repeat(1, 1fr);
+}
+
+.sec-benefit .benefit-list {
+    column-gap: 10px;
+    row-gap: 30px;
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.sec-benefit .benefit-list .card_bg {
+    height: 160px;
+    padding: 10px;
+}
+
+.sec-benefit .benefit-list .card_bg h3 {
+    font-size: 17px;
+    letter-spacing: -1px;
+}
+
+.sec-benefit .benefit-list .card_bg h3 strong {
+    font-size: 17px;
+}
+
+.sec-benefit .benefit-list>div p {
+    font-size: 15px;
+}
+
+.sec-benefit .btn {
+    margin-bottom: 10px;
+}
+.sec_hspi .titleArea h2 {
+    font-size: 20px;
+}
+.sec_hspi .titleArea h2 span {
+    display: inline;
+}
+.sec_hspi .titleArea p {
+    font-size: 16px;
+}
+.sec_hspi .titleArea p span {display: inline;}
+#secValue .valueCard>ul {
+    grid-template-columns: repeat(1, 1fr)
+}
+#secSolution .hsptList {
+    grid-template-columns: repeat(1, 1fr)
+}
+.sec_hspi .btnArea {
+    margin-top: 30px;
+}
+.sec_hspi .btn {
+    margin-bottom: 10px;
+}
+.sec-speak {
+    padding: 60px 0 0;
+}
+.sec-speak::before {
+    display: none;
+}
+.sec-speak h2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+.sec-speak h2 span {
+    display: inline;
+}
+
+.sec-speak .speak-info {
+    padding: 50px 2.5%;
+    overflow: hidden;
+}
+.sec-speak .speak-info .title>p {
+    border-radius: 15px;
+}
+.sec-speak .criteria .crit-list {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+}
+.sec-speak .criteria .crit-list:first-child {
+    padding-bottom: 20px;
+    border-bottom: 2px dotted #9e9e9e;
+}
+.sec-speak .criteria .crit-list li .img {
+    width: 80px;
+    height: 80px;
+}
+
+.sec-speak .criteria .crit-list li .img img {
+    width: 44px;
+}
+
+.sec-speak .criteria .crit-list li span {
+    font-size: 15px;
+}
+.sec-speak .flow-tags {
+    flex-direction: column;
+}
+.sec-speak .flow-tags .flow .title {
+    height: 44px;
+}
+.sec-speak .flow-process .tag-list {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.sec-speak .flow-process .tag-list span {
+    padding: 8px 15px;
+}
+.sec-usage .usage-group {
+    flex-direction: column;
+}
+.usage-box .usage-list {
+    width: 80%;
+}
+
+.usage-box .usage-list li {
+    padding: 10px
+}
+.sec-logos h2 {
+    font-size: 20px;
+}
+.sec-logos .logos {
+    grid-template-columns: repeat(4, 1fr);
+}
+.sec-logos .inner {
+    padding: 0 4%;
+}
+
+.sec-logos .titleText {
+    letter-spacing: -1px;
+}
+
+.siteInfo figure img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.bottomText .btnArea .btn {
+    width: auto
+}
+/* 주니어교육 */
+.mainVisual.junior {
+    height: 80vh;
+    margin-top: 100px;
+}
+.mainVisual.junior .inner {
+    height: 100%;
+}
+.mainVisual.junior .mainTitleArea {
+    width: 95%
+}
+.mainVisual.junior .mainTitleArea h2 {
+    margin-bottom: 20px;
+}
+.mainVisual.junior .mainTitleArea h2 br {display: none;}
+.mainVisual.junior .mainTitleArea .titleText {
+    font-size: clamp(18px, 4.651vw, 20px);
+    letter-spacing: -1px;
+    word-break: keep-all;
+    margin-bottom: 15px;
+}
+.mainVisual.junior .mainTitleArea .titleText span {
+    display: block;
+}
+.mainVisual.junior .mainTitleArea .btnArea {
+    margin-top: 20px;
+}
+.sec-edu-cont01 .edu-tags {
+    grid-template-columns: repeat(1, 1fr);   
+}
+.sec-edu-cont01 .edu_img { display: none;}
+.sec-teacher .titleArea .text {
+    font-size: 16px;
+}
+.sec-teacher .t-feature {
+    border-radius: 20px;
+    overflow: hidden;
+}
+.sec-teacher .t-feature>div:nth-child(1),  
+.sec-teacher .t-feature>div:nth-child(2),
+.sec-teacher .t-feature>div:nth-child(3)  {
+    background-image: none;
+}
+.sec-teacher .t-feature > div {
+  position: relative;
+  border-radius: 16px;
+  background: #274bae;  /* 요소 본래 배경 자유롭게 변경 가능 */
+  height: 200px;
+  margin-bottom: 25px;
+}
+
+.sec-teacher .t-feature > div::before {
+  content: "";
+  position: absolute; inset: 0;
+  padding: 2px;                    /* 보더 두께 */
+  border-radius: inherit;
+  background: linear-gradient(-120deg, var(--color-content-blue), var(--color-point-green));
+  /* 가운데를 뚫어서 테두리만 남김 */
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  pointer-events: none;
+}
+
+.sec-teacher .t-feature>div .label {
+    margin-top: 0;
+}
+.sec-teacher .teacher-cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+}
+.sec-curri .inner {
+    padding-top: 0;
+}
+.sec-curri .titleArea .badge span {
+    display: block;
+}
+.sec-curri .curri-list {
+    grid-template-columns: repeat(1, 1fr);
+}
+.sec-curri .curri-list li:nth-child(odd) {
+    background: rgba(70, 107, 208, 0.15);
+}
+.sec-curri .curri-list li:nth-child(even) {
+    background: rgba(148, 170, 233, 0.15)
+}
+.sec-curri .btnArea {
+    margin-top: 30px;
+}
+
+.steps-wrap .step-begin .cont-list {
+    grid-template-columns: repeat(1, 1fr);
+}
+.steps-wrap .step-inter .cont-list, .steps-wrap .step-advance .cont-list{
+    grid-template-columns: repeat(1, 1fr);
+}
+.sec-news .titleArea h2 {
+    font-size: 26px;
+}
+.sec-news .titleArea .titleText {
+    padding: 0 25px;
+}
+.news_contents h3 span{
+    color: #fff
+}
+.news_contents .news-card {
+    align-items: stretch;
+    grid-template-columns: repeat(3, 1fr);
+}
+.news_contents .news-card .card {
+    background: none;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    gap: 5px;
+    height: auto;
+    padding: 25px 0
+}
+.news_contents .news-card .card span {
+    font-size: 15px;
+    padding-top: 0;
+}
+.sec-dogo {
+    background: #efefef;
+    color: #fff;
+}
+.sec-dogo .titleArea {
+    width: 100%;
+}
+.sec-dogo .titleArea h2 {
+    color: var(--color-content-blue);
+    text-align: center;
+}
+.sec-dogo .titleArea .titleText {
+    font-size: 16px;
+}
+.sec-dogo .titleArea .titleText em {
+    color: var(--color-content-blue)
+}
+.learn-cont-wrap .learn-cont-top .titleText {
+    font-size: 16px;
+}
+.learn-cont-mid .sub-copy {
+    font-size: 18px;
+    font-weight: 500;
+}
+.learn-cont-mid h3, .learn-cont-mid .slogan {
+    font-size: 22px;
+}
+
+.overview .proficiency .icons-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+}
+.overview .hspt .text br {display: none;}
+.overview .hspt .text em {
+    display: inline;
+}
+.footer .inner {
+    flex-direction: column;
+    text-align: center;
+}
+.footer .f_company {
+    width: 100%;
+    margin-bottom: 40px;
+}

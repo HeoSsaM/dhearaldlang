@@ -1,0 +1,529 @@
+@charset "utf-8";
+
+section + section {padding: 120px 0;}
+section strong {
+    color: var(--color-content-blue)
+}
+
+section h3 {
+    color: var(--category-bg);
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section p {
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+/* 메인이미지영역 */
+.mainVisual {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    height: 760px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainVisual::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to bottom, rgba(8, 16, 53, 0.3), rgba(15, 34, 69, 0.4));
+}
+
+.mainVisual video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.mainTitleArea {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainTitleArea h2>span {
+    display: block;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--white);
+}
+.mainTitleArea h2>strong {
+    display: block;
+    font-size: 40px;
+    margin-top: 25px;
+    color: var(--color-point-green);
+}
+.mainVisual .btnArea {position: relative;}
+/* secIntro */
+#secIntro {
+    position: relative;
+    background: #fff url(../img/sub_about/bg_gradinet.png) no-repeat center;
+}
+#secIntro .introArea {
+    margin-bottom: 120px;
+}
+#secIntro .introArea .introText {
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 80px;
+    line-height: 1.4;
+}
+
+#secIntro .introArea .introText strong {
+    color: var(--color-content-blue)
+}
+
+#secIntro .introArea .text {
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.sloganArea .tagline {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.sloganArea .tagline>strong {
+    display: inline-block;
+    padding: 2px;
+    background: linear-gradient(90deg, #4d88ff, #20ee79);
+    border-radius: 40px;
+}
+
+.sloganArea .tagline>strong span {
+    display: inline-block;
+    background: #e4ecfb;
+    /* 안쪽 박스 색상 */
+    padding: 15px 25px;
+    border-radius: 30px;
+    color: var(--color-content-blue)
+}
+
+.sloganArea .mainSlogan {
+    margin-bottom: 80px;
+}
+
+.sloganArea .sloganContents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sloganArea .sloganContents>div {
+    width: 50%;
+}
+
+.sloganArea .sloganContents .sloganText {
+    width: 40%;
+}
+
+.sloganArea .sloganContents h3 {
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.sloganArea .sloganContents .sloganText p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+    opacity: 0.9;
+    font-size: 20px;
+    word-break: keep-all;
+}
+
+/* secCore */
+#secCore {
+    position: relative;
+    background: #f5f6fa;
+    padding: 100px 0 50px;
+}
+
+#secCore h2 {
+    margin-bottom: 25px;
+    color: #000
+}
+#secCore .titleText {
+    font-size: 24px;
+}
+#secCore .coreList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+#secCore .coreList>div {
+    position: relative;
+    background: linear-gradient(to bottom, white, var(--bg-light-gray));
+    border-radius: 15px;
+    color: #000;
+    padding: 45px 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#secCore .coreList>div::before {
+    content: url(../img/sub_testcenter/ico04.png);
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#secCore .coreList>div:nth-child(2)::before {
+    content: url(../img/sub_testcenter/ico01.png);
+}
+
+#secCore .coreList>div:nth-child(3)::before {
+    content: url(../img/sub_testcenter/ico07.png);
+}
+
+#secCore .coreList>div:nth-child(4)::before {
+    content: url(../img/sub_testcenter/ico06.png);
+}
+
+/* secWhyus */
+#secWhyus {
+    position: relative;
+    height: 850px;
+    padding: 260px 0 0;
+    background: url(../img/sub_about/about_img02.png) no-repeat left top / 100%;
+    display: flex;
+    z-index: 2;
+}
+#secWhyus h2 {
+    position: relative;
+    margin-bottom: 80px;    
+    text-align: center;
+}
+#secWhyus h2::before {
+    content: '';
+    width: 1px; height: 60px;
+    background: #fff;
+    position: absolute;
+    top: -100px; left: 50%;
+}
+#secWhyus h2 span {
+    display: inline-block;
+    padding: 15px 40px;
+    color: #fff;
+    border-radius: 50px;
+    border: 2px solid #fff;
+}
+
+#secWhyus .whyusCard {
+    width: 980px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#secWhyus .whyusCard>div {
+    position: relative;
+    padding: 45px 40px;
+    height: 320px;
+    border-radius: 25px;
+    /* background: linear-gradient(to bottom, white, #ddd); */
+    background: no-repeat top center;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border: 1px solid #90a2fd;
+}
+#secWhyus .whyusCard > div:nth-child(1) {
+    background-image: url(../img/sub_about/img_whyus01.png);
+}
+#secWhyus .whyusCard > div:nth-child(2) {
+    background-image: url(../img/sub_about/img_whyus02.png);
+}
+#secWhyus .whyusCard > div:nth-child(3) {
+    background-image: url(../img/sub_about/img_whyus03.png);
+}
+#secWhyus .whyusCard > div > .whyText {
+    position: absolute;
+    top: 150px; left: 0;
+    width: 100%; 
+    padding: 0 40px;
+    word-break: keep-all;
+    color: rgba(255,255,255,0.8)
+}
+#secWhyus .whyusCard>div h3 {
+    color: #fff;
+}
+
+/* ourValues */
+#secOurValues {
+    background: #f5f6fa;
+    position: relative;
+    top: -120px;
+    padding-bottom: 240px;
+    color: #000
+}
+
+#secOurValues .titleLogo {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#secOurValues .ourValues {
+    position: relative;
+    height: 560px;
+    margin-top: 0;
+}
+
+#secOurValues h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.valuesCircle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: url(../img/sub_about/about_img03.png) no-repeat center;
+    height: 100%;
+    column-gap: 100px;
+}
+
+.valueItem {
+    position: relative;
+    width: 30%;
+    padding: 40px;
+}
+
+.valueItem.textleft h3,
+.valueItem.textleft p {
+    text-align: left;
+}
+
+.valueItem.textright h3,
+.valueItem.textright p {
+    text-align: right;
+}
+
+.valueItem h3 {
+    color: #0da3fa;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.valueItem p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.valueItem:nth-child(1) {
+    left: 50px;
+}
+
+.valueItem:nth-child(3) {
+    left: -40px;
+}
+
+.valueItem:nth-child(5) {
+    left: 60px;
+    top: 30px;
+}
+
+.valueItem:nth-child(2) {
+    left: -30px;
+}
+
+.valueItem:nth-child(4) {
+    left: 50px;
+}
+
+.valueItem:nth-child(6) {
+    left: -30px;
+    top: 30px;
+}
+
+/* section#eduPhilosophy */
+#secEduPhil {
+    padding: 0 0 100px;
+    /* background: url(../img/sub_about/about_img06.png) no-repeat center/cover; */
+}
+#secEduPhil .inner {
+    width: 1080px;
+    margin: 0 auto;
+}
+#secEduPhil .edu_phil_top {    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 100px;
+}
+#secEduPhil .edu_phil_top .eduPhilText {width: 50%;}
+#secEduPhil .edu_phil_top .eduPhilText .top_logo_navy {margin-bottom: 30px;}
+
+#secEduPhil .eduPhilText .text {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+#secEduPhil .eduPhilText .text span {display: block;}
+#secEduPhil .eduPhilText .text strong {
+    font-weight: 600;
+    color: #000;
+    display: block;
+}
+#secEduPhil .edu_phil_top .eduPhilPic {width: 40%;}
+#secEduPhil .edu_phil_top .eduPhilPic img {max-width: 100%;}
+#secEduPhil .eduPhilText h2 {
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+#secEduPhil .philPoints {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 60px;
+    gap: 60px;
+}
+
+#secEduPhil .philPoints>div {
+    position: relative;
+}
+
+#secEduPhil .philPoints>div h3 {
+    text-align: left;
+}
+#secEduPhil .philPoints>div img {
+    width: 40px;
+    display: block;
+    margin-bottom: 20px;
+}
+#secEduPhil .philPoints>div p {
+    color: #000;
+    font-size: 18px;
+}
+
+/* review */
+#secReviews {
+    background: linear-gradient(to bottom, #2043a4, #3357bd 22%, #4a89ff 100%);    
+}
+#secReviews .reviewBg {
+    margin: 0 auto;
+    background: url(../img/sub_about/review_bg01.png) no-repeat center/cover;
+    border-radius: 40px;
+    padding: 80px;
+}
+#secReviews .titleArea {text-align: center;}
+#secReviews .titleArea > p > strong {
+    display: inline-block;
+    padding: 12px 40px;
+    background: #111;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 40px;
+}
+#secReviews .titleText {
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+#secReviews .titleText span {display: block; font-size: 24px;}
+
+#secReviews h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+#secReviews .caseCards.swiper {display: none;}
+#secReviews .caseCards {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    height: 280px;    
+}
+#secReviews .caseCards .caseCard {
+    position: relative;
+    width: calc(100%/3);
+    background: #fff;
+    padding: 80px 30px 40px;
+    border-radius: 18px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    text-align: left;
+}
+.caseCard::before {
+    position: absolute;
+    top: 20px; left: 50%;
+    transform: translateX(-50%);
+    width: 40px; height: 40px;
+    background: url(../img/icon/quotation.png) no-repeat center/contain;
+    content: '';    
+}
+.caseCard p {
+    margin-bottom: 20px;
+    font-size:17px;
+    line-height: 1.5;
+    text-align: center;
+}
+.caseCard p span {
+    color: var(--color-content-blue);
+    font-weight: 700;
+}
+.caseCard .author {
+    display: block;
+    text-align: center;   
+}
+.caseCard .author span {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    color:rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 0 15px;
+}
+.caseCard .author span::before,
+.caseCard .author span::after {
+    content: '';
+    width: 10px; height: 1px;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 50%;
+}
+.caseCard .author span::before {left: 0}
+.caseCard .author span::after {right: 0}
+.reviewBg > .text {
+    margin-top: 15px; 
+    color: rgba(0,0,0,0.6);
+    text-align: right;
+}
+#secReviews .contactArea {
+    margin-top: 80px;
+    text-align: center;
+}
+#secReviews .contactArea .emphasis {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+#secReviews .contactArea .text {
+    color: #fff;
+    font-size: 24px;
+}
+#secReviews .contactArea .text strong {font-weight: 600; color:#fff;}

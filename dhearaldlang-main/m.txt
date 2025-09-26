@@ -1,0 +1,2 @@
+font-family: "Montserrat", sans-serif;
+font-size: clamp(28px, 5vw, 44px);

@@ -1,0 +1,72 @@
+:root{
+  --header-h: 64px;
+  --brand:#0e1a52;
+  --ink:#0b1020;
+  --ink-weak:#3b4160;
+  --white:#fff;
+  --primary:#3b66ff;
+}
+
+*{box-sizing:border-box}
+body{margin:0; font-family:system-ui, AppleSDGothicNeo, "Noto Sans KR", sans-serif; color:var(--ink)}
+a{color:inherit; text-decoration:none}
+
+.site-header{
+  position:sticky; top:0; z-index:1000;
+  background:linear-gradient(0deg, #0b1548, #0b1548) padding-box;
+  color:#e8ecff; border-bottom:1px solid rgba(255,255,255,.08);
+}
+.site-header .inner{
+  height:var(--header-h); max-width:1280px; margin:0 auto;
+  padding:0 16px; display:flex; align-items:center; gap:24px;
+}
+.logo img{display:block; height:28px}
+
+.gnb{
+  /* 데스크탑에서는 헤더 라인 안에서 가로 배치 */
+  display:flex; align-items:center; gap:28px; margin-left:auto;
+}
+.menu{display:flex; gap:28px; list-style:none; padding:0; margin:0}
+.menu a{display:block; padding:10px 0; font-weight:600}
+.menu a:hover{opacity:.9; text-decoration:underline}
+.actions{display:flex; align-items:center; gap:18px}
+.btn{display:inline-flex; align-items:center; justify-content:center; padding:8px 14px; border-radius:12px; font-weight:700}
+.btn-primary{background:var(--primary); color:var(--white)}
+.login{opacity:.9}
+.btnMobile{display:none; margin-left:auto; width:40px; height:40px; border:0; background:transparent; cursor:pointer}
+.btnMobile .bar{display:block; height:2px; margin:6px 0; background:#e8ecff}
+
+/* ============== 모바일 ============== */
+@media (max-width: 768px){
+  .site-header .inner{gap:12px}
+  .gnb{
+    /* 모바일에서는 '헤더 안에 포함된 드롭다운 패널'로 변신 */
+    position:absolute; left:0; right:0; top:var(--header-h);
+    margin:0; padding:20px 16px 16px;
+    background:#ffffff; color:var(--ink);
+    border-bottom:1px solid #e9ecf2;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    display:block;
+
+    /* 초기 비노출 상태 (hidden 속성과 동기화) */
+    transform:translateY(-8px); opacity:0; pointer-events:none;
+    transition:transform .18s ease, opacity .18s ease;
+    max-height:calc(100vh - var(--header-h) - 16px);
+    overflow:auto;
+  }
+  .gnb.open{
+    transform:translateY(0); opacity:1; pointer-events:auto;
+  }
+
+  .nav{border-top:1px solid #eef1f6; padding-top:8px}
+  .menu{display:grid; gap:8px}
+  .menu a{
+    padding:14px 2px; text-align:center; border-radius:10px;
+    background:#f7f9ff;
+  }
+  .actions{justify-content:center; margin-top:16px; gap:12px}
+  .btnMobile{display:inline-block}
+}
+
+/* 바디 스크롤 잠금(옵션) */
+.no-scroll{overflow:hidden}
